@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM Wealth Select® — Independent Banking Advisory · Geneva</title>
+  <meta name="description" content="IM Wealth Select® helps high net worth individuals audit, select and monitor private banks and investment partners. Independent. Fee-only. Geneva.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ──────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav__logo">IM Wealth Select®</a>
+  <ul class="nav__links" role="list">
+    <li><a href="approach.html" class="nav__link">Approach</a></li>
+    <li><a href="use-cases.html" class="nav__link">Expertise</a></li>
+    <li><a href="publications.html" class="nav__link">Publications</a></li>
+    <li><a href="team.html" class="nav__link">Team</a></li>
+  </ul>
+  <div class="nav__controls">
+    <div class="nav__lang" role="navigation" aria-label="Language selector">
+      <button class="nav__lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language: English">
+        <span class="nav__lang-label">EN</span>
+        <svg viewBox="0 0 10 6" aria-hidden="true"><polyline points="1,1 5,5 9,1"/></svg>
+      </button>
+      <ul class="nav__lang-dropdown" role="listbox" aria-label="Select language">
+        <li class="nav__lang-option is-active" data-lang="EN" role="option" aria-selected="true">🇬🇧 English</li>
+        <li class="nav__lang-option" data-lang="FR" role="option">🇫🇷 Français</li>
+        <li class="nav__lang-option" data-lang="DE" role="option">🇩🇪 Deutsch</li>
+        <li class="nav__lang-option" data-lang="ES" role="option">🇪🇸 Español</li>
+        <li class="nav__lang-option" data-lang="IT" role="option">🇮🇹 Italiano</li>
+      </ul>
+    </div>
+    <a href="contact.html" class="btn-accent nav__cta">Request a banking review</a>
+    <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay -->
+<div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="overlay-close" aria-label="Close menu">✕</button>
+  <a href="approach.html" class="nav__link">Approach</a>
+  <a href="use-cases.html" class="nav__link">Expertise</a>
+  <a href="publications.html" class="nav__link">Publications</a>
+  <a href="team.html" class="nav__link">Team</a>
+  <a href="contact.html" class="btn-accent">Request a banking review</a>
+  <div class="overlay__lang">
+    <span class="overlay__lang-item is-active" data-lang="EN">EN</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="FR">FR</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="DE">DE</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="ES">ES</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="IT">IT</span>
+  </div>
+</div>
+
+<!-- ── HERO V6 — 70vh · vidéo brute · texte flottant ── -->
+<section class="hero" aria-labelledby="hero-title">
+  <video class="hero__video" autoplay loop muted playsinline aria-hidden="true">
+    <source src="hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero__content">
+    <h1 class="hero__title h-anim-0" id="hero-title">
+      Your private bank should be selected,<br> not inherited.
+    </h1>
+    <p class="hero__subtitle h-anim-1">
+      We help you select and monitor the right private banks and investment partners.
+    </p>
+  </div>
+</section>
+
+<!-- ── SECTION 2 : THE CHALLENGE — Comparison table ── -->
+<section class="section-light" aria-labelledby="challenge-title">
+  <div class="container">
+
+    <div class="fade-up" style="margin-bottom:48px">
+      <span class="eyebrow" data-i18n="challenge.eyebrow">The Challenge</span>
+      <h2 class="section-heading" id="challenge-title" data-i18n="challenge.heading">How to choose the right investment provider?</h2>
+    </div>
+
+    <div class="comparison-table stagger-grid" role="table" aria-label="Without independent advisor vs IM Wealth Select®">
+
+      <!-- Column headers -->
+      <div class="comparison-table__header" role="row">
+        <div class="comparison-table__head-left" role="columnheader" data-i18n="compare.header.left">Without independent advisor</div>
+        <div class="comparison-table__head-right" role="columnheader" data-i18n="compare.header.right">IM Wealth Select®</div>
+      </div>
+
+      <!-- Row 1 -->
+      <div class="comparison-table__row stagger-item" role="row">
+        <div class="comparison-table__left" role="cell">
+          <span class="comparison-table__prefix--left" aria-hidden="true">—</span>
+          Hard to compare providers.
+        </div>
+        <div class="comparison-table__right" role="cell">
+          <span class="comparison-table__prefix--right" aria-hidden="true">✓</span>
+          Structured tender across all eligible providers.
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="comparison-table__row stagger-item" role="row">
+        <div class="comparison-table__left" role="cell">
+          <span class="comparison-table__prefix--left" aria-hidden="true">—</span>
+          Total fees rarely disclosed.
+        </div>
+        <div class="comparison-table__right" role="cell">
+          <span class="comparison-table__prefix--right" aria-hidden="true">✓</span>
+          Full audit: fees benchmarked &amp; negotiated.
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="comparison-table__row stagger-item" role="row">
+        <div class="comparison-table__left" role="cell">
+          <span class="comparison-table__prefix--left" aria-hidden="true">—</span>
+          Product incentives can affect advice.
+        </div>
+        <div class="comparison-table__right" role="cell">
+          <span class="comparison-table__prefix--right" aria-hidden="true">✓</span>
+          No conflict of interest. 0 retrocessions, 0 partnerships.
+        </div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="comparison-table__row stagger-item" role="row">
+        <div class="comparison-table__left" role="cell">
+          <span class="comparison-table__prefix--left" aria-hidden="true">—</span>
+          Established relationships often go unchallenged.
+        </div>
+        <div class="comparison-table__right" role="cell">
+          <span class="comparison-table__prefix--right" aria-hidden="true">✓</span>
+          Ongoing supervision with the right to reopen a tender.
+        </div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="comparison-table__row stagger-item" role="row">
+        <div class="comparison-table__left" role="cell">
+          <span class="comparison-table__prefix--left" aria-hidden="true">—</span>
+          Multiple providers, multiple reports.
+        </div>
+        <div class="comparison-table__right" role="cell">
+          <span class="comparison-table__prefix--right" aria-hidden="true">✓</span>
+          One consolidated view across all your providers.
+        </div>
+      </div>
+
+    </div>
+
+    <p class="challenge__conclusion fade-up" data-i18n="challenge.conclusion">We audit your current setup, run a competitive selection process, negotiate terms on your behalf, and monitor each mandate over time.</p>
+
+    <!-- Stat bar — 4 items -->
+    <div class="stat-bar fade-up" role="list" aria-label="Market coverage">
+      <div class="stat-bar__item" role="listitem">
+        <span class="stat-bar__value" data-i18n="stats.v1">80+</span>
+        <span class="stat-bar__label" data-i18n="stats.l1">Swiss private banks evaluated</span>
+      </div>
+      <div class="stat-bar__item" role="listitem">
+        <span class="stat-bar__value" data-i18n="stats.v2">14</span>
+        <span class="stat-bar__label" data-i18n="stats.l2">Kantonal banks</span>
+      </div>
+      <div class="stat-bar__item" role="listitem">
+        <span class="stat-bar__value" data-i18n="stats.v3">5,300+</span>
+        <span class="stat-bar__label" data-i18n="stats.l3">Investment managers</span>
+      </div>
+      <div class="stat-bar__item" role="listitem">
+        <span class="stat-bar__value" data-i18n="stats.v4">0</span>
+        <span class="stat-bar__label" data-i18n="stats.l4">Retrocessions</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SECTION 3 : APPROACH ─────────────────────── -->
+<section class="section-light--alt" aria-labelledby="approach-title">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:48px">
+      <span class="eyebrow">Our Process</span>
+      <h2 class="section-heading" id="approach-title">Audit. Select. Negotiate. Monitor.</h2>
+      <p class="section-sub">A rigorous, conflict-free process designed to protect your interests at every step.</p>
+    </div>
+    <div class="grid-3col stagger-grid">
+      <article class="card has-spotlight stagger-item">
+        <span class="card__step">01 — Audit</span>
+        <h3 class="card__title">Precision Assessment</h3>
+        <p class="card__body">We analyse your current banking setup, portfolios, fees, risks, reporting and service quality to build a clear picture of where you stand.</p>
+      </article>
+      <article class="card has-spotlight stagger-item">
+        <span class="card__step">02 — Select &amp; Negotiate</span>
+        <h3 class="card__title">Market Alignment</h3>
+        <p class="card__body">We run an independent market comparison across suitable private banks, wealth managers and specialist providers, then negotiate pricing and terms on your behalf.</p>
+      </article>
+      <article class="card has-spotlight stagger-item">
+        <span class="card__step">03 — Monitor</span>
+        <h3 class="card__title">Active Governance</h3>
+        <p class="card__body">We track performance, costs, service quality and mandate relevance over time — keeping every partner accountable.</p>
+      </article>
+    </div>
+    <div class="fade-up" style="margin-top:40px">
+      <a href="approach.html" class="btn-outline-dark">Discover our approach →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 4 : LATEST PUBLICATIONS ──────────── -->
+<section class="section-light" aria-labelledby="pubs-title">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:48px">
+      <span class="eyebrow">Latest Publications</span>
+      <h2 class="section-heading" id="pubs-title">Insights &amp; perspectives.</h2>
+    </div>
+    <div class="pub-cards-grid stagger-grid">
+      <a href="publications.html" class="pub-card stagger-item">
+        <div class="pub-card__meta">
+          <span class="pub-card__date">June 2026</span>
+          <span class="pub-card__cat">Banking</span>
+        </div>
+        <p class="pub-card__title">How to benchmark your private bank: a practical framework for families.</p>
+        <span class="pub-card__link">Read article →</span>
+      </a>
+      <a href="publications.html" class="pub-card stagger-item">
+        <div class="pub-card__meta">
+          <span class="pub-card__date">May 2026</span>
+          <span class="pub-card__cat">Fees</span>
+        </div>
+        <p class="pub-card__title">The hidden cost of retrocessions: what your bank earns on your portfolio.</p>
+        <span class="pub-card__link">Read article →</span>
+      </a>
+      <a href="publications.html" class="pub-card stagger-item">
+        <div class="pub-card__meta">
+          <span class="pub-card__date">April 2026</span>
+          <span class="pub-card__cat">Succession</span>
+        </div>
+        <p class="pub-card__title">Banking continuity in estate transitions: what heirs need to know.</p>
+        <span class="pub-card__link">Read article →</span>
+      </a>
+    </div>
+    <div class="fade-up" style="margin-top:40px">
+      <a href="publications.html" class="btn-outline-dark">All publications →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────── -->
+<footer class="footer">
+  <p class="footer__brand">IM Wealth Select®</p>
+  <p class="footer__text">Geneva · Switzerland · Confidential<br>Independent wealth banking advisory. Not a bank. Not a fund.</p>
+</footer>
+
+<!-- ── COOKIE BANNER ─────────────────────────────── -->
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
+  <p class="cookie-banner__text">We use essential cookies only — no advertising, no tracking. <a href="#">Privacy policy</a>.</p>
+  <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
