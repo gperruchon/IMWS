@@ -336,7 +336,7 @@ section { padding:80px 0; }
   transition:color 0.25s, border-color 0.25s;
   white-space:nowrap; text-decoration:none;
 }
-.anchor-nav__item:hover   { color:var(--text-dark); }
+.anchor-nav__item:hover   { color:var(--text-dark); border-bottom-color:var(--accent); }
 .anchor-nav__item.is-active { color:var(--text-dark); border-bottom-color:var(--text-dark); }
 
 /* ── CHALLENGE SECTION ──────────────────────────── */
@@ -1105,4 +1105,107 @@ a.contact-detail__text:hover { color:var(--accent); }
   }
   .footer-bar__left { white-space: normal; overflow: visible; text-overflow: unset; }
   .footer-bar__right { justify-content: center; }
+}
+
+/* ── STEP LABEL ── */
+.step-label {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  align-self: flex-start;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 0.5px solid transparent;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.step-label:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent-border);
+}
+.step-label .step-detail__number,
+.step-label .step-detail__title { margin-bottom: 0; }
+@media (hover: none) {
+  .step-label:hover { background: transparent; border-color: transparent; }
+}
+
+/* ── FEE TABLE V2 ── */
+.fee-table-v2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 32px;
+}
+.fee-table-v2__header,
+.fee-table-v2__row {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.3fr;
+  align-items: center;
+}
+.fee-table-v2__header {
+  padding: 0 28px 12px;
+}
+.fee-table-v2__header span {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dark-mut);
+}
+.fee-table-v2__header span:not(:first-child),
+.fee-table-v2__row .fee-table-v2__value {
+  text-align: right;
+}
+.fee-table-v2__row {
+  background: #FFFFFF;
+  border: 0.5px solid var(--border-light);
+  border-radius: 16px;
+  padding: 18px 28px;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.fee-table-v2__row:hover {
+  border-color: var(--accent-border);
+  transform: translateY(-2px);
+}
+.fee-table-v2__tier {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.fee-table-v2__value {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+@media (max-width: 767px) {
+  .fee-table-v2__header,
+  .fee-table-v2__row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .fee-table-v2__header span:not(:first-child),
+  .fee-table-v2__row .fee-table-v2__value {
+    text-align: left;
+  }
+}
+
+/* ── CHALLENGE SECTION MOBILE HIDE ── */
+@media (max-width: 767px) {
+  .challenge-section {
+    display: none;
+  }
+}
+
+/* ── ANCHOR NAV CTA ── */
+.anchor-nav__cta {
+  margin-left: auto;
+}
+
+/* ── FEE TABLE V2 MOBILE LABELS ── */
+.fee-table-v2__value-label {
+  display: none;
+}
+@media (max-width: 767px) {
+  .fee-table-v2__value-label {
+    display: inline;
+    font-weight: 400;
+    color: var(--text-dark-mut);
+  }
 }

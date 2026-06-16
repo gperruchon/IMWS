@@ -62,13 +62,13 @@ PAGE 1 — HOME (index.html)
 - Background: raw unfiltered video (hero-video.mp4). No overlays, no filters.
 - Text floats directly on video: NO glassmorphic panel.
 - H1: "Your private bank should be selected, not inherited." (Inter 700, white, text-shadow: 0 2px 10px rgba(0,0,0,0.5))
-- Subtitle: "We help you select and monitor the right private banks and investment partners." (Inter 700, white, same text-shadow)
+- Subtitle: "We help you select and monitor the right private banks and wealth managers." (Inter 700, white, same text-shadow)
 - NO trust banner. NO CTA buttons in hero.
 - Animation: H1 fadeUp 0.85s, subtitle blurReveal 1.0s
 
 — SECTION 2: The Challenge — Comparison Table + Stat Bar (white, 120px)
 - Eyebrow: "The Challenge" (`data-i18n="challenge.eyebrow"`) — Inter 700, uppercase, `--accent`
-- Heading: "How to choose the right investment provider?" (`data-i18n="challenge.heading"`) — Georgia 300, `clamp(1.5rem,2.2vw,2rem)`, `--text-dark`
+- Heading: "How to choose the right investment partner?" (`data-i18n="challenge.heading"`) — Georgia 300, `clamp(1.5rem,2.2vw,2rem)`, `--text-dark`
 
 **Comparison table** (`.comparison-table.stagger-grid`):
 - 2-column CSS Grid (1fr 1fr), no `<table>` element — div-based rows
@@ -107,7 +107,7 @@ PAGE 1 — HOME (index.html)
 — SECTION 3: Approach (cream `--bg-light-alt`, 3 spotlight cards)
 - Eyebrow: "Our Process"
 - Heading: "Diagnose. Select & Negotiate. Monitor." (`.section-heading`, Georgia 300)
-- Sub: "Conflict-free institutional selection for private wealth." (`.section-sub`, Inter 300)
+- Sub: "A transparent, conflict-free process to turn private banking selection into a structured, comparable and monitored decision." (`.section-sub`, Inter 300)
 - Card 1: step "01" | title "Diagnose" | "We clarify your investment objectives and risk profile before assessing your current banking setup."
 - Card 2: step "02" | title "Select & Negotiate" | "We run a dedicated tender across all eligible providers, select the most suitable partners with you, and negotiate terms and service commitments on your behalf."
 - Card 3: step "03" | title "Monitor" | "We track performance, costs, risk and service quality — with consolidated online reporting across all providers."
@@ -146,13 +146,13 @@ PAGE 2 — APPROACH (approach.html)
 - Deliverable card: "Governance Report & Online Reporting Access" — "Regular governance reporting, access to an online reporting tool, quarterly review meetings and clear recommendations when a mandate requires attention."
 - Format card: "First 12 months after onboarding" — "Ongoing monitoring is included during the first 12 months after onboarding. After that period, continued governance and reporting can be maintained at a reduced annual rate."
 
-Fees:
-| Service | Structure | Typical Range |
+Fees (asset-tiered, percentage-based — `.fee-table-v2.stagger-grid`):
+| Assets under advice (CHF M) | Diagnose, selection & monitoring — Year 1 | Monitoring per annum (after Year 1) |
 |---|---|---|
-| Initial Audit | Flat project fee | CHF 3,500 – 8,000 |
-| Bank Selection & Negotiation | Flat project fee | CHF 5,000 – 15,000 |
-| Ongoing Monitoring | Annual retainer | CHF 4,000 – 12,000/year |
-| Combined Mandate | All-in annual | From CHF 8,000/year |
+| 1 – 5 | 0.65% | 0.25% |
+| 5 – 10 | 0.40% | 0.20% |
+| 10 – 20 | 0.35% | 0.15% |
+| 20+ | 0.25% | 0.10% |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PAGE 3 — USE CASES / EXPERTISE (use-cases.html)
