@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — IM Wealth Select®</title>
+  <meta name="description" content="Start a confidential conversation with IM Wealth Select®. Based in Geneva. Independent. Fee-only.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ──────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav__logo">IM Wealth Select®</a>
+  <ul class="nav__links" role="list">
+    <li><a href="approach.html" class="nav__link">Approach</a></li>
+    <li><a href="use-cases.html" class="nav__link">Expertise</a></li>
+    <li><a href="publications.html" class="nav__link">Publications</a></li>
+    <li><a href="team.html" class="nav__link">Team</a></li>
+  </ul>
+  <div class="nav__controls">
+    <div class="nav__lang" role="navigation" aria-label="Language selector">
+      <button class="nav__lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language: English">
+        <span class="nav__lang-label">EN</span>
+        <svg viewBox="0 0 10 6" aria-hidden="true"><polyline points="1,1 5,5 9,1"/></svg>
+      </button>
+      <ul class="nav__lang-dropdown" role="listbox" aria-label="Select language">
+        <li class="nav__lang-option is-active" data-lang="EN" role="option" aria-selected="true">🇬🇧 English</li>
+        <li class="nav__lang-option" data-lang="FR" role="option">🇫🇷 Français</li>
+        <li class="nav__lang-option" data-lang="DE" role="option">🇩🇪 Deutsch</li>
+        <li class="nav__lang-option" data-lang="ES" role="option">🇪🇸 Español</li>
+        <li class="nav__lang-option" data-lang="IT" role="option">🇮🇹 Italiano</li>
+      </ul>
+    </div>
+    <a href="contact.html" class="btn-accent nav__cta" aria-current="page">Request a banking review</a>
+    <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="overlay-close" aria-label="Close menu">✕</button>
+  <a href="approach.html" class="nav__link">Approach</a>
+  <a href="use-cases.html" class="nav__link">Expertise</a>
+  <a href="publications.html" class="nav__link">Publications</a>
+  <a href="team.html" class="nav__link">Team</a>
+  <a href="contact.html" class="btn-accent">Request a banking review</a>
+  <div class="overlay__lang">
+    <span class="overlay__lang-item is-active" data-lang="EN">EN</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="FR">FR</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="DE">DE</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="ES">ES</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="IT">IT</span>
+  </div>
+</div>
+
+<!-- ── PAGE HERO ────────────────────────────────── -->
+<header class="page-hero section-light">
+  <div class="container">
+    <div class="page-hero__inner fade-up">
+      <span class="eyebrow">Contact</span>
+      <h1 class="page-hero__title">Start with a confidential conversation.</h1>
+      <p class="page-hero__sub">A preliminary discussion is always free and without commitment. We will assess your situation honestly and explain whether — and how — we can add value.</p>
+    </div>
+  </div>
+</header>
+
+<!-- ── CONTACT FORM ──────────────────────────────── -->
+<section class="section-light--alt" aria-labelledby="form-title">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="fade-up">
+        <h2 class="section-heading" id="form-title">How to reach us.</h2>
+        <p class="section-sub" style="margin-bottom:32px">Fill in the form and Gaylord Perruchon will respond personally within one business day. All communications are treated with strict confidentiality.</p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="contact-detail__icon" aria-hidden="true">📍</span>
+            <span class="contact-detail__text">Geneva, Switzerland</span>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail__icon" aria-hidden="true">✉️</span>
+            <a href="mailto:gp@im-consultingservices.ch" class="contact-detail__text">gp@im-consultingservices.ch</a>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail__icon" aria-hidden="true">🕐</span>
+            <span class="contact-detail__text">Response within 1 business day</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <form class="form-stack" name="contact" method="POST" action="#" aria-labelledby="form-title" novalidate>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First name</label>
+              <input class="form-input" id="first-name" name="first-name" type="text" placeholder="Jean" autocomplete="given-name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last name</label>
+              <input class="form-input" id="last-name" name="last-name" type="text" placeholder="Dupont" autocomplete="family-name" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email address</label>
+            <input class="form-input" id="email" name="email" type="email" placeholder="jean@example.com" autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="country">Country of residence</label>
+            <select class="form-select" id="country" name="country" autocomplete="country">
+              <option value="" disabled selected>Select your country</option>
+              <option value="CH">Switzerland</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+              <option value="GB">United Kingdom</option>
+              <option value="LU">Luxembourg</option>
+              <option value="AE">United Arab Emirates</option>
+              <option value="SG">Singapore</option>
+              <option value="US">United States</option>
+              <option value="OTHER">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="assets">Approximate investable assets</label>
+            <select class="form-select" id="assets" name="assets">
+              <option value="" disabled selected>Select a range</option>
+              <option value="1m-3m">CHF 1 – 3 million</option>
+              <option value="3m-10m">CHF 3 – 10 million</option>
+              <option value="10m-30m">CHF 10 – 30 million</option>
+              <option value="30m+">CHF 30 million+</option>
+              <option value="prefer-not">Prefer not to say</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Your situation (optional)</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Describe your situation briefly — current banking arrangement, what prompted this review, specific concerns..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-accent" style="align-self:flex-start;margin-top:4px">
+            Send a confidential request
+          </button>
+          <p class="form-note">Your details are treated with absolute confidentiality. We will never share your information with any third party, including banks or investment managers.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────── -->
+<footer class="footer">
+  <p class="footer__brand">IM Wealth Select®</p>
+  <p class="footer__text">Geneva · Switzerland · Confidential<br>Independent wealth banking advisory. Not a bank. Not a fund.</p>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
+  <p class="cookie-banner__text">We use essential cookies only — no advertising, no tracking. <a href="#">Privacy policy</a>.</p>
+  <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
