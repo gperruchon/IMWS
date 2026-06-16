@@ -7,7 +7,8 @@
   <meta name="description" content="Gaylord Perruchon — independent wealth banking advisor based in Geneva. Former private banker. Founder of IM Wealth Select®.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231A6B56'/%3E%3Ctext x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Georgia,serif'%3EIM%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -77,14 +78,14 @@
 <section class="section-light" aria-labelledby="profile-title">
   <div class="container">
     <div class="profile fade-up">
-      <div class="profile__photo" aria-hidden="true">GP</div>
+      <img class="profile__photo" src="gaylord-perruchon.jpg.jpg" alt="Gaylord Perruchon, Founder of IM Wealth Select®">
       <div>
         <h2 class="profile__name" id="profile-title">Gaylord Perruchon</h2>
         <p class="profile__role">Founder &amp; Principal Advisor</p>
         <p class="profile__bio">Gaylord Perruchon is an independent wealth management consultant based in Geneva with over a decade of experience working inside and alongside the Swiss private banking industry. He founded IM Wealth Select® after recognising that most high net worth families lack an objective counterpart when choosing, reviewing, or renegotiating their banking relationships.</p>
         <p class="profile__bio">Having worked as a private banker himself, Gaylord understands how mandates are structured, how fees are layered, and where conflicts of interest most often arise. His advisory model is deliberately boutique: each client receives direct access, full continuity, and a relationship that is never passed to a junior team.</p>
         <p class="profile__bio">IM Wealth Select® operates exclusively on a flat-fee basis. No retrocessions. No referral income. No asset-linked remuneration.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
+        <div class="u-btn-row">
           <a href="contact.html" class="btn-accent">Work with Gaylord</a>
           <a href="publications.html" class="btn-outline-dark">Read publications →</a>
         </div>
@@ -96,7 +97,7 @@
 <!-- ── TECHNOLOGY & INFRASTRUCTURE ──────────────── -->
 <section class="section-light--alt" aria-labelledby="tools-title">
   <div class="container">
-    <div class="fade-up" style="margin-bottom:48px">
+    <div class="fade-up u-mb-48">
       <span class="eyebrow">Infrastructure</span>
       <h2 class="section-heading" id="tools-title">Professional-grade tools. Institutional-level rigour.</h2>
       <p class="section-sub">The same analytical stack used by institutional investors — applied to individual mandates.</p>
@@ -142,7 +143,7 @@
 <!-- ── PRINCIPLES ────────────────────────────────── -->
 <section class="section-light" aria-labelledby="principles-title">
   <div class="container">
-    <div class="fade-up" style="max-width:640px;margin-bottom:48px">
+    <div class="fade-up u-mb-48-mw640">
       <span class="eyebrow">Our Principles</span>
       <h2 class="section-heading" id="principles-title">Three commitments we never compromise.</h2>
     </div>
@@ -167,9 +168,12 @@
 </section>
 
 <!-- ── FOOTER ────────────────────────────────────── -->
-<footer class="footer">
-  <p class="footer__brand">IM Wealth Select®</p>
-  <p class="footer__text">Geneva · Switzerland · Confidential<br>Independent wealth banking advisory. Not a bank. Not a fund.</p>
+<footer class="footer-bar">
+  <span class="footer-bar__left">IM Wealth Select® | IM Consulting Services SA · Rue de la Cité 1, 1204 Genève</span>
+  <div class="footer-bar__right">
+    <a href="mailto:info@im-wealthselect.ch" class="footer-contact-link">Contact us</a>
+    <a href="privacy.html" class="footer-bar__link">Privacy policy</a>
+  </div>
 </footer>
 
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
@@ -177,6 +181,6 @@
   <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
 </div>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>

@@ -7,7 +7,8 @@
   <meta name="description" content="Independent perspectives on private banking, fees, wealth governance and succession from IM Wealth Select®.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231A6B56'/%3E%3Ctext x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Georgia,serif'%3EIM%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -76,7 +77,7 @@
 <!-- ── ARTICLE LIST ──────────────────────────────── -->
 <section class="section-light" aria-labelledby="articles-title">
   <div class="container">
-    <h2 class="section-heading fade-up" id="articles-title" style="margin-bottom:40px">All articles</h2>
+    <h2 class="section-heading fade-up u-mb-40" id="articles-title">All articles</h2>
 
     <div class="article-list">
 
@@ -173,9 +174,12 @@
 </section>
 
 <!-- ── FOOTER ────────────────────────────────────── -->
-<footer class="footer">
-  <p class="footer__brand">IM Wealth Select®</p>
-  <p class="footer__text">Geneva · Switzerland · Confidential<br>Independent wealth banking advisory. Not a bank. Not a fund.</p>
+<footer class="footer-bar">
+  <span class="footer-bar__left">IM Wealth Select® | IM Consulting Services SA · Rue de la Cité 1, 1204 Genève</span>
+  <div class="footer-bar__right">
+    <a href="mailto:info@im-wealthselect.ch" class="footer-contact-link">Contact us</a>
+    <a href="privacy.html" class="footer-bar__link">Privacy policy</a>
+  </div>
 </footer>
 
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
@@ -183,6 +187,6 @@
   <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
 </div>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>

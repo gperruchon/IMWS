@@ -22,7 +22,7 @@
 
 /* ── RESET ──────────────────────────────────────── */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html  { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+html  { scroll-behavior:smooth; scroll-padding-top:calc(var(--nav-h) + 56px); -webkit-text-size-adjust:100%; }
 body  {
   background:var(--bg-light); color:var(--text-dark-sub);
   font-family:var(--f-sans); font-size:16px; line-height:1.6;
@@ -234,7 +234,7 @@ section { padding:80px 0; }
   transition:opacity 320ms var(--ease);
 }
 .nav__overlay.is-open { opacity:1; pointer-events:all; }
-.nav__overlay .nav__link { font-size:1.5rem; font-weight:700; color:var(--text-dark); }
+.nav__overlay .nav__link { font-size:1.375rem; font-weight:600; color:var(--text-dark); }
 .nav__overlay .nav__link::after { display:none; }
 
 .overlay-close {
@@ -515,12 +515,9 @@ section { padding:80px 0; }
 
 .profile__photo {
   width:160px; height:160px; border-radius:50%; flex-shrink:0;
-  background:var(--bg-light-alt); border:0.5px solid var(--border-light);
-  display:flex; align-items:center; justify-content:center;
-  font-size:3rem; color:var(--text-dark-mut);
-  overflow:hidden;
+  border:0.5px solid var(--border-light);
+  display:block; object-fit:cover; overflow:hidden;
 }
-.profile__photo img { width:100%; height:100%; object-fit:cover; }
 
 .profile__name {
   font-size:1.375rem; font-weight:400; color:var(--text-dark); margin-bottom:4px;
@@ -1193,10 +1190,6 @@ a.contact-detail__text:hover { color:var(--accent); }
   }
 }
 
-/* ── ANCHOR NAV CTA ── */
-.anchor-nav__cta {
-  margin-left: auto;
-}
 
 /* ── FEE TABLE V2 MOBILE LABELS ── */
 .fee-table-v2__value-label {
@@ -1209,3 +1202,18 @@ a.contact-detail__text:hover { color:var(--accent); }
     color: var(--text-dark-mut);
   }
 }
+
+/* ── UTILITY CLASSES ── */
+.u-mb-48 { margin-bottom: 48px; }
+.u-mb-40 { margin-bottom: 40px; }
+.u-mb-32 { margin-bottom: 32px; }
+.u-mt-40 { margin-top: 40px; }
+.u-mt-36 { margin-top: 36px; }
+.u-mb-48-mw640 { margin-bottom: 48px; max-width: 640px; }
+.u-step-layout { gap: 64px; align-items: start; }
+.u-card-stack { display: flex; flex-direction: column; gap: 12px; }
+.u-gap-16 { gap: 16px; }
+.u-cta-row { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; }
+.u-btn-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.u-form-name-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.u-submit-mt { align-self: flex-start; margin-top: 4px; }

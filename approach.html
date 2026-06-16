@@ -7,7 +7,8 @@
   <meta name="description" content="A rigorous, independent three-step process: Audit, Select & Negotiate, Monitor. Transparent flat fees. No retrocessions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231A6B56'/%3E%3Ctext x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Georgia,serif'%3EIM%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -78,13 +79,12 @@
   <a href="#select"   class="anchor-nav__item">02 — Select &amp; Negotiate</a>
   <a href="#monitor" class="anchor-nav__item">03 — Monitor</a>
   <a href="#fees"    class="anchor-nav__item">Fees</a>
-  <a href="contact.html" class="btn-accent btn-sm anchor-nav__cta">Request a review</a>
 </nav>
 
 <!-- ── STEP 1: AUDIT ────────────────────────────── -->
 <section class="section-light" id="diagnose" aria-labelledby="diagnose-title">
   <div class="container">
-    <div class="grid-2col" style="gap:64px;align-items:start">
+    <div class="grid-2col u-step-layout">
       <div class="step-detail fade-up">
         <div class="step-label">
           <p class="step-detail__number">Step 01</p>
@@ -101,7 +101,7 @@
           <li>Risk exposure, reporting transparency and service quality</li>
         </ul>
       </div>
-      <div class="fade-up" style="display:flex;flex-direction:column;gap:12px">
+      <div class="fade-up u-card-stack">
         <div class="card has-spotlight">
           <p class="card__step">Deliverable</p>
           <h3 class="card__title">Investment Profile &amp; Banking Audit</h3>
@@ -120,8 +120,8 @@
 <!-- ── STEP 2: SELECT & NEGOTIATE ───────────────── -->
 <section class="section-light--alt" id="select" aria-labelledby="select-title">
   <div class="container">
-    <div class="grid-2col" style="gap:64px;align-items:start">
-      <div class="fade-up" style="display:flex;flex-direction:column;gap:12px">
+    <div class="grid-2col u-step-layout">
+      <div class="fade-up u-card-stack">
         <div class="card has-spotlight">
           <p class="card__step">Deliverable</p>
           <h3 class="card__title">Mandate Tender Report</h3>
@@ -156,7 +156,7 @@
 <!-- ── STEP 3: MONITOR ───────────────────────────── -->
 <section class="section-light" id="monitor" aria-labelledby="monitor-title">
   <div class="container">
-    <div class="grid-2col" style="gap:64px;align-items:start">
+    <div class="grid-2col u-step-layout">
       <div class="step-detail fade-up">
         <div class="step-label">
           <p class="step-detail__number">Step 03</p>
@@ -173,7 +173,7 @@
           <li>Trigger-based re-tendering when standards are no longer met</li>
         </ul>
       </div>
-      <div class="fade-up" style="display:flex;flex-direction:column;gap:12px">
+      <div class="fade-up u-card-stack">
         <div class="card has-spotlight">
           <p class="card__step">Deliverable</p>
           <h3 class="card__title">Governance Report &amp; Online Reporting Access</h3>
@@ -192,7 +192,7 @@
 <!-- ── FEES ──────────────────────────────────────── -->
 <section class="section-light--alt" id="fees" aria-labelledby="fees-title">
   <div class="container">
-    <div class="fade-up" style="margin-bottom:48px;max-width:640px">
+    <div class="fade-up u-mb-48-mw640">
       <span class="eyebrow">Transparent Fees</span>
       <h2 class="section-heading" id="fees-title">No retrocessions. No referral fees. Paid only by you.</h2>
       <p class="section-sub">Our fees are largely offset by the savings negotiated with your bank within the first 12 months. We receive no commissions from banks — ever.</p>
@@ -225,7 +225,7 @@
       </div>
     </div>
     <span class="fee-table__note fade-up">Fees vary based on portfolio complexity, number of banking relationships, and scope of the mandate. A preliminary conversation is always free.</span>
-    <div class="fade-up" style="margin-top:36px">
+    <div class="fade-up u-mt-36">
       <a href="contact.html" class="btn-accent">Request a confidential review</a>
     </div>
   </div>
@@ -245,6 +245,6 @@
   <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
 </div>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>

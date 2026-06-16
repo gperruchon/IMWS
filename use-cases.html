@@ -7,7 +7,8 @@
   <meta name="description" content="Life transitions that require independent banking expertise: divorce, succession, business sale, expatriation and more.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231A6B56'/%3E%3Ctext x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Georgia,serif'%3EIM%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -76,12 +77,12 @@
 <!-- ── USE CASE GRID ─────────────────────────────── -->
 <section class="section-light--alt" aria-labelledby="usecases-title">
   <div class="container">
-    <div class="fade-up" style="margin-bottom:48px">
+    <div class="fade-up u-mb-48">
       <span class="eyebrow">Life Scenarios</span>
       <h2 class="section-heading" id="usecases-title">Eight situations. One independent advisor.</h2>
       <p class="section-sub">Each scenario below is one we navigate regularly — structuring a clear, protected path forward.</p>
     </div>
-    <div class="grid-2x2 stagger-grid" style="gap:16px">
+    <div class="grid-2x2 stagger-grid u-gap-16">
 
       <article class="usecase-card stagger-item">
         <div class="usecase-card__icon">⚖️</div>
@@ -142,7 +143,7 @@
       <span class="eyebrow">Start with a conversation</span>
       <p class="challenge__statement">Not sure if your situation fits?</p>
       <p class="challenge__body">Every engagement begins with a no-commitment conversation. We will tell you honestly whether we can add value — and what a structured review would involve.</p>
-      <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px">
+      <div class="u-cta-row">
         <a href="contact.html" class="btn-accent">Request a confidential review</a>
         <a href="approach.html" class="btn-outline-dark">Read our approach →</a>
       </div>
@@ -151,9 +152,12 @@
 </section>
 
 <!-- ── FOOTER ────────────────────────────────────── -->
-<footer class="footer">
-  <p class="footer__brand">IM Wealth Select®</p>
-  <p class="footer__text">Geneva · Switzerland · Confidential<br>Independent wealth banking advisory. Not a bank. Not a fund.</p>
+<footer class="footer-bar">
+  <span class="footer-bar__left">IM Wealth Select® | IM Consulting Services SA · Rue de la Cité 1, 1204 Genève</span>
+  <div class="footer-bar__right">
+    <a href="mailto:info@im-wealthselect.ch" class="footer-contact-link">Contact us</a>
+    <a href="privacy.html" class="footer-bar__link">Privacy policy</a>
+  </div>
 </footer>
 
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
@@ -161,6 +165,6 @@
   <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
 </div>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>

@@ -7,7 +7,8 @@
   <meta name="description" content="Start a confidential conversation with IM Wealth Select®. Based in Geneva. Independent. Fee-only.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231A6B56'/%3E%3Ctext x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Georgia,serif'%3EIM%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -80,16 +81,13 @@
 
       <div class="fade-up">
         <h2 class="section-heading" id="form-title">How to reach us.</h2>
-        <p class="section-sub" style="margin-bottom:32px">Fill in the form and Gaylord Perruchon will respond personally within one business day. All communications are treated with strict confidentiality.</p>
+        <p class="section-sub u-mb-32">Fill in the form and Gaylord Perruchon will respond personally within one business day. All communications are treated with strict confidentiality.</p>
         <div class="contact-details">
           <div class="contact-detail">
             <span class="contact-detail__icon" aria-hidden="true">📍</span>
             <span class="contact-detail__text">Geneva, Switzerland</span>
           </div>
-          <div class="contact-detail">
-            <span class="contact-detail__icon" aria-hidden="true">✉️</span>
-            <a href="mailto:gp@im-consultingservices.ch" class="contact-detail__text">gp@im-consultingservices.ch</a>
-          </div>
+
           <div class="contact-detail">
             <span class="contact-detail__icon" aria-hidden="true">🕐</span>
             <span class="contact-detail__text">Response within 1 business day</span>
@@ -100,7 +98,7 @@
       <div class="fade-up">
         <form class="form-stack" name="contact" method="POST" action="#" aria-labelledby="form-title" novalidate>
 
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div class="u-form-name-row">
             <div class="form-group">
               <label class="form-label" for="first-name">First name</label>
               <input class="form-input" id="first-name" name="first-name" type="text" placeholder="Jean" autocomplete="given-name" required>
@@ -149,7 +147,7 @@
             <textarea class="form-textarea" id="message" name="message" placeholder="Describe your situation briefly — current banking arrangement, what prompted this review, specific concerns..."></textarea>
           </div>
 
-          <button type="submit" class="btn-accent" style="align-self:flex-start;margin-top:4px">
+          <button type="submit" class="btn-accent u-submit-mt">
             Send a confidential request
           </button>
           <p class="form-note">Your details are treated with absolute confidentiality. We will never share your information with any third party, including banks or investment managers.</p>
@@ -161,9 +159,12 @@
 </section>
 
 <!-- ── FOOTER ────────────────────────────────────── -->
-<footer class="footer">
-  <p class="footer__brand">IM Wealth Select®</p>
-  <p class="footer__text">Geneva · Switzerland · Confidential<br>Independent wealth banking advisory. Not a bank. Not a fund.</p>
+<footer class="footer-bar">
+  <span class="footer-bar__left">IM Wealth Select® | IM Consulting Services SA · Rue de la Cité 1, 1204 Genève</span>
+  <div class="footer-bar__right">
+    <a href="mailto:info@im-wealthselect.ch" class="footer-contact-link">Contact us</a>
+    <a href="privacy.html" class="footer-bar__link">Privacy policy</a>
+  </div>
 </footer>
 
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
@@ -171,6 +172,6 @@
   <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
 </div>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>
