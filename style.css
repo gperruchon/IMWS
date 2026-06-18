@@ -22,7 +22,7 @@
 
 /* ── RESET ──────────────────────────────────────── */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html  { scroll-behavior:smooth; scroll-padding-top:calc(var(--nav-h) + 56px); -webkit-text-size-adjust:100%; }
+html  { scroll-behavior:smooth; scroll-padding-top:calc(var(--nav-h) + 64px); -webkit-text-size-adjust:100%; }
 body  {
   background:var(--bg-light); color:var(--text-dark-sub);
   font-family:var(--f-sans); font-size:16px; line-height:1.6;
@@ -273,8 +273,13 @@ section { padding:80px 0; }
 .hero__video {
   position:absolute; inset:0;
   width:100%; height:100%; object-fit:cover;
-  z-index:0; will-change:transform;
+  z-index:0; will-change:transform; pointer-events:none;
 }
+.hero__video::-webkit-media-controls,
+.hero__video::-webkit-media-controls-panel,
+.hero__video::-webkit-media-controls-start-playback-button,
+.hero__video::-webkit-media-controls-fullscreen-button,
+.hero__video::-webkit-media-controls-enclosure { display:none !important; }
 
 /* Texte directement sur vidéo */
 .hero__content {
@@ -338,6 +343,14 @@ section { padding:80px 0; }
 }
 .anchor-nav__item:hover   { color:var(--text-dark); border-bottom-color:var(--accent); }
 .anchor-nav__item.is-active { color:var(--text-dark); border-bottom-color:var(--text-dark); }
+/* right-edge fade cue — mobile only, signals horizontal scroll */
+@media (max-width:767px) {
+  .anchor-nav::after {
+    content:''; position:absolute; right:0; top:0; bottom:0;
+    width:48px; pointer-events:none; z-index:1;
+    background:linear-gradient(to right, transparent, var(--bg-light));
+  }
+}
 
 /* ── CHALLENGE SECTION ──────────────────────────── */
 .challenge-block { max-width:720px; }
@@ -573,6 +586,12 @@ section { padding:80px 0; }
   .usecase-card:hover .usecase-card__icon { color: var(--text-dark); }
   .usecase-card:hover .usecase-card__title { color: var(--text-dark); }
   .usecase-card:hover .usecase-card__body { max-height: 0; opacity: 0; margin-top: 0; }
+  /* Re-affirm is-expanded after hover resets — iOS sticky hover has equal specificity and would otherwise win */
+  .usecase-card.is-expanded { border-color: var(--accent-border); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,0,0,0.07); z-index: 1; }
+  .usecase-card.is-expanded::before { opacity: 1; }
+  .usecase-card.is-expanded .usecase-card__icon { color: var(--accent); }
+  .usecase-card.is-expanded .usecase-card__title { color: var(--accent); }
+  .usecase-card.is-expanded .usecase-card__body { max-height: 250px; opacity: 1; margin-top: 12px; }
 }
 
 /* ── TEAM PROFILE ───────────────────────────────── */
@@ -636,6 +655,9 @@ section { padding:80px 0; }
 @media (hover: none) {
   .profile__content:hover .profile__bio-wrap { max-height: 0; opacity: 0; }
   .profile__content:hover .profile__read-more { max-height: 2em; opacity: 1; margin-bottom: 20px; }
+  /* Re-affirm is-expanded after hover resets — same cascade-priority fix as usecase-card */
+  .profile__content.is-expanded .profile__bio-wrap { max-height: 400px; opacity: 1; }
+  .profile__content.is-expanded .profile__read-more { max-height: 0; opacity: 0; margin-bottom: 0; pointer-events: none; }
 }
 
 /* ── TOOL GRID (Team page) ──────────────────────── */
@@ -674,23 +696,24 @@ section { padding:80px 0; }
 .tool-item:focus-visible::before,
 .tool-item.is-expanded::before { opacity: 1; }
 .tool-item__icon {
-  height: 36px;
+  height: 40px;
   width: auto;
   min-width: 24px;
-  max-width: 140px;
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .tool-item__logo {
-  height: 100%;
+  max-height: 100%;
   width: auto;
+  max-width: 120px;
   object-fit: contain;
   object-position: left center;
   display: block;
-  max-width: 140px;
 }
-.tool-item__icon svg { display: block; color: var(--text-dark-sub); }
+.tool-item__icon svg { display: block; color: var(--text-dark-sub); width: 28px; height: 28px; flex-shrink: 0; }
 .tool-item__name {
   font-size: 0.9375rem;
   font-weight: 600;
@@ -1479,4 +1502,50 @@ a.contact-detail__text:hover { color:var(--accent); }
 }
 @media (max-width: 520px) {
   .modal { padding: 40px 24px 36px; }
+}
+
+/* ── APPROACH PAGE ── */
+/* Desktop: Step 02 uses DOM order step-detail→cards; visually swap columns for alternation */
+@media (min-width: 768px) {
+  .u-step-layout--reverse .step-detail { grid-column: 2; grid-row: 1; }
+  .u-step-layout--reverse .u-card-stack { grid-column: 1; grid-row: 1; }
+}
+@media (max-width: 767px) {
+  /* Tighten top gap of first section that immediately follows anchor-nav */
+  .anchor-nav + section { padding-top: 56px; }
+  /* Fee table: hide column headers — inline value-labels already provide context */
+  .fee-table-v2__header { display: none; }
+}
+
+/* ── STEP DETAIL ICONS ── */
+.step-detail__icon-wrap {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--bg-light-alt);
+  border: 0.5px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  flex-shrink: 0;
+  transition: background 0.55s var(--ease);
+}
+.step-detail.is-visible .step-detail__icon-wrap {
+  background: var(--accent-dim);
+}
+.step-detail__icon {
+  width: 64px;
+  height: 64px;
+  color: var(--text-dark);
+  display: block;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .step-detail__icon-wrap {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .step-detail__icon { width: 52px; height: 52px; }
 }
