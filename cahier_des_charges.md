@@ -188,6 +188,61 @@ PAGE 6 — CONTACT (contact.html)
 - Privacy note below form
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 7 — LEGAL & PRIVACY (privacy.html)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Page hero: eyebrow "Legal" · serif title "Legal notice & privacy policy." · sub mentions last-updated date (18 June 2026)
+- Anchor nav (same component as approach.html): Operator · Regulatory status · Data we collect · Disclosure & transfers · Your rights · Disclaimer
+- Source content: legal notice + privacy policy text supplied by the client (IM Consulting Services SA / ARIF / FINMA disclosures) — see legal_privacy_source.md
+
+**Section 01 — Operator & data controller** (`id="operator"`, `section-light`)
+- `.step-detail` (left) + `.card.has-spotlight` stack (right), same 2-column layout as approach.html step sections
+- Left: entity identity (IM Consulting Services SA, CHE-254.458.022), scope of the policy
+- Right cards: "Entity" (address) · "Contact" (privacy request email/phone)
+
+**Section 02 — Regulatory status** (`id="regulatory"`, `section-light--alt`)
+- Single-column `.step-detail`, max-width 640px
+- Content: no licence requirement at corporate level under Swiss law · advisor(s) personally affiliated with ARIF (FINMA-recognised SRO) · affiliation disclaimer · cross-border Territory authorisation statement
+
+**Section 03 — Data we collect** (`id="data-collected"`, `section-light`)
+- Eyebrow "What we collect" + `.section-heading` "Personal data we collect."
+- `.grid-2col`: left `.step-detail` "Website access data" (6-item `.step-detail__list`: IP address, date/time, pages requested, referring site, browser/OS, technical logs) · right `.step-detail` "Contact-form & correspondence data" (6-item list: name, email, country, asset range, message content, correspondence)
+- Closing note (no sensitive documents via the contact form) below the grid
+
+**Section 04 — Disclosure & transfers** (`id="disclosure"`, `section-light--alt`)
+- Eyebrow "Use, disclosure & transfers" + heading "Why we process data, and who may see it."
+- Intro paragraph: purposes (operate/secure site, respond to enquiries, assess relevance, comply with law)
+- Body paragraph: legal basis (GDPR/UK GDPR), no automated profiling, no sale/rental of data, no disclosure to banks without instruction
+- **Sub-processor table** (`.fee-table-v2.stagger-grid`, same component as the approach.html fee table, repurposed with text columns instead of percentages):
+  | Service | Provider | Processing location |
+  |---|---|---|
+  | Website hosting | Gandi SAS | France (EU); limited transfers outside EU for technical/TLD purposes |
+  | Hosting & contact-form processing | Netlify, Inc. | United States, under Standard Contractual Clauses |
+  | Email & communications | Microsoft 365 (Microsoft Ireland Operations Ltd. / Microsoft Corp.) | EU/EFTA under Microsoft EU Data Boundary, limited US exceptions |
+- Closing paragraph: international transfer safeguards (SCCs or other lawful mechanism)
+
+**Section 05 — Retention & cookies** (no id needed on section, `section-light`)
+- `.grid-2col` two `.step-detail` blocks side by side:
+  - "Retention periods" (`id="retention-title"` on h2): 3-item list — server logs (limited period), non-converted enquiries (24 months), client relationships (per legal/regulatory retention)
+  - "Cookies & similar technologies" (`id="cookies-title"` on h2): strictly-necessary cookies only, no consent required under EU ePrivacy, no advertising/marketing pixels, future-change commitment
+
+**Section 06 — Your rights** (`id="rights"`, `section-light--alt`)
+- Eyebrow "Your rights" + heading "Your data-protection rights."
+- `.grid-3col.stagger-grid` of 3 `.card.has-spotlight`: "Access & correction" · "Deletion & objection" · "Consent & portability" (each `.card__step` / `.card__title` / `.card__body`)
+- Closing paragraphs: how to exercise rights (Section 1 contact) + right to lodge a complaint with FDPIC or competent authority · security measures + breach notification commitment
+
+**Section 07 — Legal notice / disclaimer** (`id="legal-notice"`, `section-light`)
+- Eyebrow "Legal notice" + heading "Website disclaimer."
+- Single `.step-detail__list` (6 items, no numbers): no personalised advice · restricted jurisdictions · accuracy/availability · liability exclusion · external links · intellectual property
+- CTA below: `.btn-accent` "Contact us about this policy" → `contact.html`
+
+**Footer link update (all pages)**
+- The existing `footer-bar__link` "Privacy policy" (already present in the footer markup of every page) now resolves to `privacy.html`
+- On `privacy.html` itself, this link carries `aria-current="page"`
+
+**Pending — not yet implemented**
+- Section 8 of the source text (Article 27 GDPR / UK GDPR representative in the EU/UK) is intentionally omitted until confirmed with counsel. Add as a new section once the representative's identity is confirmed.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 FOOTER (all pages)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - Background: `--bg-light-alt`, border-top: 0.5px `--border-light`

@@ -2,6 +2,54 @@
 (function () {
   'use strict';
 
+  /* ── Contact form — AJAX submit ─────────────────── */
+  const contactForm = document.getElementById('contact-form');
+  const formModal   = document.getElementById('form-modal');
+  const modalClose  = document.getElementById('modal-close');
+
+  if (contactForm && formModal) {
+    const openModal = () => {
+      formModal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    };
+    const closeModal = () => {
+      formModal.classList.remove('is-open');
+      document.body.style.overflow = '';
+    };
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+      try {
+        const res = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' }
+        });
+        if (res.ok) {
+          contactForm.reset();
+          openModal();
+        } else {
+          const data = await res.json().catch(() => ({}));
+          const msg = (data.errors || []).map(err => err.message).join(', ')
+            || 'Submission failed. Please try again.';
+          alert(msg);
+        }
+      } catch (_) {
+        alert('Network error. Please check your connection and try again.');
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    });
+
+    modalClose && modalClose.addEventListener('click', closeModal);
+    formModal.addEventListener('click', (e) => { if (e.target === formModal) closeModal(); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && formModal.classList.contains('is-open')) closeModal();
+    });
+  }
+
   /* ── Scroll nav shadow ────────────────────────── */
   const nav = document.querySelector('.nav');
   if (nav) {
@@ -115,13 +163,87 @@
   });
 
   /* ── Spotlight cards ──────────────────────────── */
-  document.querySelectorAll('.has-spotlight').forEach(card => {
+  document.querySelectorAll('.has-spotlight, .usecase-card, .tool-item').forEach(card => {
     card.addEventListener('mousemove', e => {
       const r = card.getBoundingClientRect();
       card.style.setProperty('--mx', ((e.clientX - r.left) / r.width  * 100) + '%');
       card.style.setProperty('--my', ((e.clientY - r.top)  / r.height * 100) + '%');
     });
   });
+
+  /* ── Use-case card accordion ─────────────────────── */
+  const usecaseCards = document.querySelectorAll('.usecase-card');
+  if (usecaseCards.length) {
+    usecaseCards.forEach(card => {
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-expanded', 'false');
+
+      const toggle = () => {
+        const wasExpanded = card.classList.contains('is-expanded');
+        usecaseCards.forEach(c => {
+          c.classList.remove('is-expanded');
+          c.setAttribute('aria-expanded', 'false');
+        });
+        if (!wasExpanded) {
+          card.classList.add('is-expanded');
+          card.setAttribute('aria-expanded', 'true');
+        }
+      };
+
+      card.addEventListener('click', toggle);
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle();
+        }
+      });
+    });
+  }
+
+  /* ── Tool-item accordion (Team page) ─────────── */
+  const toolItems = document.querySelectorAll('.tool-item');
+  if (toolItems.length) {
+    toolItems.forEach(item => {
+      item.setAttribute('role', 'button');
+      item.setAttribute('aria-expanded', 'false');
+
+      const toggle = () => {
+        const wasExpanded = item.classList.contains('is-expanded');
+        toolItems.forEach(t => {
+          t.classList.remove('is-expanded');
+          t.setAttribute('aria-expanded', 'false');
+        });
+        if (!wasExpanded) {
+          item.classList.add('is-expanded');
+          item.setAttribute('aria-expanded', 'true');
+        }
+      };
+
+      item.addEventListener('click', toggle);
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle();
+        }
+      });
+    });
+  }
+
+  /* ── Profile bio expand (Team page) ─────────── */
+  const profileContent = document.querySelector('.profile__content');
+  if (profileContent) {
+    const toggle = () => {
+      const expanded = profileContent.classList.toggle('is-expanded');
+      profileContent.setAttribute('aria-expanded', String(expanded));
+    };
+    profileContent.addEventListener('click', (e) => {
+      if (e.target.closest('a, button')) return;
+      toggle();
+    });
+    profileContent.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  }
 
   /* ── Cookie banner ────────────────────────────── */
   const cookie = document.getElementById('cookie-banner');

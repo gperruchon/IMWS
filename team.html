@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231A6B56'/%3E%3Ctext x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Georgia,serif'%3EIM%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='72' font-size='60' fill='%231A1A18' text-anchor='middle' font-family='Inter,sans-serif' font-weight='700' letter-spacing='-1.2'%3EIM%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -75,16 +75,18 @@
 </header>
 
 <!-- ── PROFILE ───────────────────────────────────── -->
-<section class="section-light" aria-labelledby="profile-title">
+<section class="section-light profile-section" aria-labelledby="profile-title">
   <div class="container">
     <div class="profile fade-up">
       <img class="profile__photo" src="gaylord-perruchon.jpg.jpg" alt="Gaylord Perruchon, Founder of IM Wealth Select®">
-      <div>
+      <div class="profile__content" tabindex="0" aria-expanded="false">
         <h2 class="profile__name" id="profile-title">Gaylord Perruchon</h2>
-        <p class="profile__role">Founder &amp; Principal Advisor</p>
-        <p class="profile__bio">Gaylord Perruchon is an independent wealth management consultant based in Geneva with over a decade of experience working inside and alongside the Swiss private banking industry. He founded IM Wealth Select® after recognising that most high net worth families lack an objective counterpart when choosing, reviewing, or renegotiating their banking relationships.</p>
-        <p class="profile__bio">Having worked as a private banker himself, Gaylord understands how mandates are structured, how fees are layered, and where conflicts of interest most often arise. His advisory model is deliberately boutique: each client receives direct access, full continuity, and a relationship that is never passed to a junior team.</p>
-        <p class="profile__bio">IM Wealth Select® operates exclusively on a flat-fee basis. No retrocessions. No referral income. No asset-linked remuneration.</p>
+        <p class="profile__role">Founder &amp; Principal</p>
+        <div class="profile__bio-wrap">
+          <p class="profile__bio">Gaylord Perruchon is the Principal of IM Wealth Select®. Based in Geneva, he is a CAIA Charterholder with over 20 years of experience across institutional asset management. His experience includes reviewing how portfolios are constructed, measuring the drivers of investment results, assessing costs and risk, and supporting complex investment and onboarding decisions — disciplines he now brings directly to private wealth through IM Wealth Select®.</p>
+          <p class="profile__bio">He helps individuals and families select, assess and monitor private banks, wealth managers and specialist investment partners with greater structure, independence and transparency.</p>
+        </div>
+        <span class="profile__read-more" aria-hidden="true">Read more ↓</span>
         <div class="u-btn-row">
           <a href="contact.html" class="btn-accent">Work with Gaylord</a>
           <a href="publications.html" class="btn-outline-dark">Read publications →</a>
@@ -99,40 +101,55 @@
   <div class="container">
     <div class="fade-up u-mb-48">
       <span class="eyebrow">Infrastructure</span>
-      <h2 class="section-heading" id="tools-title">Professional-grade tools. Institutional-level rigour.</h2>
-      <p class="section-sub">The same analytical stack used by institutional investors — applied to individual mandates.</p>
+      <h2 class="section-heading" id="tools-title">Institutional-grade tools, applied to private wealth.</h2>
+      <p class="section-sub">The research, analytics and manager-selection disciplines used by institutional investors — adapted to individual and family mandates.</p>
     </div>
     <div class="grid-2col stagger-grid">
 
-      <div class="tool-item stagger-item">
-        <div class="tool-item__icon">📊</div>
+      <div class="tool-item stagger-item" tabindex="0">
+        <div class="tool-item__icon">
+          <img src="MORNINGSTAR2.png" alt="Morningstar Direct" class="tool-item__logo">
+        </div>
         <div>
           <p class="tool-item__name">Morningstar Direct</p>
-          <p class="tool-item__desc">Fund and portfolio analytics — used to benchmark mandate performance, assess portfolio diversification and identify cost-drag from fund selection.</p>
+          <p class="tool-item__subtitle">Global Fund &amp; Manager Research</p>
+          <p class="tool-item__desc">Used to screen, compare and select specialist managers and funds worldwide for UHNW and institutional-style mandates — beyond a single private bank's fund shelf.</p>
         </div>
       </div>
 
-      <div class="tool-item stagger-item">
-        <div class="tool-item__icon">📋</div>
+      <div class="tool-item stagger-item" tabindex="0">
+        <div class="tool-item__icon">
+          <img src="MYSMARTRFP.webp" alt="MySmartRFP" class="tool-item__logo">
+        </div>
         <div>
-          <p class="tool-item__name">SmartRFP</p>
-          <p class="tool-item__desc">Structured Request for Proposal platform — used to formalise and manage the bank selection process, ensuring consistent, comparable responses from institutions.</p>
+          <p class="tool-item__name">MySmartRFP</p>
+          <p class="tool-item__subtitle">A fully digital online tendering platform</p>
+          <p class="tool-item__desc">A state-of-the-art RFP platform used by leading European institutional investors. It structures bank and manager selection through standardised questions, comparable responses and a clear audit trail.</p>
         </div>
       </div>
 
-      <div class="tool-item stagger-item">
-        <div class="tool-item__icon">📰</div>
+      <div class="tool-item stagger-item" tabindex="0">
+        <div class="tool-item__icon">
+          <img src="FACTSET2.webp" alt="FactSet" class="tool-item__logo">
+        </div>
         <div>
-          <p class="tool-item__name">Bloomberg Terminal</p>
-          <p class="tool-item__desc">Real-time market data and fixed income pricing — used to verify that bank-provided valuations and fee disclosures reflect accurate market conditions.</p>
+          <p class="tool-item__name">FactSet</p>
+          <p class="tool-item__subtitle">Risk and Performance Attribution</p>
+          <p class="tool-item__desc">Used to recalculate wealth-manager performance, identify return drivers and assess the contribution of asset allocation, manager selection, securities and currencies. It powers our dedicated reporting.</p>
         </div>
       </div>
 
-      <div class="tool-item stagger-item">
-        <div class="tool-item__icon">🔒</div>
+      <div class="tool-item stagger-item" tabindex="0">
+        <div class="tool-item__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
         <div>
-          <p class="tool-item__name">Secure Document Vault</p>
-          <p class="tool-item__desc">End-to-end encrypted client portal for sharing sensitive financial documents, term sheets and mandate agreements — fully GDPR-compliant.</p>
+          <p class="tool-item__name">Secure Client Portal</p>
+          <p class="tool-item__subtitle">Confidential document sharing</p>
+          <p class="tool-item__desc">A secure environment for financial documents, mandate agreements, reporting and selection materials — keeping the advisory process organised and confidential.</p>
         </div>
       </div>
 
@@ -171,7 +188,7 @@
 <footer class="footer-bar">
   <span class="footer-bar__left">IM Wealth Select® | IM Consulting Services SA · Rue de la Cité 1, 1204 Genève</span>
   <div class="footer-bar__right">
-    <a href="mailto:info@im-wealthselect.ch" class="footer-contact-link">Contact us</a>
+    <a href="mailto:contact@im-wealthselect.ch" class="footer-contact-link">Contact us</a>
     <a href="privacy.html" class="footer-bar__link">Privacy policy</a>
   </div>
 </footer>
