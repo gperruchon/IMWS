@@ -2,6 +2,13 @@
 (function () {
   'use strict';
 
+  /* ── Hero video autoplay ─────────────────────── */
+  const heroVideo = document.querySelector('.hero__video');
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.play().catch(() => {});
+  }
+
   /* ── Contact form — AJAX submit ─────────────────── */
   const contactForm = document.getElementById('contact-form');
   const formModal   = document.getElementById('form-modal');
@@ -301,7 +308,11 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = '#' + entry.target.id;
-          anchorItems.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === id));
+          anchorItems.forEach(a => {
+            const active = a.getAttribute('href') === id;
+            a.classList.toggle('is-active', active);
+            if (active) a.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          });
         }
       });
     }, { rootMargin: '-30% 0px -60% 0px' });
@@ -311,4 +322,96 @@
       if (target) anchorObserver.observe(target);
     });
   }
+
+  /* ── Stepper accordion ── */
+  const stepperSteps = document.querySelectorAll('.stepper__step');
+  if (stepperSteps.length) {
+    stepperSteps.forEach(step => {
+      const trigger = step.querySelector('.stepper__trigger');
+      if (!trigger) return;
+
+      trigger.addEventListener('click', () => {
+        const isActive = step.classList.contains('is-active');
+        stepperSteps.forEach(s => {
+          s.classList.remove('is-active');
+          const t = s.querySelector('.stepper__trigger');
+          if (t) t.setAttribute('aria-expanded', 'false');
+        });
+        if (!isActive) {
+          step.classList.add('is-active');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      trigger.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger.click(); }
+      });
+    });
+
+    // Deep-link: open matching step when arriving with a hash
+    const hash = window.location.hash;
+    if (hash) {
+      const targetStep = document.querySelector(hash + '.stepper__step');
+      if (targetStep) {
+        targetStep.classList.add('is-active');
+        const t = targetStep.querySelector('.stepper__trigger');
+        if (t) t.setAttribute('aria-expanded', 'true');
+        setTimeout(() => {
+          targetStep.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 300);
+      }
+    }
+  }
 })();
+
+/* ── i18n engine ── */
+(function () {
+  var STORAGE_KEY = 'imws-lang';
+  var SUPPORTED = ['EN', 'FR', 'DE', 'IT', 'ES'];
+  var currentLang = localStorage.getItem(STORAGE_KEY) || 'EN';
+  var translations = {};
+
+  function applyTranslations() {
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] !== undefined) el.textContent = translations[key];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] !== undefined) el.innerHTML = translations[key];
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] !== undefined) el.placeholder = translations[key];
+    });
+    document.documentElement.lang = currentLang.toLowerCase();
+    document.querySelectorAll('.nav__lang-option, .overlay__lang-item').forEach(function (el) {
+      el.classList.toggle('is-active', el.dataset.lang === currentLang);
+    });
+    var labelEl = document.querySelector('.nav__lang-label');
+    if (labelEl) labelEl.textContent = currentLang;
+  }
+
+  function loadLang(lang) {
+    fetch('translations/' + lang.toLowerCase() + '.json')
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        translations = data;
+        applyTranslations();
+      })
+      .catch(function () { console.warn('i18n load failed for:', lang); });
+  }
+
+  function setLang(lang) {
+    if (SUPPORTED.indexOf(lang) === -1) return;
+    currentLang = lang;
+    localStorage.setItem(STORAGE_KEY, lang);
+    loadLang(lang);
+  }
+
+  document.querySelectorAll('.nav__lang-option, .overlay__lang-item').forEach(function (el) {
+    el.addEventListener('click', function () { setLang(el.dataset.lang); });
+  });
+
+  loadLang(currentLang);
+}());

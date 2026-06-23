@@ -17,10 +17,10 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <a href="index.html" class="nav__logo">IM Wealth Select®</a>
   <ul class="nav__links" role="list">
-    <li><a href="approach.html" class="nav__link">Approach</a></li>
-    <li><a href="use-cases.html" class="nav__link">Expertise</a></li>
-    <li><a href="publications.html" class="nav__link">Publications</a></li>
-    <li><a href="team.html" class="nav__link">Team</a></li>
+    <li><a href="approach.html" class="nav__link" data-i18n="nav.approach">Approach</a></li>
+    <li><a href="use-cases.html" class="nav__link" data-i18n="nav.expertise">Expertise</a></li>
+    <li><a href="publications.html" class="nav__link" data-i18n="nav.publications">Publications</a></li>
+    <li><a href="team.html" class="nav__link" data-i18n="nav.team">Team</a></li>
   </ul>
   <div class="nav__controls">
     <div class="nav__lang" role="navigation" aria-label="Language selector">
@@ -32,11 +32,11 @@
         <li class="nav__lang-option is-active" data-lang="EN" role="option" aria-selected="true">🇬🇧 English</li>
         <li class="nav__lang-option" data-lang="FR" role="option">🇫🇷 Français</li>
         <li class="nav__lang-option" data-lang="DE" role="option">🇩🇪 Deutsch</li>
-        <li class="nav__lang-option" data-lang="ES" role="option">🇪🇸 Español</li>
         <li class="nav__lang-option" data-lang="IT" role="option">🇮🇹 Italiano</li>
+        <li class="nav__lang-option" data-lang="ES" role="option">🇪🇸 Español</li>
       </ul>
     </div>
-    <a href="contact.html" class="btn-accent nav__cta">Request a banking review</a>
+    <a href="contact.html" class="btn-accent nav__cta" data-i18n="nav.cta">Request a banking review</a>
     <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -45,11 +45,11 @@
 
 <div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <button class="overlay-close" aria-label="Close menu">✕</button>
-  <a href="approach.html" class="nav__link">Approach</a>
-  <a href="use-cases.html" class="nav__link">Expertise</a>
-  <a href="publications.html" class="nav__link">Publications</a>
-  <a href="team.html" class="nav__link">Team</a>
-  <a href="contact.html" class="btn-accent">Request a banking review</a>
+  <a href="approach.html" class="nav__link" data-i18n="nav.approach">Approach</a>
+  <a href="use-cases.html" class="nav__link" data-i18n="nav.expertise">Expertise</a>
+  <a href="publications.html" class="nav__link" data-i18n="nav.publications">Publications</a>
+  <a href="team.html" class="nav__link" data-i18n="nav.team">Team</a>
+  <a href="contact.html" class="btn-accent" data-i18n="nav.cta">Request a banking review</a>
   <div class="overlay__lang">
     <span class="overlay__lang-item is-active" data-lang="EN">EN</span>
     <span class="overlay__lang-sep">·</span>
@@ -57,9 +57,9 @@
     <span class="overlay__lang-sep">·</span>
     <span class="overlay__lang-item" data-lang="DE">DE</span>
     <span class="overlay__lang-sep">·</span>
-    <span class="overlay__lang-item" data-lang="ES">ES</span>
-    <span class="overlay__lang-sep">·</span>
     <span class="overlay__lang-item" data-lang="IT">IT</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="ES">ES</span>
   </div>
 </div>
 
@@ -67,9 +67,9 @@
 <header class="page-hero section-light">
   <div class="container">
     <div class="page-hero__inner fade-up">
-      <span class="eyebrow">Legal</span>
-      <h1 class="page-hero__title">Legal notice &amp; privacy policy.</h1>
-      <p class="page-hero__sub">Last updated: 18 June 2026.</p>
+      <span class="eyebrow" data-i18n="privacy_page.eyebrow">Legal</span>
+      <h1 class="page-hero__title" data-i18n="privacy_page.hero.title">Legal notice &amp; privacy policy.</h1>
+      <p class="page-hero__sub" data-i18n="privacy_page.updated">Last updated: 18 June 2026.</p>
     </div>
   </div>
 </header>
@@ -309,14 +309,14 @@
 <footer class="footer-bar">
   <span class="footer-bar__left">IM Wealth Select® | IM Consulting Services SA · Rue de la Cité 1, 1204 Genève</span>
   <div class="footer-bar__right">
-    <a href="mailto:contact@im-wealthselect.ch" class="footer-contact-link">Contact us</a>
-    <a href="privacy.html" class="footer-bar__link" aria-current="page">Privacy policy</a>
+    <a href="mailto:contact@im-wealthselect.ch" class="footer-contact-link" data-i18n="footer.contact">Contact us</a>
+    <a href="privacy.html" class="footer-bar__link" aria-current="page" data-i18n="footer.privacy">Privacy policy</a>
   </div>
 </footer>
 
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
-  <p class="cookie-banner__text">We use essential cookies only — no advertising, no tracking. <a href="privacy.html">Privacy policy</a>.</p>
-  <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
+  <p class="cookie-banner__text"><span data-i18n="cookie.text">We use essential cookies only — no advertising, no tracking.</span> <a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a>.</p>
+  <button class="btn-outline-dark btn-sm" id="cookie-accept" data-i18n="cookie.accept">Accept</button>
 </div>
 
 <script src="main.js" defer></script>

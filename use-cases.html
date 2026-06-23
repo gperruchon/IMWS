@@ -17,10 +17,10 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <a href="index.html" class="nav__logo">IM Wealth Select®</a>
   <ul class="nav__links" role="list">
-    <li><a href="approach.html" class="nav__link">Approach</a></li>
-    <li><a href="use-cases.html" class="nav__link" aria-current="page">Expertise</a></li>
-    <li><a href="publications.html" class="nav__link">Publications</a></li>
-    <li><a href="team.html" class="nav__link">Team</a></li>
+    <li><a href="approach.html" class="nav__link" data-i18n="nav.approach">Approach</a></li>
+    <li><a href="use-cases.html" class="nav__link" aria-current="page" data-i18n="nav.expertise">Expertise</a></li>
+    <li><a href="publications.html" class="nav__link" data-i18n="nav.publications">Publications</a></li>
+    <li><a href="team.html" class="nav__link" data-i18n="nav.team">Team</a></li>
   </ul>
   <div class="nav__controls">
     <div class="nav__lang" role="navigation" aria-label="Language selector">
@@ -32,11 +32,11 @@
         <li class="nav__lang-option is-active" data-lang="EN" role="option" aria-selected="true">🇬🇧 English</li>
         <li class="nav__lang-option" data-lang="FR" role="option">🇫🇷 Français</li>
         <li class="nav__lang-option" data-lang="DE" role="option">🇩🇪 Deutsch</li>
-        <li class="nav__lang-option" data-lang="ES" role="option">🇪🇸 Español</li>
         <li class="nav__lang-option" data-lang="IT" role="option">🇮🇹 Italiano</li>
+        <li class="nav__lang-option" data-lang="ES" role="option">🇪🇸 Español</li>
       </ul>
     </div>
-    <a href="contact.html" class="btn-accent nav__cta">Request a banking review</a>
+    <a href="contact.html" class="btn-accent nav__cta" data-i18n="nav.cta">Request a banking review</a>
     <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -45,11 +45,11 @@
 
 <div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <button class="overlay-close" aria-label="Close menu">✕</button>
-  <a href="approach.html" class="nav__link">Approach</a>
-  <a href="use-cases.html" class="nav__link">Expertise</a>
-  <a href="publications.html" class="nav__link">Publications</a>
-  <a href="team.html" class="nav__link">Team</a>
-  <a href="contact.html" class="btn-accent">Request a banking review</a>
+  <a href="approach.html" class="nav__link" data-i18n="nav.approach">Approach</a>
+  <a href="use-cases.html" class="nav__link" data-i18n="nav.expertise">Expertise</a>
+  <a href="publications.html" class="nav__link" data-i18n="nav.publications">Publications</a>
+  <a href="team.html" class="nav__link" data-i18n="nav.team">Team</a>
+  <a href="contact.html" class="btn-accent" data-i18n="nav.cta">Request a banking review</a>
   <div class="overlay__lang">
     <span class="overlay__lang-item is-active" data-lang="EN">EN</span>
     <span class="overlay__lang-sep">·</span>
@@ -57,9 +57,9 @@
     <span class="overlay__lang-sep">·</span>
     <span class="overlay__lang-item" data-lang="DE">DE</span>
     <span class="overlay__lang-sep">·</span>
-    <span class="overlay__lang-item" data-lang="ES">ES</span>
-    <span class="overlay__lang-sep">·</span>
     <span class="overlay__lang-item" data-lang="IT">IT</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="ES">ES</span>
   </div>
 </div>
 
@@ -67,9 +67,9 @@
 <header class="page-hero section-light">
   <div class="container">
     <div class="page-hero__inner fade-up">
-      <span class="eyebrow">Expertise</span>
-      <h1 class="page-hero__title">When life changes, banking must too.</h1>
-      <p class="page-hero__sub">Our work is most impactful at life inflection points — when the stakes are high and an independent voice is essential.</p>
+      <span class="eyebrow" data-i18n="expertise_page.eyebrow">Expertise</span>
+      <h1 class="page-hero__title" data-i18n="expertise_page.hero.title">When life changes, banking must too.</h1>
+      <p class="page-hero__sub" data-i18n="expertise_page.hero.sub">Our work is most impactful at life inflection points — when the stakes are high and an independent voice is essential.</p>
     </div>
   </div>
 </header>
@@ -89,8 +89,8 @@
             <line x1="8.12" y1="8.12" x2="12" y2="12"/>
           </svg>
         </div>
-        <h3 class="usecase-card__title">Divorce &amp; Asset Separation</h3>
-        <p class="usecase-card__body">When shared accounts and joint mandates must be untangled, we help define which institution serves each party's future needs — and negotiate the transition with full confidentiality.</p>
+        <h3 class="usecase-card__title" data-i18n="expertise_page.uc1.title">Divorce &amp; Asset Separation</h3>
+        <p class="usecase-card__body" data-i18n="expertise_page.uc1.body">When shared accounts and joint mandates must be untangled, we help define which institution serves each party's future needs — and negotiate the transition with full confidentiality.</p>
       </article>
 
       <article class="usecase-card stagger-item" tabindex="0">
@@ -100,8 +100,8 @@
             <polyline points="9 22 9 12 15 12 15 22"/>
           </svg>
         </div>
-        <h3 class="usecase-card__title">Inheritance &amp; Estate Transition</h3>
-        <p class="usecase-card__body">Inheriting a banking relationship is not the same as choosing one. We audit the existing setup, assess suitability for the heir's profile, and manage the transition with minimal disruption.</p>
+        <h3 class="usecase-card__title" data-i18n="expertise_page.uc2.title">Inheritance &amp; Estate Transition</h3>
+        <p class="usecase-card__body" data-i18n="expertise_page.uc2.body">Inheriting a banking relationship is not the same as choosing one. We audit the existing setup, assess suitability for the heir's profile, and manage the transition with minimal disruption.</p>
       </article>
 
       <article class="usecase-card stagger-item" tabindex="0">
@@ -110,8 +110,8 @@
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           </svg>
         </div>
-        <h3 class="usecase-card__title">Widowhood — Banking Continuity</h3>
-        <p class="usecase-card__body">The surviving spouse often inherits banking arrangements they never chose and may not understand. We provide clarity, independence, and a structured review at a time when simplicity matters most.</p>
+        <h3 class="usecase-card__title" data-i18n="expertise_page.uc3.title">Widowhood — Banking Continuity</h3>
+        <p class="usecase-card__body" data-i18n="expertise_page.uc3.body">The surviving spouse often inherits banking arrangements they never chose and may not understand. We provide clarity, independence, and a structured review at a time when simplicity matters most.</p>
       </article>
 
       <article class="usecase-card stagger-item" tabindex="0">
@@ -121,8 +121,8 @@
             <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
           </svg>
         </div>
-        <h3 class="usecase-card__title">Business Sale — Private Banking Setup</h3>
-        <p class="usecase-card__body">A significant liquidity event demands a private banking setup that reflects new realities. We run a full market process to identify the right partners for significant, newly liquid assets.</p>
+        <h3 class="usecase-card__title" data-i18n="expertise_page.uc4.title">Business Sale — Private Banking Setup</h3>
+        <p class="usecase-card__body" data-i18n="expertise_page.uc4.body">A significant liquidity event demands a private banking setup that reflects new realities. We run a full market process to identify the right partners for significant, newly liquid assets.</p>
       </article>
 
       <article class="usecase-card stagger-item" tabindex="0">
@@ -136,8 +136,8 @@
             <polygon points="12 2 20 7 4 7"/>
           </svg>
         </div>
-        <h3 class="usecase-card__title">Corporate Treasury — Partner Selection</h3>
-        <p class="usecase-card__body">Family offices and SMEs holding idle treasury need banking partners optimised for yield, security and flexibility. We identify and negotiate with suitable institutions.</p>
+        <h3 class="usecase-card__title" data-i18n="expertise_page.uc5.title">Corporate Treasury — Partner Selection</h3>
+        <p class="usecase-card__body" data-i18n="expertise_page.uc5.body">Family offices and SMEs holding idle treasury need banking partners optimised for yield, security and flexibility. We identify and negotiate with suitable institutions.</p>
       </article>
 
       <article class="usecase-card stagger-item" tabindex="0">
@@ -148,8 +148,8 @@
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
           </svg>
         </div>
-        <h3 class="usecase-card__title">Expatriation — New Banking Setup</h3>
-        <p class="usecase-card__body">Relocating internationally means rethinking every banking relationship. We help new arrivals in Switzerland — and Swiss residents moving abroad — build a banking structure that fits their new reality.</p>
+        <h3 class="usecase-card__title" data-i18n="expertise_page.uc6.title">Expatriation — New Banking Setup</h3>
+        <p class="usecase-card__body" data-i18n="expertise_page.uc6.body">Relocating internationally means rethinking every banking relationship. We help new arrivals in Switzerland — and Swiss residents moving abroad — build a banking structure that fits their new reality.</p>
       </article>
 
       <article class="usecase-card stagger-item" tabindex="0">
@@ -186,11 +186,11 @@
   <div class="container">
     <div class="challenge-block fade-up">
       <span class="eyebrow">Start with a conversation</span>
-      <p class="challenge__statement">Not sure if your situation fits?</p>
-      <p class="challenge__body">Every engagement begins with a no-commitment conversation. We will tell you honestly whether we can add value — and what a structured review would involve.</p>
+      <p class="challenge__statement" data-i18n="expertise_page.cta.text">Not sure if your situation fits?</p>
+      <p class="challenge__body" data-i18n="expertise_page.cta.sub">Every engagement begins with a no-commitment conversation. We will tell you honestly whether we can add value — and what a structured review would involve.</p>
       <div class="u-cta-row">
-        <a href="contact.html" class="btn-accent">Request a confidential review</a>
-        <a href="approach.html" class="btn-outline-dark">Read our approach →</a>
+        <a href="contact.html" class="btn-accent" data-i18n="expertise_page.cta.btn">Request a confidential review</a>
+        <a href="approach.html" class="btn-outline-dark" data-i18n="approach.cta">Read our approach →</a>
       </div>
     </div>
   </div>
@@ -200,14 +200,14 @@
 <footer class="footer-bar">
   <span class="footer-bar__left">IM Wealth Select® | IM Consulting Services SA · Rue de la Cité 1, 1204 Genève</span>
   <div class="footer-bar__right">
-    <a href="mailto:contact@im-wealthselect.ch" class="footer-contact-link">Contact us</a>
-    <a href="privacy.html" class="footer-bar__link">Privacy policy</a>
+    <a href="mailto:contact@im-wealthselect.ch" class="footer-contact-link" data-i18n="footer.contact">Contact us</a>
+    <a href="privacy.html" class="footer-bar__link" data-i18n="footer.privacy">Privacy policy</a>
   </div>
 </footer>
 
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
-  <p class="cookie-banner__text">We use essential cookies only — no advertising, no tracking. <a href="#">Privacy policy</a>.</p>
-  <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
+  <p class="cookie-banner__text"><span data-i18n="cookie.text">We use essential cookies only — no advertising, no tracking.</span> <a href="#" data-i18n="footer.privacy">Privacy policy</a>.</p>
+  <button class="btn-outline-dark btn-sm" id="cookie-accept" data-i18n="cookie.accept">Accept</button>
 </div>
 
 <script src="main.js" defer></script>

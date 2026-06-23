@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Approach — IM Wealth Select®</title>
-  <meta name="description" content="A rigorous, independent three-step process: Audit, Select & Negotiate, Monitor. Transparent flat fees. No retrocessions.">
+  <meta name="description" content="A rigorous, independent three-step process: Diagnose, Select & Negotiate, Monitor. Transparent flat fees. No retrocessions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,10 +17,10 @@
 <nav class="nav" role="navigation" aria-label="Main navigation">
   <a href="index.html" class="nav__logo">IM Wealth Select®</a>
   <ul class="nav__links" role="list">
-    <li><a href="approach.html" class="nav__link" aria-current="page">Approach</a></li>
-    <li><a href="use-cases.html" class="nav__link">Expertise</a></li>
-    <li><a href="publications.html" class="nav__link">Publications</a></li>
-    <li><a href="team.html" class="nav__link">Team</a></li>
+    <li><a href="approach.html" class="nav__link" aria-current="page" data-i18n="nav.approach">Approach</a></li>
+    <li><a href="use-cases.html" class="nav__link" data-i18n="nav.expertise">Expertise</a></li>
+    <li><a href="publications.html" class="nav__link" data-i18n="nav.publications">Publications</a></li>
+    <li><a href="team.html" class="nav__link" data-i18n="nav.team">Team</a></li>
   </ul>
   <div class="nav__controls">
     <div class="nav__lang" role="navigation" aria-label="Language selector">
@@ -32,11 +32,11 @@
         <li class="nav__lang-option is-active" data-lang="EN" role="option" aria-selected="true">🇬🇧 English</li>
         <li class="nav__lang-option" data-lang="FR" role="option">🇫🇷 Français</li>
         <li class="nav__lang-option" data-lang="DE" role="option">🇩🇪 Deutsch</li>
-        <li class="nav__lang-option" data-lang="ES" role="option">🇪🇸 Español</li>
         <li class="nav__lang-option" data-lang="IT" role="option">🇮🇹 Italiano</li>
+        <li class="nav__lang-option" data-lang="ES" role="option">🇪🇸 Español</li>
       </ul>
     </div>
-    <a href="contact.html" class="btn-accent nav__cta">Request a banking review</a>
+    <a href="contact.html" class="btn-accent nav__cta" data-i18n="nav.cta">Request a banking review</a>
     <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -45,11 +45,11 @@
 
 <div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <button class="overlay-close" aria-label="Close menu">✕</button>
-  <a href="approach.html" class="nav__link">Approach</a>
-  <a href="use-cases.html" class="nav__link">Expertise</a>
-  <a href="publications.html" class="nav__link">Publications</a>
-  <a href="team.html" class="nav__link">Team</a>
-  <a href="contact.html" class="btn-accent">Request a banking review</a>
+  <a href="approach.html" class="nav__link" data-i18n="nav.approach">Approach</a>
+  <a href="use-cases.html" class="nav__link" data-i18n="nav.expertise">Expertise</a>
+  <a href="publications.html" class="nav__link" data-i18n="nav.publications">Publications</a>
+  <a href="team.html" class="nav__link" data-i18n="nav.team">Team</a>
+  <a href="contact.html" class="btn-accent" data-i18n="nav.cta">Request a banking review</a>
   <div class="overlay__lang">
     <span class="overlay__lang-item is-active" data-lang="EN">EN</span>
     <span class="overlay__lang-sep">·</span>
@@ -57,9 +57,9 @@
     <span class="overlay__lang-sep">·</span>
     <span class="overlay__lang-item" data-lang="DE">DE</span>
     <span class="overlay__lang-sep">·</span>
-    <span class="overlay__lang-item" data-lang="ES">ES</span>
-    <span class="overlay__lang-sep">·</span>
     <span class="overlay__lang-item" data-lang="IT">IT</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="ES">ES</span>
   </div>
 </div>
 
@@ -67,203 +67,161 @@
 <header class="page-hero section-light">
   <div class="container">
     <div class="page-hero__inner fade-up">
-      <span class="eyebrow">Our Approach</span>
-      <h1 class="page-hero__title">A rigorous, independent process.</h1>
+      <span class="eyebrow" data-i18n="approach_page.eyebrow">Our Approach</span>
+      <h1 class="page-hero__title" data-i18n="approach_page.hero.title">A rigorous, independent process.</h1>
     </div>
   </div>
 </header>
 
-<!-- ── ANCHOR NAV ───────────────────────────────── -->
-<nav class="anchor-nav" aria-label="Page sections">
-  <a href="#diagnose" class="anchor-nav__item">01 — Diagnose</a>
-  <a href="#select"   class="anchor-nav__item">02 — Select &amp; Negotiate</a>
-  <a href="#monitor" class="anchor-nav__item">03 — Monitor</a>
-  <a href="#fees"    class="anchor-nav__item">Fees</a>
-</nav>
+<!-- ── STEPPER + FEES ────────────────────────────── -->
+<section class="section-light stepper-section">
+  <div class="stepper-wrap">
 
-<!-- ── STEP 1: AUDIT ────────────────────────────── -->
-<section class="section-light" id="diagnose" aria-labelledby="diagnose-title">
-  <div class="container">
-    <div class="grid-2col u-step-layout">
-      <div class="step-detail fade-up">
-        <div class="step-detail__icon-wrap">
-          <svg class="step-detail__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="27" cy="27" r="18"/>
-            <line x1="19" y1="35" x2="19" y2="27"/>
-            <line x1="25" y1="35" x2="25" y2="21"/>
-            <line x1="31" y1="35" x2="31" y2="29"/>
-            <line x1="41" y1="41" x2="55" y2="55"/>
-          </svg>
-        </div>
-        <div class="step-label">
-          <p class="step-detail__number">Step 01</p>
-          <h2 class="step-detail__title" id="diagnose-title">Diagnose.</h2>
-        </div>
-        <p class="step-detail__subtitle">Know exactly where you stand.</p>
-        <p class="step-detail__body">We define your objectives and risk profile, then audit your current banking relationships to identify what is aligned, what is costly, and what should be challenged.</p>
-        <ul class="step-detail__list">
-          <li>Investment goals and personal objectives</li>
-          <li>Risk profile, liquidity needs and time horizon</li>
-          <li>Current banks, mandates, asset allocation and holdings</li>
-          <li>Performance versus objectives and relevant benchmarks</li>
-          <li>Full fee review: management, custody, transaction costs and retrocessions</li>
-          <li>Risk exposure, reporting transparency and service quality</li>
-        </ul>
-      </div>
-      <div class="fade-up u-card-stack">
-        <div class="card has-spotlight">
-          <p class="card__step">Deliverable</p>
-          <h3 class="card__title">Investment Profile &amp; Banking Audit</h3>
-          <p class="card__body">A clear diagnostic of your objectives, current setup, key gaps and priorities — mandate by mandate.</p>
-        </div>
-        <div class="card has-spotlight">
-          <p class="card__step">Duration</p>
-          <h3 class="card__title">1 – 3 weeks</h3>
-          <p class="card__body">Depending on the number of banking relationships, portfolio complexity, and availability of documentation.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="stepper">
 
-<!-- ── STEP 2: SELECT & NEGOTIATE ───────────────── -->
-<section class="section-light--alt" id="select" aria-labelledby="select-title">
-  <div class="container">
-    <div class="grid-2col u-step-layout u-step-layout--reverse">
-      <div class="step-detail fade-up">
-        <div class="step-detail__icon-wrap">
-          <svg class="step-detail__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="32" y1="12" x2="32" y2="54"/>
-            <line x1="10" y1="24" x2="54" y2="24"/>
-            <circle cx="32" cy="24" r="3"/>
-            <line x1="15" y1="24" x2="13" y2="36"/>
-            <line x1="23" y1="24" x2="25" y2="36"/>
-            <ellipse cx="19" cy="36" rx="7" ry="2.5"/>
-            <line x1="41" y1="24" x2="39" y2="36"/>
-            <line x1="49" y1="24" x2="51" y2="36"/>
-            <ellipse cx="45" cy="36" rx="7" ry="2.5"/>
-            <line x1="24" y1="54" x2="40" y2="54"/>
-          </svg>
-        </div>
-        <div class="step-label">
-          <p class="step-detail__number">Step 02</p>
-          <h2 class="step-detail__title" id="select-title">Independent Selection &amp; Negotiation.</h2>
-        </div>
-        <p class="step-detail__subtitle">Choose providers on merit, not relationships.</p>
-        <p class="step-detail__body">For each mandate, we run a dedicated tender across eligible providers, compare proposals side by side, and negotiate fees and terms on your behalf.</p>
-        <ul class="step-detail__list">
-          <li>One dedicated tender / Request for Proposal (RFP) per mandate</li>
-          <li>Screening of eligible private banks, External Asset Managers (EAMs) and specialist providers</li>
-          <li>Side-by-side comparison of proposals, fees, service, access and reporting</li>
-          <li>Final selection made together with you</li>
-          <li>Negotiation of fees, terms and service commitments</li>
-          <li>Transition support and implementation coordination</li>
-        </ul>
-      </div>
-      <div class="fade-up u-card-stack">
-        <div class="card has-spotlight">
-          <p class="card__step">Deliverable</p>
-          <h3 class="card__title">Mandate Tender Report</h3>
-          <p class="card__body">A clear comparison of shortlisted providers, negotiated terms and our recommendation for each mandate.</p>
-        </div>
-        <div class="card has-spotlight">
-          <p class="card__step">Duration</p>
-          <h3 class="card__title">2 – 4 weeks</h3>
-          <p class="card__body">We run a formal market process — obtaining proposals, clarifying terms, negotiating, and presenting you with a clear recommendation.</p>
+      <!-- ── Step 01: Diagnose ── -->
+      <div class="stepper__step" data-step="1" id="diagnose">
+        <button class="stepper__trigger" aria-expanded="false" aria-controls="stepper-panel-1">
+          <span class="stepper__num">01</span>
+          <span class="stepper__title" data-i18n="approach_page.step1.title">Diagnose.</span>
+          <svg class="stepper__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4,6 8,10 12,6"/></svg>
+        </button>
+        <div class="stepper__panel" id="stepper-panel-1">
+          <div class="stepper__panel-inner">
+            <p class="stepper__subtitle" data-i18n="approach_page.step1.subtitle">Know exactly where you stand.</p>
+            <p class="stepper__text" data-i18n="approach_page.step1.body">We define your objectives and risk profile, then audit your current banking relationships — identifying what is aligned, what is costly, and what should be challenged.</p>
+            <div class="stepper__cards">
+              <div class="stepper__card">
+                <p class="stepper__card-label" data-i18n="approach_page.step1.deliverable.label">Deliverable</p>
+                <p class="stepper__card-title" data-i18n="approach_page.step1.deliverable.title">Investment Profile &amp; Banking Audit</p>
+                <p class="stepper__card-sub">Mandate by mandate diagnostic of gaps and priorities.</p>
+              </div>
+              <div class="stepper__card">
+                <p class="stepper__card-label" data-i18n="approach_page.step1.duration.label">Duration</p>
+                <p class="stepper__card-title" data-i18n="approach_page.step1.duration.title">1 – 3 weeks</p>
+                <p class="stepper__card-sub">Depending on number of relationships and complexity.</p>
+              </div>
+            </div>
+            <ul class="stepper__list">
+              <li data-i18n="approach_page.step1.li1">Investment goals, risk profile and time horizon</li>
+              <li data-i18n="approach_page.step1.li2">Current banks, mandates and asset allocation</li>
+              <li data-i18n="approach_page.step1.li3">Performance vs objectives and benchmarks</li>
+              <li data-i18n="approach_page.step1.li4">Full fee review: management, custody and retrocessions</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ── STEP 3: MONITOR ───────────────────────────── -->
-<section class="section-light" id="monitor" aria-labelledby="monitor-title">
-  <div class="container">
-    <div class="grid-2col u-step-layout">
-      <div class="step-detail fade-up">
-        <div class="step-detail__icon-wrap">
-          <svg class="step-detail__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="10" y1="54" x2="10" y2="8"/>
-            <line x1="10" y1="54" x2="58" y2="54"/>
-            <polyline points="10,46 21,40 32,33 43,27 54,18"/>
-            <circle cx="21" cy="40" r="2.5" fill="currentColor" stroke="none"/>
-            <circle cx="32" cy="33" r="2.5" fill="currentColor" stroke="none"/>
-            <circle cx="43" cy="27" r="2.5" fill="currentColor" stroke="none"/>
-            <circle cx="54" cy="18" r="5"/>
-            <circle cx="54" cy="18" r="2" fill="currentColor" stroke="none"/>
-          </svg>
-        </div>
-        <div class="step-label">
-          <p class="step-detail__number">Step 03</p>
-          <h2 class="step-detail__title" id="monitor-title">Monitor.</h2>
-        </div>
-        <p class="step-detail__subtitle">Keep the mandate accountable.</p>
-        <p class="step-detail__body">After onboarding, we monitor whether each mandate stays aligned with your objectives — and help you act when standards slip.</p>
-        <ul class="step-detail__list">
-          <li>Performance and risk reviewed against agreed objectives</li>
-          <li>Verification of fees, costs and negotiated terms</li>
-          <li>Mandate compliance, reporting quality and service review</li>
-          <li>Access to an online reporting tool, with consolidation where relevant</li>
-          <li>Quarterly review meeting and clear action points</li>
-          <li>Trigger-based re-tendering when standards are no longer met</li>
-        </ul>
-      </div>
-      <div class="fade-up u-card-stack">
-        <div class="card has-spotlight">
-          <p class="card__step">Deliverable</p>
-          <h3 class="card__title">Governance Report &amp; Online Reporting Access</h3>
-          <p class="card__body">Regular governance reporting, an online reporting tool, quarterly reviews, and clear recommendations when needed.</p>
-        </div>
-        <div class="card has-spotlight">
-          <p class="card__step">Format</p>
-          <h3 class="card__title">First 12 months after onboarding</h3>
-          <p class="card__body">Included for the first 12 months after onboarding; continued governance can then be maintained at a reduced annual rate.</p>
+      <!-- ── Step 02: Select & Negotiate ── -->
+      <div class="stepper__step" data-step="2" id="select">
+        <button class="stepper__trigger" aria-expanded="false" aria-controls="stepper-panel-2">
+          <span class="stepper__num">02</span>
+          <span class="stepper__title" data-i18n="approach_page.step2.title">Select &amp; Negotiate.</span>
+          <svg class="stepper__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4,6 8,10 12,6"/></svg>
+        </button>
+        <div class="stepper__panel" id="stepper-panel-2">
+          <div class="stepper__panel-inner">
+            <p class="stepper__subtitle" data-i18n="approach_page.step2.subtitle">Choose on merit, not relationships.</p>
+            <p class="stepper__text" data-i18n="approach_page.step2.body">For each mandate, we run a dedicated tender across eligible wealth managers, compare proposals side by side, and negotiate fees and terms on your behalf.</p>
+            <div class="stepper__cards">
+              <div class="stepper__card">
+                <p class="stepper__card-label" data-i18n="approach_page.step2.deliverable.label">Deliverable</p>
+                <p class="stepper__card-title" data-i18n="approach_page.step2.deliverable.title">Mandate Tender Report</p>
+                <p class="stepper__card-sub" data-i18n="approach_page.step2.deliverable.sub">A ranked comparison of the best-fit providers for your profile and mandate.</p>
+              </div>
+              <div class="stepper__card">
+                <p class="stepper__card-label" data-i18n="approach_page.step2.duration.label">Duration</p>
+                <p class="stepper__card-title" data-i18n="approach_page.step2.duration.title">2 – 4 weeks</p>
+                <p class="stepper__card-sub">Formal market process — proposals, negotiation, recommendation.</p>
+              </div>
+            </div>
+            <ul class="stepper__list">
+              <li data-i18n="approach_page.step2.li1">One RFP per mandate across eligible private banks</li>
+              <li data-i18n="approach_page.step2.li2">Side-by-side comparison of fees, service and reporting</li>
+              <li data-i18n="approach_page.step2.li3">Final selection made together with you</li>
+              <li data-i18n="approach_page.step2.li4">Transition support and implementation coordination</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ── FEES ──────────────────────────────────────── -->
-<section class="section-light--alt" id="fees" aria-labelledby="fees-title">
-  <div class="container">
-    <div class="fade-up u-mb-48-mw640">
-      <span class="eyebrow">Transparent Fees</span>
-      <h2 class="section-heading" id="fees-title">No retrocessions. No referral fees. Paid only by you.</h2>
-      <p class="section-sub">Our fees are largely offset by the savings negotiated with your bank within the first 12 months. We receive no commissions from banks — ever.</p>
-    </div>
-    <div class="fee-table-v2 stagger-grid" role="table" aria-label="Annual fee structure">
-      <div class="fee-table-v2__header" role="row">
-        <span role="columnheader">Assets under advice (CHF M)</span>
-        <span role="columnheader">Diagnose, selection &amp; monitoring — Year 1</span>
-        <span role="columnheader">Monitoring per annum (after Year 1)</span>
+      <!-- ── Step 03: Monitor ── -->
+      <div class="stepper__step" data-step="3" id="monitor">
+        <button class="stepper__trigger" aria-expanded="false" aria-controls="stepper-panel-3">
+          <span class="stepper__num">03</span>
+          <span class="stepper__title" data-i18n="approach_page.step3.title">Monitor.</span>
+          <svg class="stepper__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4,6 8,10 12,6"/></svg>
+        </button>
+        <div class="stepper__panel" id="stepper-panel-3">
+          <div class="stepper__panel-inner">
+            <p class="stepper__subtitle" data-i18n="approach_page.step3.subtitle">Keep the mandate accountable.</p>
+            <p class="stepper__text" data-i18n="approach_page.step3.body">After onboarding, we monitor whether each mandate stays aligned with your objectives — and act when standards slip.</p>
+            <div class="stepper__cards">
+              <div class="stepper__card">
+                <p class="stepper__card-label" data-i18n="approach_page.step3.deliverable.label">Deliverable</p>
+                <p class="stepper__card-title" data-i18n="approach_page.step3.deliverable.title">Governance Report &amp; Online Reporting</p>
+                <p class="stepper__card-sub">Quarterly reviews and clear recommendations when needed.</p>
+              </div>
+              <div class="stepper__card">
+                <p class="stepper__card-label" data-i18n="approach_page.step3.duration.label">Duration</p>
+                <p class="stepper__card-title" data-i18n="approach_page.step3.duration.title">First 12 months included</p>
+                <p class="stepper__card-sub" data-i18n="approach_page.step3.duration.sub">Then continued governance at a reduced annual rate.</p>
+              </div>
+            </div>
+            <ul class="stepper__list">
+              <li data-i18n="approach_page.step3.li1">Performance and risk reviewed against agreed objectives</li>
+              <li data-i18n="approach_page.step3.li2">Verification of fees, costs and negotiated terms</li>
+              <li data-i18n="approach_page.step3.li3">Consolidated online reporting across all providers</li>
+              <li data-i18n="approach_page.step3.li4">Trigger-based re-tendering when standards slip</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="fee-table-v2__row stagger-item" role="row">
-        <span class="fee-table-v2__tier" role="cell">1 – 5</span>
-        <span class="fee-table-v2__value" role="cell"><span class="fee-table-v2__value-label">Year 1: </span>0.65%</span>
-        <span class="fee-table-v2__value" role="cell"><span class="fee-table-v2__value-label">After Year 1: </span>0.25%</span>
+
+    </div><!-- /.stepper -->
+
+    <hr class="stepper__divider">
+
+    <!-- ── Fees ── -->
+    <div class="stepper__fees">
+      <span class="eyebrow" data-i18n="fees.eyebrow">Transparent fees — no retrocessions, ever</span>
+      <div class="fee-table-v2" role="table" aria-label="Annual fee structure">
+        <div class="fee-table-v2__header" role="row">
+          <span role="columnheader" data-i18n="fees.col1">Assets (CHF M)</span>
+          <span role="columnheader" data-i18n="fees.col2">Year 1</span>
+          <span role="columnheader" data-i18n="fees.col3">After Year 1</span>
+        </div>
+        <div class="fee-table-v2__row" role="row">
+          <span class="fee-table-v2__tier" role="cell">1 – 5</span>
+          <span class="fee-table-v2__value" role="cell">0.65%</span>
+          <span class="fee-table-v2__value" role="cell">0.25%</span>
+        </div>
+        <div class="fee-table-v2__row" role="row">
+          <span class="fee-table-v2__tier" role="cell">5 – 10</span>
+          <span class="fee-table-v2__value" role="cell">0.40%</span>
+          <span class="fee-table-v2__value" role="cell">0.20%</span>
+        </div>
+        <div class="fee-table-v2__row" role="row">
+          <span class="fee-table-v2__tier" role="cell">10 – 20</span>
+          <span class="fee-table-v2__value" role="cell">0.35%</span>
+          <span class="fee-table-v2__value" role="cell">0.15%</span>
+        </div>
+        <div class="fee-table-v2__row" role="row">
+          <span class="fee-table-v2__tier" role="cell">20+</span>
+          <span class="fee-table-v2__value" role="cell">0.25%</span>
+          <span class="fee-table-v2__value" role="cell">0.10%</span>
+        </div>
       </div>
-      <div class="fee-table-v2__row stagger-item" role="row">
-        <span class="fee-table-v2__tier" role="cell">5 – 10</span>
-        <span class="fee-table-v2__value" role="cell"><span class="fee-table-v2__value-label">Year 1: </span>0.40%</span>
-        <span class="fee-table-v2__value" role="cell"><span class="fee-table-v2__value-label">After Year 1: </span>0.20%</span>
+      <p class="stepper__fees-note" data-i18n="fees.note">Fees are largely offset by savings negotiated with your bank within the first 12 months. A preliminary conversation is always free.</p>
+      <div class="stepper__trust">
+        <svg class="stepper__trust-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 1.5L2 4.5v3.75C2 11.5 4.75 14 8 14.75 11.25 14 14 11.5 14 8.25V4.5L8 1.5z"/>
+        </svg>
+        <span data-i18n="fees.zero">Zero commissions from banks. We are paid only by you — never by the institutions we evaluate.</span>
       </div>
-      <div class="fee-table-v2__row stagger-item" role="row">
-        <span class="fee-table-v2__tier" role="cell">10 – 20</span>
-        <span class="fee-table-v2__value" role="cell"><span class="fee-table-v2__value-label">Year 1: </span>0.35%</span>
-        <span class="fee-table-v2__value" role="cell"><span class="fee-table-v2__value-label">After Year 1: </span>0.15%</span>
-      </div>
-      <div class="fee-table-v2__row stagger-item" role="row">
-        <span class="fee-table-v2__tier" role="cell">20+</span>
-        <span class="fee-table-v2__value" role="cell"><span class="fee-table-v2__value-label">Year 1: </span>0.25%</span>
-        <span class="fee-table-v2__value" role="cell"><span class="fee-table-v2__value-label">After Year 1: </span>0.10%</span>
-      </div>
-    </div>
-    <span class="fee-table__note fade-up">Fees vary based on portfolio complexity, number of banking relationships, and scope of the mandate. A preliminary conversation is always free.</span>
-    <div class="fade-up u-mt-36">
-      <a href="contact.html" class="btn-accent">Request a confidential review</a>
-    </div>
-  </div>
+    </div><!-- /.stepper__fees -->
+
+  </div><!-- /.stepper-wrap -->
 </section>
 
 <!-- ── FOOTER ────────────────────────────────────── -->
@@ -276,8 +234,8 @@
 </footer>
 
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice">
-  <p class="cookie-banner__text">We use essential cookies only — no advertising, no tracking. <a href="#">Privacy policy</a>.</p>
-  <button class="btn-outline-dark btn-sm" id="cookie-accept">Accept</button>
+  <p class="cookie-banner__text"><span data-i18n="cookie.text">We use essential cookies only — no advertising, no tracking.</span> <a href="#" data-i18n="footer.privacy">Privacy policy</a>.</p>
+  <button class="btn-outline-dark btn-sm" id="cookie-accept" data-i18n="cookie.accept">Accept</button>
 </div>
 
 <script src="main.js" defer></script>
