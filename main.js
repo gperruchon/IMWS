@@ -393,7 +393,7 @@
   }
 
   function loadLang(lang) {
-    fetch('translations/' + lang.toLowerCase() + '.json')
+    fetch(lang.toLowerCase() + '.json')
       .then(function (res) { return res.json(); })
       .then(function (data) {
         translations = data;
