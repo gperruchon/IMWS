@@ -366,6 +366,7 @@
 
 /* ── i18n engine ── */
 (function () {
+  if (document.body && document.body.dataset.i18nStatic) return;
   var STORAGE_KEY = 'imws-lang';
   var SUPPORTED = ['EN', 'FR', 'DE', 'IT', 'ES'];
   var currentLang = localStorage.getItem(STORAGE_KEY) || 'EN';
@@ -393,6 +394,7 @@
   }
 
   function loadLang(lang) {
+    if (document.body && document.body.dataset.i18nStatic) return;
     fetch(lang.toLowerCase() + '.json')
       .then(function (res) { return res.json(); })
       .then(function (data) {
@@ -410,7 +412,10 @@
   }
 
   document.querySelectorAll('.nav__lang-option, .overlay__lang-item').forEach(function (el) {
-    el.addEventListener('click', function () { setLang(el.dataset.lang); });
+    el.addEventListener('click', function () {
+      var href = el.getAttribute('data-href');
+      if (href) window.location.href = href;
+    });
   });
 
   loadLang(currentLang);
