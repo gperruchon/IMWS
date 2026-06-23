@@ -102,15 +102,6 @@
       langWidget.classList.toggle('is-open');
     });
 
-    langOptions.forEach(opt => {
-      opt.addEventListener('click', () => {
-        langOptions.forEach(o => o.classList.remove('is-active'));
-        opt.classList.add('is-active');
-        if (langLabel) langLabel.textContent = opt.dataset.lang || opt.textContent.trim().split(' ')[0];
-        langWidget.classList.remove('is-open');
-      });
-    });
-
     document.addEventListener('click', (e) => {
       if (!langWidget.contains(e.target)) langWidget.classList.remove('is-open');
     });
@@ -119,15 +110,13 @@
     });
   }
 
-  /* ── Language selector — mobile overlay ───────── */
-  document.querySelectorAll('.overlay__lang-item').forEach(item => {
-    item.addEventListener('click', () => {
-      document.querySelectorAll('.overlay__lang-item').forEach(i => i.classList.remove('is-active'));
-      item.classList.add('is-active');
-      if (langLabel) langLabel.textContent = item.dataset.lang || item.textContent.trim();
-      langOptions.forEach(o => {
-        o.classList.toggle('is-active', o.dataset.lang === item.dataset.lang);
-      });
+  /* ── Language navigation ──────────────────────── */
+  document.querySelectorAll('.nav__lang-option, .overlay__lang-item').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var href = el.getAttribute('data-href');
+      if (href) window.location.href = href;
     });
   });
 
@@ -366,7 +355,7 @@
 
 /* ── i18n engine ── */
 (function () {
-  if (document.body && document.body.dataset.i18nStatic) return;
+  if (document.body && document.body.getAttribute('data-i18n-static') === 'true') return;
   var STORAGE_KEY = 'imws-lang';
   var SUPPORTED = ['EN', 'FR', 'DE', 'IT', 'ES'];
   var currentLang = localStorage.getItem(STORAGE_KEY) || 'EN';
@@ -394,7 +383,7 @@
   }
 
   function loadLang(lang) {
-    if (document.body && document.body.dataset.i18nStatic) return;
+    if (document.body && document.body.getAttribute('data-i18n-static') === 'true') return;
     fetch(lang.toLowerCase() + '.json')
       .then(function (res) { return res.json(); })
       .then(function (data) {
@@ -410,13 +399,6 @@
     localStorage.setItem(STORAGE_KEY, lang);
     loadLang(lang);
   }
-
-  document.querySelectorAll('.nav__lang-option, .overlay__lang-item').forEach(function (el) {
-    el.addEventListener('click', function () {
-      var href = el.getAttribute('data-href');
-      if (href) window.location.href = href;
-    });
-  });
 
   loadLang(currentLang);
 }());
