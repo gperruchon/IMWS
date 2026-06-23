@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM Wealth Select® — Asesoramiento bancario independiente · Ginebra</title>
+  <meta name="description" content="IM Wealth Select® ayuda a particulares con alto patrimonio a auditar, seleccionar y supervisar bancos privados y gestores de patrimonio. Independiente. Solo honorarios. Ginebra.">
+  <link rel="alternate" hreflang="en" href="https://im-wealthselect.ch/index.html">
+  <link rel="alternate" hreflang="fr" href="https://im-wealthselect.ch/index-fr.html">
+  <link rel="alternate" hreflang="de" href="https://im-wealthselect.ch/index-de.html">
+  <link rel="alternate" hreflang="it" href="https://im-wealthselect.ch/index-it.html">
+  <link rel="alternate" hreflang="es" href="https://im-wealthselect.ch/index-es.html">
+  <link rel="alternate" hreflang="x-default" href="https://im-wealthselect.ch/index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='72' font-size='60' fill='%231A1A18' text-anchor='middle' font-family='Inter,sans-serif' font-weight='700' letter-spacing='-1.2'%3EIM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-i18n-static="true">
+
+<!-- ── NAVIGATION ──────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+  <a href="index-es.html" class="nav__logo" aria-current="page">IM Wealth Select®</a>
+  <ul class="nav__links" role="list">
+    <li><a href="approach-es.html" class="nav__link">Nuestro método</a></li>
+    <li><a href="use-cases-es.html" class="nav__link">Expertise</a></li>
+    <li><a href="publications-es.html" class="nav__link">Publicaciones</a></li>
+    <li><a href="team-es.html" class="nav__link">El equipo</a></li>
+  </ul>
+  <div class="nav__controls">
+    <div class="nav__lang" role="navigation" aria-label="Selector de idioma">
+      <button class="nav__lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Idioma: Español">
+        <span class="nav__lang-label">ES</span>
+        <svg viewBox="0 0 10 6" aria-hidden="true"><polyline points="1,1 5,5 9,1"/></svg>
+      </button>
+      <ul class="nav__lang-dropdown" role="listbox" aria-label="Seleccionar un idioma">
+        <li class="nav__lang-option" data-lang="EN" role="option" onclick="window.location='index.html'">🇬🇧 English</li>
+        <li class="nav__lang-option" data-lang="FR" role="option" onclick="window.location='index-fr.html'">🇫🇷 Français</li>
+        <li class="nav__lang-option" data-lang="DE" role="option" onclick="window.location='index-de.html'">🇩🇪 Deutsch</li>
+        <li class="nav__lang-option" data-lang="IT" role="option" onclick="window.location='index-it.html'">🇮🇹 Italiano</li>
+        <li class="nav__lang-option is-active" data-lang="ES" role="option" aria-selected="true">🇪🇸 Español</li>
+      </ul>
+    </div>
+    <a href="contact-es.html" class="btn-accent nav__cta">Solicitar un análisis bancario</a>
+    <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay -->
+<div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+  <button class="overlay-close" aria-label="Cerrar menú">✕</button>
+  <a href="approach-es.html" class="nav__link">Nuestro método</a>
+  <a href="use-cases-es.html" class="nav__link">Expertise</a>
+  <a href="publications-es.html" class="nav__link">Publicaciones</a>
+  <a href="team-es.html" class="nav__link">El equipo</a>
+  <a href="contact-es.html" class="btn-accent">Solicitar un análisis bancario</a>
+  <div class="overlay__lang">
+    <span class="overlay__lang-item" data-lang="EN" onclick="window.location='index.html'">EN</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="FR" onclick="window.location='index-fr.html'">FR</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="DE" onclick="window.location='index-de.html'">DE</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item" data-lang="IT" onclick="window.location='index-it.html'">IT</span>
+    <span class="overlay__lang-sep">·</span>
+    <span class="overlay__lang-item is-active" data-lang="ES">ES</span>
+  </div>
+</div>
+
+<!-- ── SECTION 1 : HERO ─────────────────────────── -->
+<section class="hero" aria-labelledby="hero-title">
+  <video class="hero__video" autoplay muted loop playsinline webkit-playsinline disablePictureInPicture controlsList="nodownload nofullscreen noremoteplayback" poster="hero-poster.jpg" aria-hidden="true">
+    <source src="hero-video.mp4" type="video/mp4">
+  </video>
+  <img class="hero__poster" src="hero-poster.jpg" alt="" aria-hidden="true">
+  <div class="hero__content">
+    <h1 class="hero__title h-anim-0" id="hero-title">
+      Su banco privado debería ser elegido,<br> no heredado.
+    </h1>
+    <p class="hero__subtitle h-anim-1">
+      Le ayudamos a seleccionar y supervisar los bancos privados y gestores de patrimonio adecuados en Suiza.
+    </p>
+  </div>
+</section>
+
+<!-- ── SECTION 3 : APPROACH ─────────────────────── -->
+<section class="section-light--alt" aria-labelledby="approach-title">
+  <div class="container">
+    <div class="fade-up u-mb-48">
+      <span class="eyebrow">Nuestro método</span>
+      <h2 class="section-heading" id="approach-title">Diagnosticar. Seleccionar &amp; Negociar. Supervisar.</h2>
+      <p class="section-sub" style="max-width: none;">Un proceso transparente y libre de conflictos de interés para convertir la selección bancaria en una decisión estructurada, comparable y supervisada a lo largo del tiempo.</p>
+    </div>
+    <div class="approach-grid stagger-grid">
+      <a href="approach-es.html#diagnose" class="approach-card stagger-item">
+        <span class="approach-card__number">01.</span>
+        <p class="approach-card__title">Diagnosticar</p>
+        <p class="approach-card__body">Definimos sus objetivos de inversión y perfil de riesgo antes de evaluar su estructura bancaria actual.</p>
+      </a>
+      <a href="approach-es.html#select" class="approach-card stagger-item">
+        <span class="approach-card__number">02.</span>
+        <p class="approach-card__title">Seleccionar &amp; Negociar</p>
+        <p class="approach-card__body">Lanzamos una licitación entre los gestores elegibles, seleccionamos el banco privado adecuado junto a usted y negociamos las condiciones.</p>
+      </a>
+      <a href="approach-es.html#monitor" class="approach-card stagger-item">
+        <span class="approach-card__number">03.</span>
+        <p class="approach-card__title">Supervisar</p>
+        <p class="approach-card__body">Seguimos la evolución del rendimiento, los costes y la calidad del servicio — con informes consolidados en línea sobre todos sus proveedores.</p>
+      </a>
+    </div>
+    <div class="fade-up u-mt-40">
+      <a href="approach-es.html" class="btn-outline-dark">Descubra nuestro método →</a>
+    </div>
+    <div class="stat-bar fade-up" role="list" aria-label="Cobertura del mercado">
+      <div class="stat-bar__item" role="listitem">
+        <span class="stat-bar__value">80<em>+</em></span>
+        <span class="stat-bar__label">Bancos privados suizos evaluados</span>
+      </div>
+      <div class="stat-bar__item" role="listitem">
+        <span class="stat-bar__value">14</span>
+        <span class="stat-bar__label">Bancos cantonales</span>
+      </div>
+      <div class="stat-bar__item" role="listitem">
+        <span class="stat-bar__value">5300<em>+</em></span>
+        <span class="stat-bar__label">Gestores de patrimonio</span>
+      </div>
+      <div class="stat-bar__item" role="listitem">
+        <span class="stat-bar__value">0</span>
+        <span class="stat-bar__label">Retrocesiones</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 4 : LATEST PUBLICATIONS ──────────── -->
+<section class="section-light" aria-labelledby="pubs-title">
+  <div class="container">
+    <div class="fade-up u-mb-48">
+      <span class="eyebrow">Últimas publicaciones</span>
+      <h2 class="section-heading" id="pubs-title">Análisis &amp; perspectivas.</h2>
+    </div>
+    <div class="pub-cards-grid stagger-grid">
+      <a href="publications-es.html" class="pub-card has-spotlight stagger-item">
+        <div class="pub-card__meta">
+          <span class="pub-card__date">Junio 2026</span>
+          <span class="pub-card__cat">Bancos</span>
+        </div>
+        <p class="pub-card__title">Cómo evaluar su banco privado: un marco práctico para familias.</p>
+        <span class="pub-card__link">Leer el artículo →</span>
+      </a>
+      <a href="publications-es.html" class="pub-card has-spotlight stagger-item">
+        <div class="pub-card__meta">
+          <span class="pub-card__date">Mayo 2026</span>
+          <span class="pub-card__cat">Comisiones</span>
+        </div>
+        <p class="pub-card__title">El coste oculto de las retrocesiones: lo que su banco gana con su cartera.</p>
+        <span class="pub-card__link">Leer el artículo →</span>
+      </a>
+      <a href="publications-es.html" class="pub-card has-spotlight stagger-item">
+        <div class="pub-card__meta">
+          <span class="pub-card__date">Abril 2026</span>
+          <span class="pub-card__cat">Sucesión</span>
+        </div>
+        <p class="pub-card__title">Continuidad bancaria en las sucesiones: lo que deben saber los herederos.</p>
+        <span class="pub-card__link">Leer el artículo →</span>
+      </a>
+    </div>
+    <div class="fade-up u-mt-40">
+      <a href="publications-es.html" class="btn-outline-dark">Todas las publicaciones →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────── -->
+<footer class="footer-bar">
+  <span class="footer-bar__left">IM Wealth Select® | IM Consulting Services SA · Rue de la Cité 1, 1204 Ginebra</span>
+  <div class="footer-bar__right">
+    <a href="mailto:contact@im-wealthselect.ch" class="footer-contact-link">Contáctenos</a>
+    <a href="privacy-es.html" class="footer-bar__link">Política de privacidad</a>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso sobre cookies">
+  <p class="cookie-banner__text"><span>Utilizamos únicamente cookies esenciales — sin publicidad, sin seguimiento.</span> <a href="privacy-es.html">Política de privacidad</a>.</p>
+  <button class="btn-outline-dark btn-sm" id="cookie-accept">Aceptar</button>
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
