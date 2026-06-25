@@ -283,6 +283,7 @@
   if (toolItems.length) {
     toolItems.forEach(item => {
       item.setAttribute('role', 'button');
+      item.setAttribute('tabindex', '0');
       item.setAttribute('aria-expanded', 'false');
 
       const toggle = () => {
@@ -302,6 +303,26 @@
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           toggle();
+        }
+      });
+    });
+  }
+
+  /* ── Approach-card step toggle (index.html) ─── */
+  const approachCards = document.querySelectorAll('.approach-card');
+  if (approachCards.length) {
+    approachCards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        const isOpen = card.classList.contains('is-expanded');
+        approachCards.forEach(el => el.classList.remove('is-expanded'));
+        if (!isOpen) card.classList.add('is-expanded');
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const isOpen = card.classList.contains('is-expanded');
+          approachCards.forEach(el => el.classList.remove('is-expanded'));
+          if (!isOpen) card.classList.add('is-expanded');
         }
       });
     });

@@ -779,6 +779,18 @@ section { padding:80px 0; }
   .tool-item:hover::before { opacity: 0; }
   .tool-item:hover .tool-item__name { color: var(--text-dark); }
   .tool-item:hover .tool-item__desc { max-height: 0; opacity: 0; margin-top: 0; }
+  /* Re-affirm is-expanded after hover resets — same sticky-hover cascade fix as usecase-card */
+  .tool-item.is-expanded {
+    border-color: var(--accent-border);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+  }
+  .tool-item.is-expanded::before { opacity: 1; }
+  .tool-item.is-expanded .tool-item__name { color: var(--accent); }
+  .tool-item.is-expanded .tool-item__desc {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 8px;
+  }
 }
 
 /* ── STEP DETAIL (Approach page) ────────────────── */
@@ -1211,6 +1223,17 @@ a.contact-detail__text:hover { color:var(--accent); }
 .approach-card:hover .approach-card__body {
   color: var(--accent);
 }
+.approach-card.is-expanded {
+  background: radial-gradient(circle at center, var(--accent-dim) 0%, var(--bg-light) 70%);
+  border-color: var(--accent-border);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+.approach-card.is-expanded .approach-card__number,
+.approach-card.is-expanded .approach-card__title,
+.approach-card.is-expanded .approach-card__body {
+  color: var(--accent);
+}
 @media (hover: none) {
   .approach-card:hover {
     background: var(--bg-light);
@@ -1221,6 +1244,12 @@ a.contact-detail__text:hover { color:var(--accent); }
   .approach-card:hover .approach-card__number { color: var(--text-dark-mut); }
   .approach-card:hover .approach-card__title  { color: var(--text-dark); }
   .approach-card:hover .approach-card__body   { color: var(--text-dark-sub); }
+  /* Re-affirm is-expanded after hover resets */
+  .approach-card.is-expanded {
+    border-color: var(--accent-border);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+  }
+  .approach-card.is-expanded .approach-card__body { opacity: 1; max-height: 200px; }
 }
 
 .approach-card__number {
