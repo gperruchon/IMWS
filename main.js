@@ -410,4 +410,42 @@
       if (target) anchorObserver.observe(target);
     });
   }
+
+  /* ── Stepper accordion (Approach page) ──────── */
+  const stepperTriggers = document.querySelectorAll('.stepper__trigger');
+  if (stepperTriggers.length) {
+    const openStep = (trigger) => {
+      const step = trigger.closest('.stepper__step');
+      const panelId = trigger.getAttribute('aria-controls');
+      const panel = panelId ? document.getElementById(panelId) : null;
+      trigger.setAttribute('aria-expanded', 'true');
+      step && step.classList.add('is-open');
+      panel && panel.classList.add('is-open');
+    };
+    const closeStep = (trigger) => {
+      const step = trigger.closest('.stepper__step');
+      const panelId = trigger.getAttribute('aria-controls');
+      const panel = panelId ? document.getElementById(panelId) : null;
+      trigger.setAttribute('aria-expanded', 'false');
+      step && step.classList.remove('is-open');
+      panel && panel.classList.remove('is-open');
+    };
+
+    stepperTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+        stepperTriggers.forEach(t => closeStep(t));
+        if (!isOpen) openStep(trigger);
+      });
+      trigger.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          trigger.click();
+        }
+      });
+    });
+
+    // Open first step by default
+    openStep(stepperTriggers[0]);
+  }
 })();

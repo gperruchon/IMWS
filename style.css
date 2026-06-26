@@ -1858,6 +1858,33 @@ a.contact-detail__text:hover { color:var(--accent); }
   .stepper__cards { grid-template-columns: 1fr 1fr; gap: 12px; }
 }
 
+/* ── STEPPER ACCORDION ───────────────────────── */
+.stepper__panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+              opacity 0.3s ease;
+}
+.stepper__panel.is-open {
+  max-height: 1200px;
+  opacity: 1;
+}
+.stepper__chevron {
+  transition: transform 0.35s ease;
+  flex-shrink: 0;
+}
+.stepper__step.is-open .stepper__chevron {
+  transform: rotate(180deg);
+}
+.stepper__step.is-open .stepper__trigger {
+  color: var(--text-dark);
+}
+.stepper__step.is-open .stepper__num {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ── Step cards label — mobile-only signal above deliverable cards ── */
 .step-cards-label {
   font-size: 0.6875rem;
