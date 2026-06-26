@@ -1885,6 +1885,19 @@ a.contact-detail__text:hover { color:var(--accent); }
   color: var(--accent);
 }
 
+/* ── Minimum fee callout ─────────────────────── */
+.stepper__fees-min {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background: var(--bg-light-alt);
+  border-left: 2px solid var(--accent);
+  padding: 10px 16px;
+  border-radius: 0 6px 6px 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
 /* ── Step cards label — mobile-only signal above deliverable cards ── */
 .step-cards-label {
   font-size: 0.6875rem;
