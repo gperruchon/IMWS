@@ -33,5 +33,5 @@
 /it-privacy                      /it-privacy.html                   301
 
 # Deleted articles → homepage
-/article-retrocessions.html      /                                  301
-/article-mandat-discretionnaire.html /                              301
+/article-retrocessions.html      /index.html                        301
+/article-mandat-discretionnaire.html /index.html                    301
