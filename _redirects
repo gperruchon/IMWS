@@ -1,62 +1,35 @@
-# ── Root redirect: / → French homepage (Swiss market default) ──
-/                       /fr-index.html        302
+# Pretty URLs → canonical .html versions
+/approach                        /approach.html                     301
+/contact                         /contact.html                      301
+/use-cases                       /use-cases.html                    301
+/publications                    /publications.html                 301
+/team                            /team.html                         301
+/privacy                         /privacy.html                      301
 
-# ── Old flat lang files (pre-folder structure) ──
-/index-fr.html          /fr-index.html        301
-/index-de.html          /de-index.html        301
-/index-it.html          /it-index.html        301
-/approach-fr.html       /fr-approach.html     301
-/approach-de.html       /de-approach.html     301
-/approach-it.html       /it-approach.html     301
-/use-cases-fr.html      /fr-use-cases.html    301
-/use-cases-de.html      /de-use-cases.html    301
-/use-cases-it.html      /it-use-cases.html    301
-/publications-fr.html   /fr-publications.html 301
-/publications-de.html   /de-publications.html 301
-/publications-it.html   /it-publications.html 301
-/team-fr.html           /fr-team.html         301
-/team-de.html           /de-team.html         301
-/team-it.html           /it-team.html         301
-/contact-fr.html        /fr-contact.html      301
-/contact-de.html        /de-contact.html      301
-/contact-it.html        /it-contact.html      301
-/privacy-fr.html        /fr-privacy.html      301
-/privacy-de.html        /de-privacy.html      301
-/privacy-it.html        /it-privacy.html      301
+# French versions
+/fr-approach                     /fr-approach.html                  301
+/fr-contact                      /fr-contact.html                   301
+/fr-use-cases                    /fr-use-cases.html                 301
+/fr-publications                 /fr-publications.html              301
+/fr-team                         /fr-team.html                      301
+/fr-privacy                      /fr-privacy.html                   301
 
-# ── Old folder-based URLs ──
-/fr/                    /fr-index.html        301
-/de/                    /de-index.html        301
-/it/                    /it-index.html        301
-/en/                    /index.html           301
-/fr/approach/           /fr-approach.html     301
-/de/approach/           /de-approach.html     301
-/it/approach/           /it-approach.html     301
-/fr/contact/            /fr-contact.html      301
-/de/contact/            /de-contact.html      301
-/it/contact/            /it-contact.html      301
-/fr/privacy/            /fr-privacy.html      301
-/de/privacy/            /de-privacy.html      301
-/it/privacy/            /it-privacy.html      301
-/fr/publications/       /fr-publications.html 301
-/de/publications/       /de-publications.html 301
-/it/publications/       /it-publications.html 301
-/fr/team/               /fr-team.html         301
-/de/team/               /de-team.html         301
-/it/team/               /it-team.html         301
-/fr/use-cases/          /fr-use-cases.html    301
-/de/use-cases/          /de-use-cases.html    301
-/it/use-cases/          /it-use-cases.html    301
-/approach/              /approach.html        301
-/contact/               /contact.html         301
-/privacy/               /privacy.html         301
-/publications/          /publications.html    301
-/team/                  /team.html            301
-/use-cases/             /use-cases.html       301
+# German versions
+/de-approach                     /de-approach.html                  301
+/de-contact                      /de-contact.html                   301
+/de-use-cases                    /de-use-cases.html                 301
+/de-publications                 /de-publications.html              301
+/de-team                         /de-team.html                      301
+/de-privacy                      /de-privacy.html                   301
 
-# ── Deleted articles — permanent redirect to homepage ──
-/article-retrocessions.html                /    301
-/article-mandat-discretionnaire.html       /    301
+# Italian versions
+/it-approach                     /it-approach.html                  301
+/it-contact                      /it-contact.html                   301
+/it-use-cases                    /it-use-cases.html                 301
+/it-publications                 /it-publications.html              301
+/it-team                         /it-team.html                      301
+/it-privacy                      /it-privacy.html                   301
 
-# ── Fallback SPA ──
-/*                      /index.html           200
+# Deleted articles → homepage
+/article-retrocessions.html      /                                  301
+/article-mandat-discretionnaire.html /                              301
