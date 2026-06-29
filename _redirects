@@ -54,5 +54,9 @@
 /team/                  /team.html            301
 /use-cases/             /use-cases.html       301
 
+# ── Deleted articles — permanent redirect to homepage ──
+/article-retrocessions.html                /    301
+/article-mandat-discretionnaire.html       /    301
+
 # ── Fallback SPA ──
 /*                      /index.html           200
