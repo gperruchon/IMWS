@@ -109,10 +109,13 @@
 
 <!-- ── SECTION 1 : HERO ─────────────────────────── -->
 <section class="hero" aria-labelledby="hero-title">
-  <video class="hero__video" autoplay muted loop playsinline webkit-playsinline disablePictureInPicture controlsList="nodownload nofullscreen noremoteplayback" poster="hero-poster.jpg" aria-hidden="true">
+  <video class="hero__video" autoplay muted loop playsinline webkit-playsinline disablePictureInPicture controlsList="nodownload nofullscreen noremoteplayback" poster="hero-poster.webp" aria-hidden="true">
     <source src="hero-video.mp4" type="video/mp4">
   </video>
-  <img class="hero__poster" src="hero-poster.jpg" alt="Two people walking on a mountain ridge overlooking a Swiss lake at dawn" aria-hidden="true">
+  <picture>
+    <source type="image/webp" srcset="hero-poster.webp">
+    <img class="hero__poster" src="hero-poster.jpg" alt="Two people walking on a mountain ridge overlooking a Swiss lake at dawn" aria-hidden="true" width="1274" height="700">
+  </picture>
   <div class="hero__content">
     <h1 class="hero__title h-anim-0" id="hero-title" data-i18n="hero.title">
       Your private bank should be selected,<br> not inherited.
