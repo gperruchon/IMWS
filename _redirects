@@ -1,36 +1,97 @@
 /     /index.html     301!
 
-# Pretty URLs → canonical .html versions
+# EN pretty URLs → .html
 /approach                        /approach.html                     301
 /contact                         /contact.html                      301
 /use-cases                       /use-cases.html                    301
 /publications                    /publications.html                 301
 /team                            /team.html                         301
 /privacy                         /privacy.html                      301
+/article-evaluate-private-bank   /article-evaluate-private-bank.html  301
+/article-rfp-private-bank        /article-rfp-private-bank.html       301
 
-# French versions
-/fr-approach                     /fr-approach.html                  301
-/fr-contact                      /fr-contact.html                   301
-/fr-use-cases                    /fr-use-cases.html                 301
-/fr-publications                 /fr-publications.html              301
-/fr-team                         /fr-team.html                      301
-/fr-privacy                      /fr-privacy.html                   301
+# FR pretty URLs → .html (new structure)
+/fr/approach                     /fr/approach.html                  301
+/fr/contact                      /fr/contact.html                   301
+/fr/use-cases                    /fr/use-cases.html                 301
+/fr/publications                 /fr/publications.html              301
+/fr/team                         /fr/team.html                      301
+/fr/privacy                      /fr/privacy.html                   301
+/fr/article-appel-offres-banque-privee   /fr/article-appel-offres-banque-privee.html   301
+/fr/article-evaluer-banque-privee        /fr/article-evaluer-banque-privee.html        301
 
-# German versions
-/de-approach                     /de-approach.html                  301
-/de-contact                      /de-contact.html                   301
-/de-use-cases                    /de-use-cases.html                 301
-/de-publications                 /de-publications.html              301
-/de-team                         /de-team.html                      301
-/de-privacy                      /de-privacy.html                   301
+# DE pretty URLs → .html (new structure)
+/de/approach                     /de/approach.html                  301
+/de/contact                      /de/contact.html                   301
+/de/use-cases                    /de/use-cases.html                 301
+/de/publications                 /de/publications.html              301
+/de/team                         /de/team.html                      301
+/de/privacy                      /de/privacy.html                   301
+/de/artikel-ausschreibung-privatbank     /de/artikel-ausschreibung-privatbank.html     301
+/de/artikel-privatbank-bewerten          /de/artikel-privatbank-bewerten.html          301
 
-# Italian versions
-/it-approach                     /it-approach.html                  301
-/it-contact                      /it-contact.html                   301
-/it-use-cases                    /it-use-cases.html                 301
-/it-publications                 /it-publications.html              301
-/it-team                         /it-team.html                      301
-/it-privacy                      /it-privacy.html                   301
+# IT pretty URLs → .html (new structure)
+/it/approach                     /it/approach.html                  301
+/it/contact                      /it/contact.html                   301
+/it/use-cases                    /it/use-cases.html                 301
+/it/publications                 /it/publications.html              301
+/it/team                         /it/team.html                      301
+/it/privacy                      /it/privacy.html                   301
+/it/articolo-gara-banca-privata          /it/articolo-gara-banca-privata.html          301
+/it/articolo-valutare-banca-privata      /it/articolo-valutare-banca-privata.html      301
+
+# Legacy flat-file URLs → new folder structure (301 permanent)
+/fr-index.html                   /fr/                               301
+/fr-approach.html                /fr/approach.html                  301
+/fr-contact.html                 /fr/contact.html                   301
+/fr-use-cases.html               /fr/use-cases.html                 301
+/fr-publications.html            /fr/publications.html              301
+/fr-team.html                    /fr/team.html                      301
+/fr-privacy.html                 /fr/privacy.html                   301
+/fr-article-appel-offres-banque-privee.html   /fr/article-appel-offres-banque-privee.html   301
+/fr-article-evaluer-banque-privee.html        /fr/article-evaluer-banque-privee.html        301
+
+/de-index.html                   /de/                               301
+/de-approach.html                /de/approach.html                  301
+/de-contact.html                 /de/contact.html                   301
+/de-use-cases.html               /de/use-cases.html                 301
+/de-publications.html            /de/publications.html              301
+/de-team.html                    /de/team.html                      301
+/de-privacy.html                 /de/privacy.html                   301
+/de-artikel-ausschreibung-privatbank.html     /de/artikel-ausschreibung-privatbank.html     301
+/de-artikel-privatbank-bewerten.html          /de/artikel-privatbank-bewerten.html          301
+
+/it-index.html                   /it/                               301
+/it-approach.html                /it/approach.html                  301
+/it-contact.html                 /it/contact.html                   301
+/it-use-cases.html               /it/use-cases.html                 301
+/it-publications.html            /it/publications.html              301
+/it-team.html                    /it/team.html                      301
+/it-privacy.html                 /it/privacy.html                   301
+/it-articolo-gara-banca-privata.html          /it/articolo-gara-banca-privata.html          301
+/it-articolo-valutare-banca-privata.html      /it/articolo-valutare-banca-privata.html      301
+
+# Legacy pretty slugs (old flat structure)
+/fr-approach                     /fr/approach.html                  301
+/fr-contact                      /fr/contact.html                   301
+/fr-use-cases                    /fr/use-cases.html                 301
+/fr-publications                 /fr/publications.html              301
+/fr-team                         /fr/team.html                      301
+/fr-privacy                      /fr/privacy.html                   301
+
+/de-approach                     /de/approach.html                  301
+/de-contact                      /de/contact.html                   301
+/de-use-cases                    /de/use-cases.html                 301
+/de-publications                 /de/publications.html              301
+/de-team                         /de/team.html                      301
+/de-privacy                      /de/privacy.html                   301
+
+/it-approach                     /it/approach.html                  301
+/it-contact                      /it/contact.html                   301
+/it-use-cases                    /it/use-cases.html                 301
+/it-publications                 /it/publications.html              301
+/it-team                         /it/team.html                      301
+/it-privacy                      /it/privacy.html                   301
 
 # Deleted articles → homepage
 /article-retrocessions.html      /index.html                        301
