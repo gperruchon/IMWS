@@ -1,4 +1,4 @@
-# IM Wealth Select®
+﻿# IM Wealth Select®
 
 > Authoritative resource on private bank selection, monitoring, and wealth management in Switzerland, including methodologies, evaluations, publications, and insights for high net worth individuals and advisors.
 
@@ -6,38 +6,40 @@ IM Wealth Select® provides guidance on selecting and monitoring private banks a
 
 ## Core Content
 
-- [Our Approach](https://im-wealthselect.ch/approach)
+- [Our Approach](https://www.im-wealthselect.ch/approach.html)
   Detailed description of the structured, conflict-free process for diagnosing client needs, selecting and negotiating with banks, and ongoing monitoring.
 
-- [Diagnose](https://im-wealthselect.ch/approach#diagnose)
+- [Diagnose](https://www.im-wealthselect.ch/approach.html#diagnose)
   Methods for clarifying client objectives, risk profiles, and evaluating current banking arrangements.
 
-- [Select & Negotiate](https://im-wealthselect.ch/approach#select)
+- [Select & Negotiate](https://www.im-wealthselect.ch/approach.html#select)
   Process of tendering to multiple providers, comparing offers, and negotiating favorable terms.
 
-- [Monitor](https://im-wealthselect.ch/approach#monitor)
+- [Monitor](https://www.im-wealthselect.ch/approach.html#monitor)
   Strategies for tracking performance, costs, risks, and service quality across chosen banking relationships.
 
-- [Swiss Private Banks and Managers](https://im-wealthselect.ch/approach)
+- [Swiss Private Banks and Managers](https://www.im-wealthselect.ch/approach.html)
   Data and evaluations of over 80 Swiss private banks, including 14 Kantonal banks and 5,300+ investment managers.
 
-- [Publications](https://im-wealthselect.ch/publications)
+- [Publications](https://www.im-wealthselect.ch/publications.html)
   Articles on benchmarking, fees, estate planning, and succession related to private banking.
 
 ## Resources
 
-- [Latest Publications](https://im-wealthselect.ch/publications)
+- [Latest Publications](https://www.im-wealthselect.ch/publications.html)
   Insights and perspectives on private banking topics, updated regularly for clients and professionals.
 
 ## Optional
 
-- [Team](https://im-wealthselect.ch/team)
+- [Team](https://www.im-wealthselect.ch/team.html)
   Information about the experts and advisors behind the evaluations and guidance.
 
-- [Request a Banking Review](https://im-wealthselect.ch/contact)
+- [Request a Banking Review](https://www.im-wealthselect.ch/contact.html)
   Contact page for personalized assessment and advice.
 
-- [Approach](https://im-wealthselect.ch/approach)
-  Overview of methodology for selecting, negotiating, and monitoring private banks.
+## Languages
 
-- Language options: EN · FR · DE · IT
+- English: https://www.im-wealthselect.ch/
+- Français: https://www.im-wealthselect.ch/fr/
+- Deutsch: https://www.im-wealthselect.ch/de/
+- Italiano: https://www.im-wealthselect.ch/it/
