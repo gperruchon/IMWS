@@ -1,5 +1,3 @@
-/     /index.html     301!
-
 # EN pretty URLs → .html
 /approach                        /approach.html                     301
 /contact                         /contact.html                      301
@@ -11,6 +9,7 @@
 /article-rfp-private-bank        /article-rfp-private-bank.html       301
 
 # FR pretty URLs → .html (new structure)
+/fr/      /fr/index.html      200
 /fr/approach                     /fr/approach.html                  301
 /fr/contact                      /fr/contact.html                   301
 /fr/use-cases                    /fr/use-cases.html                 301
@@ -21,6 +20,7 @@
 /fr/article-evaluer-banque-privee        /fr/article-evaluer-banque-privee.html        301
 
 # DE pretty URLs → .html (new structure)
+/de/      /de/index.html      200
 /de/approach                     /de/approach.html                  301
 /de/contact                      /de/contact.html                   301
 /de/use-cases                    /de/use-cases.html                 301
@@ -31,6 +31,7 @@
 /de/artikel-privatbank-bewerten          /de/artikel-privatbank-bewerten.html          301
 
 # IT pretty URLs → .html (new structure)
+/it/      /it/index.html      200
 /it/approach                     /it/approach.html                  301
 /it/contact                      /it/contact.html                   301
 /it/use-cases                    /it/use-cases.html                 301
