@@ -22,22 +22,25 @@
     return '';
   }
 
-  /* Detect current page language from filename prefix */
+  /* Detect current page language from folder prefix */
   function detectPageLang() {
-    var filename = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    if (filename.startsWith('fr-')) return 'FR';
-    if (filename.startsWith('de-')) return 'DE';
-    if (filename.startsWith('it-')) return 'IT';
+    var segments = window.location.pathname.split('/').filter(Boolean);
+    var first = (segments[0] || '').toLowerCase();
+    if (first === 'fr') return 'FR';
+    if (first === 'de') return 'DE';
+    if (first === 'it') return 'IT';
     return 'EN';
   }
 
-  /* Build URL for given lang on current page */
+  /* Build URL for given lang on current page, preserving the page name */
   function urlForLang(lang) {
-    var pathname = window.location.pathname;
-    var filename = pathname.split('/').pop() || 'index.html';
-    var base = filename.replace(/^(fr|de|it)-/, '') || 'index.html';
-    if (lang === 'EN') return base;
-    return lang.toLowerCase() + '-' + base;
+    var segments = window.location.pathname.split('/').filter(Boolean);
+    var first = (segments[0] || '').toLowerCase();
+    var isLangFolder = first === 'fr' || first === 'de' || first === 'it';
+    var page = isLangFolder ? (segments[1] || 'index.html') : (segments[0] || 'index.html');
+
+    if (lang === 'EN') return '/' + page;
+    return '/' + lang.toLowerCase() + '/' + page;
   }
 
   /* Update visible lang label and active states */
