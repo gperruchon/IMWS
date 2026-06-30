@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ── HOME (priority 1.0 · x-default → EN) ── -->
+  <!-- ══ HOME — priority 1.0 · monthly · x-default → EN ══ -->
 
   <url>
     <loc>https://www.im-wealthselect.ch/</loc>
@@ -52,191 +52,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.im-wealthselect.ch/"/>
   </url>
 
-  <!-- ── APPROACH (priority 0.8 · monthly) ── -->
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/approach.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/approach.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/fr/approach.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/approach.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/de/approach.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/approach.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/it/approach.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/approach.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/approach.html"/>
-  </url>
-
-  <!-- ── USE CASES (priority 0.8 · monthly) ── -->
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/use-cases.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/use-cases.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/fr/use-cases.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/use-cases.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/de/use-cases.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/use-cases.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/it/use-cases.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/use-cases.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/use-cases.html"/>
-  </url>
-
-  <!-- ── PUBLICATIONS (priority 0.7 · weekly) ── -->
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/publications.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/fr/publications.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/de/publications.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/it/publications.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/publications.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications.html"/>
-  </url>
-
-  <!-- ── TEAM (priority 0.7 · monthly) ── -->
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/team.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/fr/team.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/de/team.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team.html"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/it/team.html</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team.html"/>
-  </url>
-
-  <!-- ── CONTACT (priority 0.9 · yearly) ── -->
+  <!-- ══ CONTACT — priority 0.9 · yearly ══ -->
 
   <url>
     <loc>https://www.im-wealthselect.ch/contact.html</loc>
@@ -282,7 +98,191 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/contact.html"/>
   </url>
 
-  <!-- ── ARTICLE: Evaluate / Évaluer / Bewerten / Valutare (priority 0.6 · weekly) ── -->
+  <!-- ══ APPROACH — priority 0.8 · monthly ══ -->
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/approach.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/approach.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/fr/approach.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/approach.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/de/approach.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/approach.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/it/approach.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/approach.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/approach.html"/>
+  </url>
+
+  <!-- ══ USE CASES — priority 0.8 · monthly ══ -->
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/use-cases.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/use-cases.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/fr/use-cases.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/use-cases.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/de/use-cases.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/use-cases.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/it/use-cases.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/use-cases.html"/>
+  </url>
+
+  <!-- ══ PUBLICATIONS — priority 0.7 · weekly ══ -->
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/publications.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/fr/publications.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/de/publications.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/it/publications.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications.html"/>
+  </url>
+
+  <!-- ══ TEAM — priority 0.7 · monthly ══ -->
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/team.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/fr/team.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/de/team.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/it/team.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team.html"/>
+  </url>
+
+  <!-- ══ ARTICLE: Évaluer / Evaluate / Bewerten / Valutare — priority 0.6 · weekly ══ -->
 
   <url>
     <loc>https://www.im-wealthselect.ch/article-evaluate-private-bank.html</loc>
@@ -328,7 +328,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/articolo-valutare-banca-privata.html"/>
   </url>
 
-  <!-- ── ARTICLE: RFP / Appel d'offres / Ausschreibung / Gara (priority 0.6 · weekly) ── -->
+  <!-- ══ ARTICLE: RFP / Appel d'offres / Ausschreibung / Gara — priority 0.6 · weekly ══ -->
 
   <url>
     <loc>https://www.im-wealthselect.ch/article-rfp-private-bank.html</loc>
@@ -374,7 +374,7 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/articolo-gara-banca-privata.html"/>
   </url>
 
-  <!-- ── PRIVACY (priority 0.3 · yearly) ── -->
+  <!-- ══ PRIVACY — priority 0.3 · yearly ══ -->
 
   <url>
     <loc>https://www.im-wealthselect.ch/privacy.html</loc>
