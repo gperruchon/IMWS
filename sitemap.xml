@@ -374,6 +374,52 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/articolo-gara-banca-privata.html"/>
   </url>
 
+  <!-- ══ ARTICLE: Private Bank vs IAM / Banque privée vs GFI / Privatbank vs UVV / Banca privata vs GPI — priority 0.6 · weekly ══ -->
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/article-private-bank-vs-independent-manager.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/article-private-bank-vs-independent-manager.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/article-banque-privee-vs-gerant-independant.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/artikel-privatbank-vs-unabhaengiger-vermoegensverwalter.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/articolo-banca-privata-vs-gestore-indipendente.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/fr/article-banque-privee-vs-gerant-independant.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/article-private-bank-vs-independent-manager.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/article-banque-privee-vs-gerant-independant.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/artikel-privatbank-vs-unabhaengiger-vermoegensverwalter.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/articolo-banca-privata-vs-gestore-indipendente.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/de/artikel-privatbank-vs-unabhaengiger-vermoegensverwalter.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/article-private-bank-vs-independent-manager.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/article-banque-privee-vs-gerant-independant.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/artikel-privatbank-vs-unabhaengiger-vermoegensverwalter.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/articolo-banca-privata-vs-gestore-indipendente.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.im-wealthselect.ch/it/articolo-banca-privata-vs-gestore-indipendente.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/article-private-bank-vs-independent-manager.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/article-banque-privee-vs-gerant-independant.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/artikel-privatbank-vs-unabhaengiger-vermoegensverwalter.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/articolo-banca-privata-vs-gestore-indipendente.html"/>
+  </url>
+
   <!-- ══ PRIVACY — priority 0.3 · yearly ══ -->
 
   <url>
