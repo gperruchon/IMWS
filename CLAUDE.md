@@ -78,3 +78,16 @@ Translatable text carries `data-i18n="key"` matching keys in `translations/en.js
 ## Card hover convention
 
 Card hovers only change: border-color, background (radial spotlight), box-shadow, transform. Text color changes via descendant selectors (e.g. `.approach-card:hover .approach-card__title`). Always pair hover rules with an `@media (hover: none)` reset block to disable effects on touch devices.
+
+## Editorial & brand guidelines — apply to every content task
+
+- TONE & COPYWRITING: High-end, premium, and confidential, yet exceptionally clear, direct, and anti-jargon. Completely avoid vague financial terms (e.g., replace "wealth office ecosystem" with "our method," "your interests," or "your wealth"). The copy must be written in flawless, elegant French for the primary version.
+- MAIN OBJECTIVE: Achieve absolute clarity. The opposite of the Zwei Wealth website. A high-net-worth visitor must understand within 10 seconds exactly what we do, who we do it for, and how we are compensated.
+- VISUAL POSITIONING: Ultra-clean, modern luxury, and minimalist layout. Use generous white space and a strict corporate identity structure.
+- PROCESS STRUCTURE: Show our client onboarding in a clear chronological 3-step section (1. Audit / 2. Strategy / 3. Ongoing Supervision). This applies to pages presenting our method (home, approach) — do not insert it into publication articles unless the source content already describes it.
+- CREDIBILITY & TRUST: Highlight total transparency and the complete absence of conflicts of interest (we accept 0% commissions or retrocessions from banks; we are paid purely for our advice).
+- MULTILINGUAL READY: The final site will be localized into 4 languages: French, English, Italian, and German. Layouts must be highly flexible with generous text-box paddings to seamlessly accommodate varying sentence lengths (especially German text expansion) without breaking the design.
+
+### Publications
+
+Never change the substance of an article text supplied by the client (no rewording, no adding or removing ideas). Only HTML structuring (h2/p/ul li/strong) and building an FAQ from facts already present in the text are allowed. Enumerations of 3+ items separated by semicolons inside a single `<p>` must be converted to `<ul><li>`. Always check `style.css` before assuming a class exists or is styled, rather than relying on the HTML alone.
