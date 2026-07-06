@@ -363,6 +363,19 @@
   /* ── Stat counter count-up ───────────────────── */
   const statValues = document.querySelectorAll('.stat-bar__value');
   if (statValues.length) {
+    const pageLang = (document.documentElement.lang || '').toLowerCase();
+    const useSwissThousands = pageLang === 'fr' || pageLang === 'de' || pageLang === 'it';
+    const formatStatNumber = (n) => {
+      if (!useSwissThousands) return n.toLocaleString('en-US');
+      const digits = String(n);
+      let grouped = '';
+      for (let i = 0; i < digits.length; i++) {
+        if (i > 0 && (digits.length - i) % 3 === 0) grouped += "'";
+        grouped += digits.charAt(i);
+      }
+      return grouped;
+    };
+
     const countObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -381,7 +394,7 @@
           const progress = Math.min((now - start) / duration, 1);
           const ease     = 1 - Math.pow(1 - progress, 3);
           const current  = Math.round(ease * target);
-          el.textContent = current.toLocaleString('en-US');
+          el.textContent = formatStatNumber(current);
           if (suffixText) {
             const em = document.createElement('em');
             em.textContent = suffixText;
