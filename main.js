@@ -32,12 +32,31 @@
     return 'EN';
   }
 
+  /* Article filenames differ per language, unlike every other page (approach.html,
+     publications.html, etc. are identical across EN/FR/DE/IT). */
+  var ARTICLE_MAP = [
+    { EN: 'article-evaluate-private-bank.html',              FR: 'article-evaluer-banque-privee.html',
+      DE: 'artikel-privatbank-bewerten.html',                 IT: 'articolo-valutare-banca-privata.html' },
+    { EN: 'article-rfp-private-bank.html',                    FR: 'article-appel-offres-banque-privee.html',
+      DE: 'artikel-ausschreibung-privatbank.html',             IT: 'articolo-gara-banca-privata.html' },
+    { EN: 'article-private-bank-vs-independent-manager.html', FR: 'article-banque-privee-vs-gerant-independant.html',
+      DE: 'artikel-privatbank-vs-unabhaengiger-vermoegensverwalter.html', IT: 'articolo-banca-privata-vs-gestore-indipendente.html' }
+  ];
+
   /* Build URL for given lang on current page, preserving the page name */
   function urlForLang(lang) {
     var segments = window.location.pathname.split('/').filter(Boolean);
     var first = (segments[0] || '').toLowerCase();
     var isLangFolder = first === 'fr' || first === 'de' || first === 'it';
     var page = isLangFolder ? (segments[1] || 'index.html') : (segments[0] || 'index.html');
+
+    for (var i = 0; i < ARTICLE_MAP.length; i++) {
+      var entry = ARTICLE_MAP[i];
+      if (entry.EN === page || entry.FR === page || entry.DE === page || entry.IT === page) {
+        page = entry[lang];
+        break;
+      }
+    }
 
     if (lang === 'EN') return '/' + page;
     return '/' + lang.toLowerCase() + '/' + page;
@@ -58,28 +77,38 @@
   }
 
   var currentLang = detectPageLang();
-  var savedLang   = getCookie('imws_lang');
 
-  if (savedLang && VALID_LANGS.indexOf(savedLang) !== -1) {
-    if (savedLang !== currentLang) {
-      window.location.replace(urlForLang(savedLang));
-      return;
+  /* Auto-detection/redirection only applies to the ambiguous bare domain root.
+     Any other URL (a language folder, or an explicit EN filename) already
+     determines the language via its path — never override that. */
+  if (window.location.pathname === '/') {
+    var savedLang = getCookie('imws_lang');
+
+    if (savedLang && VALID_LANGS.indexOf(savedLang) !== -1) {
+      if (savedLang !== currentLang) {
+        window.location.replace(urlForLang(savedLang));
+        return;
+      }
+      document.addEventListener('DOMContentLoaded', function () { syncLangUI(savedLang); });
+    } else {
+      var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      var detected = 'FR'; /* Default: French (marché suisse) */
+      if (browserLang.startsWith('de'))      detected = 'DE';
+      else if (browserLang.startsWith('it')) detected = 'IT';
+      else if (browserLang.startsWith('en')) detected = 'EN';
+
+      setCookie('imws_lang', detected, 365);
+
+      if (detected !== currentLang) {
+        window.location.replace(urlForLang(detected));
+        return;
+      }
+      document.addEventListener('DOMContentLoaded', function () { syncLangUI(detected); });
     }
-    document.addEventListener('DOMContentLoaded', function () { syncLangUI(savedLang); });
   } else {
-    var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    var detected = 'FR'; /* Default: French (marché suisse) */
-    if (browserLang.startsWith('de'))      detected = 'DE';
-    else if (browserLang.startsWith('it')) detected = 'IT';
-    else if (browserLang.startsWith('en')) detected = 'EN';
-
-    setCookie('imws_lang', detected, 365);
-
-    if (detected !== currentLang) {
-      window.location.replace(urlForLang(detected));
-      return;
-    }
-    document.addEventListener('DOMContentLoaded', function () { syncLangUI(detected); });
+    /* Language already explicit in the URL — just keep the cookie and UI in sync. */
+    setCookie('imws_lang', currentLang, 365);
+    document.addEventListener('DOMContentLoaded', function () { syncLangUI(currentLang); });
   }
 
   /* Wire up lang option clicks to navigate + set cookie */
