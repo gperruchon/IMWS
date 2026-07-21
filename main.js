@@ -164,6 +164,11 @@
         if (res.ok) {
           contactForm.reset();
           openModal();
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-18285689569/7bCCCJ3uhNQcEOH1pY9E'
+            });
+          }
         } else {
           const data = await res.json().catch(() => ({}));
           const msg = (data.errors || []).map(err => err.message).join(', ')
