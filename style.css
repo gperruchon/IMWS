@@ -1039,7 +1039,7 @@ a.contact-detail__text:hover { color:var(--accent); }
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .stat-bar { grid-template-columns: repeat(4, 1fr); }
+  .stat-bar { grid-template-columns: repeat(3, 1fr); }
 }
 
 .stat-bar__item {

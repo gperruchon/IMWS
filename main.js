@@ -397,10 +397,7 @@
   /* ── Stat counter count-up ───────────────────── */
   const statValues = document.querySelectorAll('.stat-bar__value');
   if (statValues.length) {
-    const pageLang = (document.documentElement.lang || '').toLowerCase();
-    const useSwissThousands = pageLang === 'fr' || pageLang === 'de' || pageLang === 'it';
     const formatStatNumber = (n) => {
-      if (!useSwissThousands) return n.toLocaleString('en-US');
       const digits = String(n);
       let grouped = '';
       for (let i = 0; i < digits.length; i++) {
