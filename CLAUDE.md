@@ -47,14 +47,14 @@ Translatable text carries `data-i18n="key"` matching keys in `translations/en.js
 
 ## Design rules — non-negotiable
 
-**Color: green = buttons only.**
-- `--accent` (`#1A6B56`) is used exclusively for CTA buttons, pill backgrounds, checkmark icons, and accent links.
-- **Never use green for body text, headings, eyebrows, or labels.** `--text-dark-mut` (slate gray `#8A8A85`) is the correct color for eyebrows, step numbers, and muted labels.
+**Color: green = buttons + eyebrows.**
+- `--accent` (`#1A6B56`) is used for CTA buttons, pill backgrounds, checkmark icons, accent links, and eyebrows (`.eyebrow`, style.css) — this is the actual production styling, confirmed as intentional.
+- **Never use green for body text or headings.** `--text-dark-mut` (slate gray `#8A8A85`) is the correct color for step numbers and other muted labels (not eyebrows).
 
 **Typography tokens:**
 - Section headings: Georgia/serif, weight 400 — class `.section-heading`
 - Body text: Inter 300–400
-- Eyebrows / step labels: Inter 700, uppercase, `letter-spacing:0.16em`, `color:var(--text-dark-mut)`
+- Eyebrows / step labels: Inter 700, uppercase, `letter-spacing:0.16em`, `color:var(--accent)`
 
 **No dark sections.** All sections are light: white or cream only.
 

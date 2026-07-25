@@ -79,6 +79,7 @@ section { padding:80px 0; }
 }
 .h-anim-0 { opacity:0; animation:fadeUp     0.85s var(--ease) 0.10s forwards; }
 .h-anim-1 { opacity:0; animation:blurReveal 1.0s  var(--ease) 0.40s forwards; }
+.h-anim-2 { opacity:0; animation:fadeUp     0.85s var(--ease) 0.25s forwards; }
 
 .fade-up {
   opacity:0; transform:translateY(28px);
@@ -322,6 +323,9 @@ section { padding:80px 0; }
   text-shadow: 0 2px 10px rgba(0,0,0,0.5);
   line-height: 1.5;
 }
+
+/* Eyebrow — blanc + ombre (override du vert --accent), lisibilité sur toutes les frames de la vidéo */
+.hero__content .eyebrow { color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 
 /* ── PAGE HERO — pages secondaires ─────────────── */
 .page-hero {
@@ -959,7 +963,7 @@ a.contact-detail__text:hover { color:var(--accent); }
 @media (prefers-reduced-motion:reduce) {
   *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
   .fade-up,.stagger-item { opacity:1; transform:none; }
-  .h-anim-0,.h-anim-1   { opacity:1; animation:none; }
+  .h-anim-0,.h-anim-1,.h-anim-2 { opacity:1; animation:none; }
 }
 
 /* ── BR HERO RESPONSIVE ─────────────────────────── */
