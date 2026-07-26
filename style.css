@@ -1974,3 +1974,7 @@ a.contact-detail__text:hover { color:var(--accent); }
   line-height: 1.75;
   max-width: 760px;
 }
+
+#challenge-title + .section-sub {
+  max-width: 720px;
+}
