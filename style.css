@@ -63,6 +63,7 @@ section { padding:80px 0; }
   font-size:0.9375rem; font-weight:300; line-height:1.8;
   max-width:580px; color:var(--text-dark-sub);
   word-break:normal; overflow:visible;
+  text-wrap: pretty;
 }
 @media (max-width:767px) {
   .section-sub { max-width:100%; }
