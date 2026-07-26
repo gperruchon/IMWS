@@ -1948,3 +1948,28 @@ a.contact-detail__text:hover { color:var(--accent); }
 @media (min-width: 768px) {
   .step-cards-label { display: none; }
 }
+
+/* ── ENJEU ── */
+.enjeu-card__stat {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.enjeu-closing {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 0.5px solid var(--border-light);
+}
+
+.enjeu-closing__text {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.75;
+  max-width: 760px;
+}
