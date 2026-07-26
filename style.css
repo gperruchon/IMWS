@@ -378,20 +378,6 @@ section { padding:80px 0; }
   }
 }
 
-/* ── CHALLENGE SECTION ──────────────────────────── */
-.challenge-block { max-width:720px; }
-
-.challenge__statement {
-  font-family:var(--f-serif); font-weight:400;
-  font-size:clamp(1.5rem,3.5vw,2.25rem);
-  color:var(--text-dark); letter-spacing:-0.02em;
-  line-height:1.25; margin-bottom:28px;
-}
-.challenge__body {
-  font-size:0.9375rem; font-weight:300; color:var(--text-dark-sub);
-  line-height:1.85; margin-bottom:20px; max-width:640px;
-}
-
 /* ── APPROCHE — CARTES CLAIRES ──────────────────── */
 .card {
   background:var(--bg-light); border:0.5px solid var(--border-light);
@@ -1112,122 +1098,6 @@ a.contact-detail__text:hover { color:var(--accent); }
   color:var(--text-dark);
 }
 
-/* ── COMPARISON TABLE ── */
-.comparison-table {
-  width: 100%;
-  margin-top: 32px;
-  border-top: 0.5px solid var(--border-light);
-}
-
-.comparison-table__header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: var(--bg-light-alt);
-  border-radius: 10px 10px 0 0;
-  padding: 12px 22px;
-  border-bottom: 0.5px solid var(--border-light);
-}
-
-.comparison-table__head-left {
-  font-family: var(--f-sans);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-  color: var(--text-dark-mut);
-  text-align: center;
-  width: 100%;
-}
-
-.comparison-table__head-right {
-  font-family: var(--f-sans);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-  color: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-
-.comparison-table__row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: none;
-  padding-bottom: 8px;
-}
-
-.comparison-table__left,
-.comparison-table__right {
-  display: flex;
-  align-items: center;
-  padding: 16px 22px;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  transition: background 0.2s var(--ease);
-}
-
-.comparison-table__left {
-  font-style: normal;
-  font-weight: 400;
-  color: var(--text-dark-mut);
-  border-right: 0.5px solid var(--border-light);
-}
-
-.comparison-table__right {
-  background: var(--bg-light);
-  border-radius: 10px;
-  box-shadow: 0 2px 16px var(--accent-dim);
-  font-weight: 500;
-  color: var(--text-dark);
-  margin: 6px 0;
-  position: relative;
-}
-
-.comparison-table__row:hover { background: transparent; }
-.comparison-table__row:hover .comparison-table__left  { background: var(--bg-light-alt); }
-.comparison-table__row:hover .comparison-table__right { background: var(--accent-dim); }
-
-.comparison-table__prefix--right,
-.comparison-table__prefix--left {
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0;
-  line-height: 1;
-}
-
-.comparison-table__prefix--right {
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-right: 12px;
-}
-
-.comparison-table__prefix--left {
-  color: var(--border-light);
-  margin-right: 12px;
-}
-
-@media (max-width: 767px) {
-  .comparison-table__header,
-  .comparison-table__row { grid-template-columns: 1fr; }
-  .comparison-table__head-left,
-  .comparison-table__head-right { padding: 10px 0; }
-  .comparison-table__left {
-    border-right: none;
-    border-bottom: 0.5px solid var(--border-light);
-  }
-  .comparison-table__row {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .comparison-table__right { margin: 4px 0 12px; }
-}
-
 /* ── APPROACH GRID ── */
 .approach-grid {
   display: grid;
@@ -1480,14 +1350,6 @@ a.contact-detail__text:hover { color:var(--accent); }
     text-align: left;
   }
 }
-
-/* ── CHALLENGE SECTION MOBILE HIDE ── */
-@media (max-width: 767px) {
-  .challenge-section {
-    display: none;
-  }
-}
-
 
 /* ── FEE TABLE V2 MOBILE LABELS ── */
 .fee-table-v2__value-label {
@@ -1950,62 +1812,57 @@ a.contact-detail__text:hover { color:var(--accent); }
   .step-cards-label { display: none; }
 }
 
-/* ── ENJEU ── */
-.enjeu-card__stat {
-  display: block;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  letter-spacing: 0.01em;
-  line-height: 1.5;
-  margin-bottom: 14px;
-}
-
-.enjeu-closing {
-  margin-top: 56px;
-  padding-top: 40px;
-  border-top: 0.5px solid var(--border-light);
-}
-
-.enjeu-closing__text {
-  font-size: 1.0625rem;
-  font-weight: 400;
-  color: var(--text-dark);
-  line-height: 1.75;
-  max-width: 760px;
-}
-
 #challenge-title + .section-sub {
   max-width: 720px;
 }
 
-/* Card titles — match .approach-card__title exactly (sans, 600, dark) */
-section:has(#challenge-title) .card__title {
-  font-family: var(--f-sans);
-  font-weight: 600;
-  color: var(--text-dark);
+/* ── VOS ENJEUX ── */
+.enjeux { margin-top: 8px; }
+
+/* Mobile: stacked cards, rail hidden */
+.enjeux__rail { display: none; }
+.enjeux__panels { display: flex; flex-direction: column; gap: 16px; }
+.enjeux__panel {
+  background: var(--bg-light); border: 0.5px solid var(--border-light);
+  border-radius: 12px; padding: 24px;
+}
+.enjeux__panel[hidden] { display: block; } /* mobile: show all panels */
+.enjeux__panel-title {
+  font-family: var(--f-serif); font-weight: 400; font-size: 1.0625rem;
+  color: var(--text-dark); line-height: 1.3; margin-bottom: 12px;
+}
+.enjeux__panel-context {
+  font-size: 0.875rem; font-weight: 300; color: var(--text-dark-sub);
+  line-height: 1.75; margin-bottom: 16px;
+}
+.enjeux__panel-answer {
+  font-size: 0.875rem; font-weight: 500; color: var(--text-dark);
+  line-height: 1.7; padding-left: 14px; border-left: 2px solid var(--accent-light);
 }
 
-/* Hover — same convention as .approach-card: border, radial background, shadow, transform */
-section:has(#challenge-title) .card {
-  transition: border-color 0.4s var(--ease), transform 0.4s var(--ease),
-              box-shadow 0.4s var(--ease), background 0.4s var(--ease);
-}
-section:has(#challenge-title) .card:hover {
-  background: radial-gradient(circle at center, var(--accent-dim) 0%, var(--bg-light) 70%);
-  border-color: var(--accent-border);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
-  transform: translateY(-4px);
-}
-/* Disable the mouse-tracked spotlight in favour of the centered radial above */
-section:has(#challenge-title) .card.has-spotlight::before {
-  display: none;
-}
-@media (hover: none) {
-  section:has(#challenge-title) .card:hover {
-    background: var(--bg-light);
-    border-color: var(--border-light);
-    box-shadow: none;
-    transform: none;
+/* Desktop: focus rail */
+@media (min-width: 768px) {
+  .enjeux { display: grid; grid-template-columns: 38% 1fr; gap: 32px; align-items: start; }
+  .enjeux__rail { display: flex; flex-direction: column; border-top: 0.5px solid var(--border-light); }
+  .enjeux__tab {
+    text-align: left; background: none; border: none;
+    border-bottom: 0.5px solid var(--border-light);
+    border-left: 2px solid transparent;
+    padding: 18px 16px; cursor: pointer;
+    font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.3;
+    color: var(--text-dark-mut);
+    transition: color 0.3s var(--ease), border-color 0.3s var(--ease), background 0.3s var(--ease);
   }
+  .enjeux__tab:hover { color: var(--text-dark); }
+  .enjeux__tab.is-active { color: var(--text-dark); border-left-color: var(--accent); }
+  .enjeux__tab:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+  .enjeux__panels { display: block; }
+  .enjeux__panel { border: none; background: none; border-radius: 0; padding: 4px 0 0; }
+  .enjeux__panel[hidden] { display: none; } /* desktop: only the active panel */
+  .enjeux__panel.is-active { display: block; }
+  .enjeux__panel-title { display: none; } /* the tab already stands in as the title */
+  .enjeux__panel-answer { padding-left: 16px; }
 }
+
+@media (hover: none) { .enjeux__tab:hover { color: var(--text-dark-mut); } }

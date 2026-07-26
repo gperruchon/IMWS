@@ -151,31 +151,46 @@
 <section class="section-light" aria-labelledby="challenge-title">
   <div class="container">
     <div class="fade-up u-mb-48">
-      <span class="eyebrow" data-i18n="challenge.eyebrow">The Challenge</span>
-      <h2 class="section-heading" id="challenge-title" data-i18n="challenge.heading">On what basis do you judge the quality of your wealth management?</h2>
-      <p class="section-sub" data-i18n="challenge.sub">Four key dimensions — yet limited access to complete, comparable information.</p>
+      <span class="eyebrow" data-i18n="challenge.eyebrow">Your Challenges</span>
+      <h2 class="section-heading" id="challenge-title" data-i18n="challenge.heading">A complete access to the market, a unique method to compare it.</h2>
+      <p class="section-sub" data-i18n="challenge.sub">Neither a long-standing relationship nor a recommendation guarantees suitable management.</p>
     </div>
-    <div class="grid-2x2 stagger-grid u-gap-16">
-      <div class="card has-spotlight stagger-item">
-        <h3 class="card__title" data-i18n="challenge.card1.title">A vast, fragmented market</h3>
-        <span class="enjeu-card__stat" data-i18n="challenge.card1.stat">80+ private banks · 14 cantonal banks · 1'300 independent wealth managers</span>
-        <p class="card__body" data-i18n="challenge.card1.body">Providers differ significantly in size, expertise, service model and the type of clientele they serve. Identifying those that genuinely match your profile — then gathering the information needed to assess them — is a first challenge.</p>
+
+    <div class="enjeux fade-up">
+      <div class="enjeux__rail" role="tablist" aria-label="Vos enjeux" aria-orientation="vertical">
+        <button class="enjeux__tab is-active" role="tab" id="enj-tab-1" aria-controls="enj-panel-1" aria-selected="true" tabindex="0" data-i18n="challenge.e1.title">Accessing the market and gathering information</button>
+        <button class="enjeux__tab" role="tab" id="enj-tab-2" aria-controls="enj-panel-2" aria-selected="false" tabindex="-1" data-i18n="challenge.e2.title">Understanding and negotiating the true total cost</button>
+        <button class="enjeux__tab" role="tab" id="enj-tab-3" aria-controls="enj-panel-3" aria-selected="false" tabindex="-1" data-i18n="challenge.e3.title">Assessing management capabilities</button>
+        <button class="enjeux__tab" role="tab" id="enj-tab-4" aria-controls="enj-panel-4" aria-selected="false" tabindex="-1" data-i18n="challenge.e4.title">Judging the quality of service</button>
       </div>
-      <div class="card has-spotlight stagger-item">
-        <h3 class="card__title" data-i18n="challenge.card2.title">Costs that are hard to reconstruct</h3>
-        <p class="card__body" data-i18n="challenge.card2.body">Minimum fees, management and custody fees, transaction costs, margins on foreign exchange or credit lines, additional charges on in-house products, indirect commissions: costs accumulate at several levels. The challenge is to establish the true total cost of the relationship, based on the assets entrusted and the services used.</p>
-      </div>
-      <div class="card has-spotlight stagger-item">
-        <h3 class="card__title" data-i18n="challenge.card3.title">Performance that needs perspective</h3>
-        <p class="card__body" data-i18n="challenge.card3.body">Past performance alone is not enough to judge a manager's quality. You need to separate what stems from currency effects and hedging, strategic allocation, security selection, and the level of risk taken.</p>
-      </div>
-      <div class="card has-spotlight stagger-item">
-        <h3 class="card__title" data-i18n="challenge.card4.title">Service quality rarely assessed</h3>
-        <p class="card__body" data-i18n="challenge.card4.body">E-banking functionality, team availability and stability, quality of advice, access to specialists, credit solutions, clarity of reporting: criteria that matter as much as financial results. They are measured over time, rarely at the point of choice.</p>
+
+      <div class="enjeux__panels">
+        <div class="enjeux__panel is-active" role="tabpanel" id="enj-panel-1" aria-labelledby="enj-tab-1" tabindex="0">
+          <h3 class="enjeux__panel-title" data-i18n="challenge.e1.title">Accessing the market and gathering information</h3>
+          <p class="enjeux__panel-context" data-i18n="challenge.e1.context">The Swiss market has more than 80 private banks, 14 cantonal banks and close to 1'300 independent wealth managers.</p>
+          <p class="enjeux__panel-answer" data-i18n="challenge.e1.answer">We identify the relevant providers, gather the useful information from them, and compare them on consistent criteria.</p>
+        </div>
+        <div class="enjeux__panel" role="tabpanel" id="enj-panel-2" aria-labelledby="enj-tab-2" tabindex="0" hidden>
+          <h3 class="enjeux__panel-title" data-i18n="challenge.e2.title">Understanding and negotiating the true total cost</h3>
+          <p class="enjeux__panel-context" data-i18n="challenge.e2.context">Management, custody and transaction fees, FX margins, charges on in-house funds: calculated on your assets or set as flat minimums, these costs accumulate at several levels and remain difficult to reconstruct.</p>
+          <p class="enjeux__panel-answer" data-i18n="challenge.e2.answer">We reconstruct the true total cost of your banking relationship, compare offers and negotiate terms suited to your situation.</p>
+        </div>
+        <div class="enjeux__panel" role="tabpanel" id="enj-panel-3" aria-labelledby="enj-tab-3" tabindex="0" hidden>
+          <h3 class="enjeux__panel-title" data-i18n="challenge.e3.title">Assessing management capabilities</h3>
+          <p class="enjeux__panel-context" data-i18n="challenge.e3.context">A manager's capabilities are measured by past performance, the level of risk taken, and the quality of the investment process.</p>
+          <p class="enjeux__panel-answer" data-i18n="challenge.e3.answer">We analyse the true sources of performance — allocation, security selection and currency effect — and assess the robustness of the investment process.</p>
+        </div>
+        <div class="enjeux__panel" role="tabpanel" id="enj-panel-4" aria-labelledby="enj-tab-4" tabindex="0" hidden>
+          <h3 class="enjeux__panel-title" data-i18n="challenge.e4.title">Judging the quality of service</h3>
+          <p class="enjeux__panel-context" data-i18n="challenge.e4.context">Team availability and stability, quality of advice, access to specialists, credit solutions, e-banking, clarity of reporting.</p>
+          <p class="enjeux__panel-answer" data-i18n="challenge.e4.answer">We compare each institution's ability to reliably deliver, over time, the services that genuinely matter to you.</p>
+        </div>
       </div>
     </div>
-    <div class="enjeu-closing fade-up">
-      <p class="enjeu-closing__text" data-i18n="challenge.closing">In such a vast and fragmented universe, identifying the relevant providers and assessing them on genuinely consistent terms remains particularly difficult. Our role is to give you access to this universe and to provide an independent, structured and comparable reading of it.</p>
+
+    <p class="challenge__conclusion fade-up" data-i18n="challenge.conclusion">We give you access to the market and bring <em>a rigorous method to compare providers</em>.</p>
+    <div class="fade-up u-mt-40">
+      <a href="contact" class="btn-accent" data-i18n="challenge.cta">Request a banking review →</a>
     </div>
   </div>
 </section>

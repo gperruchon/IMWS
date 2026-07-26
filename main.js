@@ -495,4 +495,33 @@
     // Open first step by default
     openStep(stepperTriggers[0]);
   }
+
+  /* ── Focus rail (Vos enjeux, index.html) ──────── */
+  (function initEnjeux() {
+    var rail = document.querySelector('.enjeux__rail');
+    if (!rail) return;
+    var tabs = Array.prototype.slice.call(rail.querySelectorAll('.enjeux__tab'));
+    var panels = Array.prototype.slice.call(document.querySelectorAll('.enjeux__panel'));
+    function activate(i, focus) {
+      tabs.forEach(function (t, j) {
+        var on = j === i;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        panels[j].classList.toggle('is-active', on);
+        if (on) { panels[j].removeAttribute('hidden'); } else { panels[j].setAttribute('hidden', ''); }
+      });
+      if (focus) tabs[i].focus();
+    }
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { activate(i, false); });
+      tab.addEventListener('keydown', function (e) {
+        var n = tabs.length, k = e.key;
+        if (k === 'ArrowDown' || k === 'ArrowRight') { e.preventDefault(); activate((i + 1) % n, true); }
+        else if (k === 'ArrowUp' || k === 'ArrowLeft') { e.preventDefault(); activate((i - 1 + n) % n, true); }
+        else if (k === 'Home') { e.preventDefault(); activate(0, true); }
+        else if (k === 'End') { e.preventDefault(); activate(n - 1, true); }
+      });
+    });
+  })();
 })();

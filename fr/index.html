@@ -134,31 +134,46 @@
 <section class="section-light" aria-labelledby="challenge-title">
   <div class="container">
     <div class="fade-up u-mb-48">
-      <span class="eyebrow">L'enjeu</span>
-      <h2 class="section-heading" id="challenge-title">Sur quelles bases jugez-vous la qualité de votre gestion de fortune ?</h2>
-      <p class="section-sub">Quatre dimensions clés — mais un accès difficile à une information complète et comparable.</p>
+      <span class="eyebrow">Vos enjeux</span>
+      <h2 class="section-heading" id="challenge-title">Un accès complet au marché, une méthode unique pour le comparer.</h2>
+      <p class="section-sub">Ni une relation historique ni une recommandation ne garantissent une gestion adaptée.</p>
     </div>
-    <div class="grid-2x2 stagger-grid u-gap-16">
-      <div class="card has-spotlight stagger-item">
-        <h3 class="card__title">Un marché vaste et fragmenté</h3>
-        <span class="enjeu-card__stat">80+ banques privées · 14 banques cantonales · 1'300 gérants de fortune indépendants</span>
-        <p class="card__body">Les prestataires diffèrent fortement par leur taille, leurs expertises, leur modèle de service et le type de clientèle qu'ils accompagnent. Identifier ceux qui correspondent réellement à votre profil — puis réunir les informations nécessaires pour les évaluer — constitue une première difficulté.</p>
+
+    <div class="enjeux fade-up">
+      <div class="enjeux__rail" role="tablist" aria-label="Vos enjeux" aria-orientation="vertical">
+        <button class="enjeux__tab is-active" role="tab" id="enj-tab-1" aria-controls="enj-panel-1" aria-selected="true" tabindex="0">Accéder au marché et réunir l'information</button>
+        <button class="enjeux__tab" role="tab" id="enj-tab-2" aria-controls="enj-panel-2" aria-selected="false" tabindex="-1">Comprendre et négocier le coût total réel</button>
+        <button class="enjeux__tab" role="tab" id="enj-tab-3" aria-controls="enj-panel-3" aria-selected="false" tabindex="-1">Évaluer les capacités de gestion</button>
+        <button class="enjeux__tab" role="tab" id="enj-tab-4" aria-controls="enj-panel-4" aria-selected="false" tabindex="-1">Apprécier la qualité de service</button>
       </div>
-      <div class="card has-spotlight stagger-item">
-        <h3 class="card__title">Des coûts difficiles à reconstituer</h3>
-        <p class="card__body">Frais minimums, frais de gestion et de dépôt, coûts de transaction, marges sur les opérations de change ou les lignes de crédit, frais additionnels sur les produits internes, commissions indirectes : les coûts se cumulent à plusieurs niveaux. L'enjeu est d'établir le coût total réel de la relation, selon le patrimoine confié et les services utilisés.</p>
-      </div>
-      <div class="card has-spotlight stagger-item">
-        <h3 class="card__title">Une performance à remettre en perspective</h3>
-        <p class="card__body">Une performance passée ne suffit pas à juger la qualité d'un gérant. Il faut distinguer ce qui relève de l'effet devise et des couvertures de change, de l'allocation stratégique, de la sélection des titres et du niveau de risque pris.</p>
-      </div>
-      <div class="card has-spotlight stagger-item">
-        <h3 class="card__title">Une qualité de service rarement évaluée</h3>
-        <p class="card__body">Fonctionnalités de l'e-banking, disponibilité et stabilité de l'équipe, qualité du conseil, accès aux spécialistes, solutions de crédit, clarté du reporting : autant de critères qui comptent autant que les résultats financiers. Ils se mesurent dans la durée, rarement au moment du choix.</p>
+
+      <div class="enjeux__panels">
+        <div class="enjeux__panel is-active" role="tabpanel" id="enj-panel-1" aria-labelledby="enj-tab-1" tabindex="0">
+          <h3 class="enjeux__panel-title">Accéder au marché et réunir l'information</h3>
+          <p class="enjeux__panel-context">Le marché suisse compte plus de 80 banques privées, 14 banques cantonales et près de 1'300 gérants de fortune indépendants.</p>
+          <p class="enjeux__panel-answer">Nous identifions les prestataires pertinents, recueillons auprès d'eux les informations utiles et les comparons sur des critères homogènes.</p>
+        </div>
+        <div class="enjeux__panel" role="tabpanel" id="enj-panel-2" aria-labelledby="enj-tab-2" tabindex="0" hidden>
+          <h3 class="enjeux__panel-title">Comprendre et négocier le coût total réel</h3>
+          <p class="enjeux__panel-context">Frais de gestion, de dépôt et de transaction, marges de change, frais sur les fonds maison : calculés sur votre patrimoine ou assortis de minimums forfaitaires, ces coûts se cumulent à plusieurs niveaux et restent difficiles à reconstituer.</p>
+          <p class="enjeux__panel-answer">Nous reconstituons le coût total de votre relation bancaire, comparons les offres et négocions des conditions adaptées à votre situation.</p>
+        </div>
+        <div class="enjeux__panel" role="tabpanel" id="enj-panel-3" aria-labelledby="enj-tab-3" tabindex="0" hidden>
+          <h3 class="enjeux__panel-title">Évaluer les capacités de gestion</h3>
+          <p class="enjeux__panel-context">Les capacités d'un gérant se mesurent à ses performances passées, au niveau de risque pris et à la qualité de son processus d'investissement.</p>
+          <p class="enjeux__panel-answer">Nous analysons les véritables sources de performance — allocation, sélection de titres et effet de change — et évaluons la solidité du processus d'investissement.</p>
+        </div>
+        <div class="enjeux__panel" role="tabpanel" id="enj-panel-4" aria-labelledby="enj-tab-4" tabindex="0" hidden>
+          <h3 class="enjeux__panel-title">Apprécier la qualité de service</h3>
+          <p class="enjeux__panel-context">Disponibilité et stabilité de l'équipe, qualité du conseil, accès aux spécialistes, solutions de crédit, e-banking, clarté du reporting.</p>
+          <p class="enjeux__panel-answer">Nous comparons la capacité de chaque établissement à assurer durablement les services qui comptent réellement pour vous.</p>
+        </div>
       </div>
     </div>
-    <div class="enjeu-closing fade-up">
-      <p class="enjeu-closing__text">Dans un univers aussi vaste et fragmenté, identifier les prestataires pertinents et les évaluer sur des bases réellement homogènes reste particulièrement difficile. Notre rôle est de vous donner accès à cet univers et d'en proposer une lecture indépendante, structurée et comparable.</p>
+
+    <p class="challenge__conclusion fade-up">Nous vous donnons accès au marché et vous apportons <em>une méthode rigoureuse pour comparer les prestataires</em>.</p>
+    <div class="fade-up u-mt-40">
+      <a href="contact" class="btn-accent">Demander une revue bancaire →</a>
     </div>
   </div>
 </section>
