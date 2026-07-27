@@ -1833,18 +1833,23 @@ section[aria-labelledby="challenge-title"] .section-sub {
   color: var(--text-dark); line-height: 1.3; margin-bottom: 12px;
 }
 .enjeux__panel-context {
-  font-size: 0.875rem; font-weight: 300; color: var(--text-dark-sub);
-  line-height: 1.75; margin-bottom: 16px;
+  font-family: var(--f-sans);
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: var(--text-dark-sub);
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 .enjeux__panel-answer {
   background: var(--accent-dim);
   border-left: 3px solid var(--accent);
   border-radius: 0 8px 8px 0;
   padding: 16px 18px;
-  font-size: 0.875rem;
+  font-family: var(--f-sans);
+  font-size: 0.9375rem;
   font-weight: 500;
   color: var(--text-dark);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 /* Desktop: focus rail */
