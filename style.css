@@ -1837,8 +1837,14 @@ section[aria-labelledby="challenge-title"] .section-sub {
   line-height: 1.75; margin-bottom: 16px;
 }
 .enjeux__panel-answer {
-  font-size: 0.875rem; font-weight: 500; color: var(--text-dark);
-  line-height: 1.7; padding-left: 14px; border-left: 2px solid var(--accent-light);
+  background: var(--accent-dim);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 16px 18px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.7;
 }
 
 /* Desktop: focus rail */
@@ -1879,7 +1885,6 @@ section[aria-labelledby="challenge-title"] .section-sub {
   .enjeux__panel[hidden] { display: none; } /* desktop: only the active panel */
   .enjeux__panel.is-active { display: block; }
   .enjeux__panel-title { display: none; } /* the tab already stands in as the title */
-  .enjeux__panel-answer { padding-left: 16px; }
 }
 
 @media (hover: none) {
