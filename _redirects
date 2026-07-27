@@ -1,7 +1,17 @@
+# Canonical host — force apex (non-www) to www, in case the Netlify
+# dashboard's primary-domain setting doesn't already handle it.
+https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301!
+
 # FR/DE/IT root rewrite (ambiguous root only)
 /fr/      /fr/index.html      200
 /de/      /de/index.html      200
 /it/      /it/index.html      200
+
+# Strip stray /index.html — the clean folder URL stays the only indexable one
+/index.html        /        301!
+/fr/index.html     /fr/     301!
+/de/index.html     /de/     301!
+/it/index.html     /it/     301!
 
 # .html → pretty URL (force, since Netlify would otherwise serve the .html file directly)
 /approach.html                                                    /approach 301!
