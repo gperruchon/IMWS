@@ -1824,9 +1824,6 @@ section[aria-labelledby="challenge-title"] .section-sub {
   display: none;
 }
 
-.challenge-item {
-  border-bottom: 0.5px solid var(--border-light);
-}
 .challenge-item__row {
   display: flex; flex-direction: column; gap: 12px;
   padding: 20px 0;
@@ -1858,9 +1855,8 @@ section[aria-labelledby="challenge-title"] .section-sub {
 }
 
 @media (min-width: 768px) {
-  .challenge-accordion { border-top: 0.5px solid var(--border-light); }
   .challenge-accordion__cols {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px;
+    display: none; grid-template-columns: 1fr 1fr; gap: 0 32px;
     padding: 16px 0;
     border-bottom: 0.5px solid var(--border-light);
   }
@@ -1900,6 +1896,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
   .challenge-item__detail {
     font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
     color: var(--text-dark-sub); line-height: 1.6;
+    width: calc(50% - 16px);
     margin: 0; padding: 4px 0 20px;
   }
 }
