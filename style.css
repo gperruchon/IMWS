@@ -1922,11 +1922,15 @@ section[aria-labelledby="challenge-title"] .section-sub {
 }
 
 .intro-fo__lead {
+  font-family: var(--f-sans); font-size: 1.0625rem; font-weight: 600;
+  color: var(--text-dark); line-height: 1.6;
+  margin: 0 0 12px; max-width: 80ch;
+}
+.intro-fo__lead-body {
   font-family: var(--f-sans); font-size: 1.0625rem; font-weight: 300;
   color: var(--text-dark); line-height: 1.6;
   margin: 0 0 32px; max-width: 80ch;
 }
-.intro-fo__lead strong { font-weight: 600; }
 
 .intro-fo__independence {
   display: flex; flex-wrap: wrap; align-items: baseline; gap: 0;
