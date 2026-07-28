@@ -138,34 +138,69 @@
       <p class="section-sub">Informationen, schwer zugänglich und komplex auszuwerten.</p>
     </div>
 
-    <div class="enjeux fade-up">
-      <div class="enjeux__rail" role="tablist" aria-label="Ihre Herausforderungen" aria-orientation="vertical">
-        <button class="enjeux__tab is-active" role="tab" id="enj-tab-1" aria-controls="enj-panel-1" aria-selected="true" tabindex="0">Ein grosser, segmentierter Markt</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-2" aria-controls="enj-panel-2" aria-selected="false" tabindex="-1">Unübersichtliche Kosten</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-3" aria-controls="enj-panel-3" aria-selected="false" tabindex="-1">Schwer vergleichbare Anlagekompetenz</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-4" aria-controls="enj-panel-4" aria-selected="false" tabindex="-1">Eine selten gemessene Servicequalität</button>
+    <div class="challenge-accordion fade-up">
+      <div class="challenge-accordion__cols" aria-hidden="true">
+        <span>Die Ausgangslage</span>
+        <span>Unsere Antwort</span>
       </div>
 
-      <div class="enjeux__panels">
-        <div class="enjeux__panel is-active" role="tabpanel" id="enj-panel-1" aria-labelledby="enj-tab-1" tabindex="0">
-          <h3 class="enjeux__panel-title">Ein grosser, segmentierter Markt</h3>
-          <p class="enjeux__panel-context">Über 80 Privatbanken, 14 Kantonalbanken und nahezu 1'300 unabhängige Vermögensverwalter bilden den Schweizer Markt.</p>
-          <p class="enjeux__panel-answer">Wir identifizieren die Gesellschaften, die am besten zu Ihrem Profil passen, und konsultieren sie im Rahmen einer Ausschreibung.</p>
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title">Ein grosser, segmentierter Markt</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-1"
+                    aria-expanded="false" aria-label="Problemdetails anzeigen"
+                    data-label-show="Problemdetails anzeigen" data-label-hide="Problemdetails ausblenden"></button>
+          </div>
+          <p class="challenge-item__answer">Wir identifizieren die Gesellschaften, die am besten zu Ihrem Profil passen, und konsultieren sie im Rahmen einer Ausschreibung.</p>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-2" aria-labelledby="enj-tab-2" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title">Unübersichtliche Kosten</h3>
-          <p class="enjeux__panel-context">Verwaltungs-, Depot- und Transaktionsgebühren, Wechselkursmargen, Kosten für hauseigene Produkte, mitunter mit pauschalen Mindestbeträgen: lauter Komponenten, die die tatsächlichen Kosten schwer erkennbar machen.</p>
-          <p class="enjeux__panel-answer">Wir rekonstruieren die Gesamtkosten anhand Ihres Profils und Ihrer Vermögenswerte und verhandeln anschliessend die passendsten Konditionen.</p>
+        <div class="challenge-item__panel" id="challenge-detail-1" role="region">
+          <div><p class="challenge-item__detail">Über 80 Privatbanken, 14 Kantonalbanken und nahezu 1'300 unabhängige Vermögensverwalter bilden den Schweizer Markt.</p></div>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-3" aria-labelledby="enj-tab-3" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title">Schwer vergleichbare Anlagekompetenz</h3>
-          <p class="enjeux__panel-context">Die Performance hängt von zahlreichen Faktoren ab — Anlageuniversum und -prozess, strategische Allokation, aktive oder passive Verwaltung, Titelauswahl, Währungseffekte… —, deren jeweiliger Einfluss sich nur schwer isolieren lässt.</p>
-          <p class="enjeux__panel-answer">Wir analysieren die tatsächlichen Performancequellen, risikobereinigt, und beurteilen die Solidität des Anlageprozesses und des Teams.</p>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title">Unübersichtliche Kosten</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-2"
+                    aria-expanded="false" aria-label="Problemdetails anzeigen"
+                    data-label-show="Problemdetails anzeigen" data-label-hide="Problemdetails ausblenden"></button>
+          </div>
+          <p class="challenge-item__answer">Wir rekonstruieren die Gesamtkosten anhand Ihres Profils und Ihrer Vermögenswerte und verhandeln anschliessend die passendsten Konditionen.</p>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-4" aria-labelledby="enj-tab-4" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title">Eine selten gemessene Servicequalität</h3>
-          <p class="enjeux__panel-context">Über die rein finanziellen Kriterien hinaus zählen weitere Aspekte ebenso stark: Verfügbarkeit und Stabilität des Teams, Qualität der Beratung, Zugang zu Spezialisten, Kreditlösungen, E-Banking-Funktionalitäten, Klarheit des Reportings.</p>
-          <p class="enjeux__panel-answer">Wir vergleichen die Fähigkeit jedes Instituts, die Dienstleistungen, die für Sie wirklich zählen, dauerhaft zu gewährleisten.</p>
+        <div class="challenge-item__panel" id="challenge-detail-2" role="region">
+          <div><p class="challenge-item__detail">Verwaltungs-, Depot- und Transaktionsgebühren, Wechselkursmargen, Kosten für hauseigene Produkte, mitunter mit pauschalen Mindestbeträgen: lauter Komponenten, die die tatsächlichen Kosten schwer erkennbar machen.</p></div>
+        </div>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title">Schwer vergleichbare Anlagekompetenz</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-3"
+                    aria-expanded="false" aria-label="Problemdetails anzeigen"
+                    data-label-show="Problemdetails anzeigen" data-label-hide="Problemdetails ausblenden"></button>
+          </div>
+          <p class="challenge-item__answer">Wir analysieren die tatsächlichen Performancequellen, risikobereinigt, und beurteilen die Solidität des Anlageprozesses und des Teams.</p>
+        </div>
+        <div class="challenge-item__panel" id="challenge-detail-3" role="region">
+          <div><p class="challenge-item__detail">Die Performance hängt von zahlreichen Faktoren ab — Anlageuniversum und -prozess, strategische Allokation, aktive oder passive Verwaltung, Titelauswahl, Währungseffekte… —, deren jeweiliger Einfluss sich nur schwer isolieren lässt.</p></div>
+        </div>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title">Eine selten gemessene Servicequalität</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-4"
+                    aria-expanded="false" aria-label="Problemdetails anzeigen"
+                    data-label-show="Problemdetails anzeigen" data-label-hide="Problemdetails ausblenden"></button>
+          </div>
+          <p class="challenge-item__answer">Wir vergleichen die Fähigkeit jedes Instituts, die Dienstleistungen, die für Sie wirklich zählen, dauerhaft zu gewährleisten.</p>
+        </div>
+        <div class="challenge-item__panel" id="challenge-detail-4" role="region">
+          <div><p class="challenge-item__detail">Über die rein finanziellen Kriterien hinaus zählen weitere Aspekte ebenso stark: Verfügbarkeit und Stabilität des Teams, Qualität der Beratung, Zugang zu Spezialisten, Kreditlösungen, E-Banking-Funktionalitäten, Klarheit des Reportings.</p></div>
         </div>
       </div>
     </div>

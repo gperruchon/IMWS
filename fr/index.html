@@ -139,34 +139,69 @@
       <p class="section-sub">Informations difficiles d'accès, et complexes à analyser.</p>
     </div>
 
-    <div class="enjeux fade-up">
-      <div class="enjeux__rail" role="tablist" aria-label="Vos enjeux" aria-orientation="vertical">
-        <button class="enjeux__tab is-active" role="tab" id="enj-tab-1" aria-controls="enj-panel-1" aria-selected="true" tabindex="0">Un marché vaste et segmenté</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-2" aria-controls="enj-panel-2" aria-selected="false" tabindex="-1">Une tarification peu lisible</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-3" aria-controls="enj-panel-3" aria-selected="false" tabindex="-1">Des compétences d'investissement difficilement comparables</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-4" aria-controls="enj-panel-4" aria-selected="false" tabindex="-1">Une qualité de service rarement mesurée</button>
+    <div class="challenge-accordion fade-up">
+      <div class="challenge-accordion__cols" aria-hidden="true">
+        <span>Le constat</span>
+        <span>Notre réponse</span>
       </div>
 
-      <div class="enjeux__panels">
-        <div class="enjeux__panel is-active" role="tabpanel" id="enj-panel-1" aria-labelledby="enj-tab-1" tabindex="0">
-          <h3 class="enjeux__panel-title">Un marché vaste et segmenté</h3>
-          <p class="enjeux__panel-context">Plus de 80 banques privées, 14 banques cantonales et près de 1'300 gérants de fortune indépendants composent le marché suisse.</p>
-          <p class="enjeux__panel-answer">Nous identifions les sociétés les plus adaptées à votre profil et les consultons dans le cadre d'un appel d'offres.</p>
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title">Un marché vaste et segmenté</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-1"
+                    aria-expanded="false" aria-label="Voir le détail du problème"
+                    data-label-show="Voir le détail du problème" data-label-hide="Masquer le détail du problème"></button>
+          </div>
+          <p class="challenge-item__answer">Nous identifions les sociétés les plus adaptées à votre profil et les consultons dans le cadre d'un appel d'offres.</p>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-2" aria-labelledby="enj-tab-2" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title">Une tarification peu lisible</h3>
-          <p class="enjeux__panel-context">Frais de gestion, de dépôt et de transaction, marges de change, frais sur les produits maison, parfois assortis de minimums forfaitaires : autant de composantes qui rendent le coût réel difficile à identifier.</p>
-          <p class="enjeux__panel-answer">Nous reconstituons le coût total en fonction de votre profil et de vos encours, puis négocions les conditions les plus adaptées.</p>
+        <div class="challenge-item__panel" id="challenge-detail-1" role="region">
+          <div><p class="challenge-item__detail">Plus de 80 banques privées, 14 banques cantonales et près de 1'300 gérants de fortune indépendants composent le marché suisse.</p></div>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-3" aria-labelledby="enj-tab-3" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title">Des compétences d'investissement difficilement comparables</h3>
-          <p class="enjeux__panel-context">La performance dépend de nombreux facteurs — univers et processus d'investissement, allocation stratégique, gestion active ou passive, sélection des titres, effets de change… — dont l'impact respectif reste difficile à isoler.</p>
-          <p class="enjeux__panel-answer">Nous analysons les véritables sources de performance, ajustées du risque, et nous évaluons la solidité du processus d'investissement et de l'équipe.</p>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title">Une tarification peu lisible</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-2"
+                    aria-expanded="false" aria-label="Voir le détail du problème"
+                    data-label-show="Voir le détail du problème" data-label-hide="Masquer le détail du problème"></button>
+          </div>
+          <p class="challenge-item__answer">Nous reconstituons le coût total en fonction de votre profil et de vos encours, puis négocions les conditions les plus adaptées.</p>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-4" aria-labelledby="enj-tab-4" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title">Une qualité de service rarement mesurée</h3>
-          <p class="enjeux__panel-context">Au-delà des seuls critères financiers, d'autres aspects comptent tout autant : disponibilité et stabilité de l'équipe, qualité du conseil, accès aux spécialistes, solutions de crédit, fonctionnalités de l'e-banking, clarté du reporting.</p>
-          <p class="enjeux__panel-answer">Nous comparons la capacité de chaque établissement à assurer durablement les services qui comptent réellement pour vous.</p>
+        <div class="challenge-item__panel" id="challenge-detail-2" role="region">
+          <div><p class="challenge-item__detail">Frais de gestion, de dépôt et de transaction, marges de change, frais sur les produits maison, parfois assortis de minimums forfaitaires : autant de composantes qui rendent le coût réel difficile à identifier.</p></div>
+        </div>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title">Des compétences d'investissement difficilement comparables</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-3"
+                    aria-expanded="false" aria-label="Voir le détail du problème"
+                    data-label-show="Voir le détail du problème" data-label-hide="Masquer le détail du problème"></button>
+          </div>
+          <p class="challenge-item__answer">Nous analysons les véritables sources de performance, ajustées du risque, et nous évaluons la solidité du processus d'investissement et de l'équipe.</p>
+        </div>
+        <div class="challenge-item__panel" id="challenge-detail-3" role="region">
+          <div><p class="challenge-item__detail">La performance dépend de nombreux facteurs — univers et processus d'investissement, allocation stratégique, gestion active ou passive, sélection des titres, effets de change… — dont l'impact respectif reste difficile à isoler.</p></div>
+        </div>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title">Une qualité de service rarement mesurée</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-4"
+                    aria-expanded="false" aria-label="Voir le détail du problème"
+                    data-label-show="Voir le détail du problème" data-label-hide="Masquer le détail du problème"></button>
+          </div>
+          <p class="challenge-item__answer">Nous comparons la capacité de chaque établissement à assurer durablement les services qui comptent réellement pour vous.</p>
+        </div>
+        <div class="challenge-item__panel" id="challenge-detail-4" role="region">
+          <div><p class="challenge-item__detail">Au-delà des seuls critères financiers, d'autres aspects comptent tout autant : disponibilité et stabilité de l'équipe, qualité du conseil, accès aux spécialistes, solutions de crédit, fonctionnalités de l'e-banking, clarté du reporting.</p></div>
         </div>
       </div>
     </div>

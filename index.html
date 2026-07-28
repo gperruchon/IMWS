@@ -156,34 +156,69 @@
       <p class="section-sub" data-i18n="challenge.sub">Information hard to access, and complex to analyse.</p>
     </div>
 
-    <div class="enjeux fade-up">
-      <div class="enjeux__rail" role="tablist" aria-label="Vos enjeux" aria-orientation="vertical">
-        <button class="enjeux__tab is-active" role="tab" id="enj-tab-1" aria-controls="enj-panel-1" aria-selected="true" tabindex="0" data-i18n="challenge.e1.title">A vast, segmented market</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-2" aria-controls="enj-panel-2" aria-selected="false" tabindex="-1" data-i18n="challenge.e2.title">Unclear pricing</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-3" aria-controls="enj-panel-3" aria-selected="false" tabindex="-1" data-i18n="challenge.e3.title">Investment skills that are hard to compare</button>
-        <button class="enjeux__tab" role="tab" id="enj-tab-4" aria-controls="enj-panel-4" aria-selected="false" tabindex="-1" data-i18n="challenge.e4.title">Service quality that is rarely measured</button>
+    <div class="challenge-accordion fade-up">
+      <div class="challenge-accordion__cols" aria-hidden="true">
+        <span data-i18n="challenge.col_situation">The situation</span>
+        <span data-i18n="challenge.col_answer">Our response</span>
       </div>
 
-      <div class="enjeux__panels">
-        <div class="enjeux__panel is-active" role="tabpanel" id="enj-panel-1" aria-labelledby="enj-tab-1" tabindex="0">
-          <h3 class="enjeux__panel-title" data-i18n="challenge.e1.title">A vast, segmented market</h3>
-          <p class="enjeux__panel-context" data-i18n="challenge.e1.context">More than 80 private banks, 14 cantonal banks and nearly 1'300 independent wealth managers make up the Swiss market.</p>
-          <p class="enjeux__panel-answer" data-i18n="challenge.e1.answer">We identify the firms best suited to your profile and consult them through a request for proposals.</p>
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title" data-i18n="challenge.e1.title">A vast, segmented market</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-1"
+                    aria-expanded="false" aria-label="Show problem detail"
+                    data-label-show="Show problem detail" data-label-hide="Hide problem detail"></button>
+          </div>
+          <p class="challenge-item__answer" data-i18n="challenge.e1.answer">We identify the firms best suited to your profile and consult them through a request for proposals.</p>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-2" aria-labelledby="enj-tab-2" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title" data-i18n="challenge.e2.title">Unclear pricing</h3>
-          <p class="enjeux__panel-context" data-i18n="challenge.e2.context">Management, custody and transaction fees, currency-exchange margins, in-house product charges, sometimes with flat minimums: so many components that make the real cost hard to pin down.</p>
-          <p class="enjeux__panel-answer" data-i18n="challenge.e2.answer">We reconstruct the total cost according to your profile and assets, then negotiate the most suitable terms.</p>
+        <div class="challenge-item__panel" id="challenge-detail-1" role="region">
+          <div><p class="challenge-item__detail" data-i18n="challenge.e1.context">More than 80 private banks, 14 cantonal banks and nearly 1'300 independent wealth managers make up the Swiss market.</p></div>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-3" aria-labelledby="enj-tab-3" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title" data-i18n="challenge.e3.title">Investment skills that are hard to compare</h3>
-          <p class="enjeux__panel-context" data-i18n="challenge.e3.context">Performance depends on many factors — investment universe and process, strategic allocation, active or passive management, security selection, currency effects… — whose respective impact is hard to isolate.</p>
-          <p class="enjeux__panel-answer" data-i18n="challenge.e3.answer">We analyse the true sources of performance, adjusted for risk, and assess the strength of the investment process and the team.</p>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title" data-i18n="challenge.e2.title">Unclear pricing</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-2"
+                    aria-expanded="false" aria-label="Show problem detail"
+                    data-label-show="Show problem detail" data-label-hide="Hide problem detail"></button>
+          </div>
+          <p class="challenge-item__answer" data-i18n="challenge.e2.answer">We reconstruct the total cost according to your profile and assets, then negotiate the most suitable terms.</p>
         </div>
-        <div class="enjeux__panel" role="tabpanel" id="enj-panel-4" aria-labelledby="enj-tab-4" tabindex="0" hidden>
-          <h3 class="enjeux__panel-title" data-i18n="challenge.e4.title">Service quality that is rarely measured</h3>
-          <p class="enjeux__panel-context" data-i18n="challenge.e4.context">Beyond financial criteria alone, other aspects matter just as much: the team's availability and stability, quality of advice, access to specialists, credit solutions, e-banking functionality, clarity of reporting.</p>
-          <p class="enjeux__panel-answer" data-i18n="challenge.e4.answer">We compare each institution's ability to sustain, over time, the services that truly matter to you.</p>
+        <div class="challenge-item__panel" id="challenge-detail-2" role="region">
+          <div><p class="challenge-item__detail" data-i18n="challenge.e2.context">Management, custody and transaction fees, currency-exchange margins, in-house product charges, sometimes with flat minimums: so many components that make the real cost hard to pin down.</p></div>
+        </div>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title" data-i18n="challenge.e3.title">Investment skills that are hard to compare</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-3"
+                    aria-expanded="false" aria-label="Show problem detail"
+                    data-label-show="Show problem detail" data-label-hide="Hide problem detail"></button>
+          </div>
+          <p class="challenge-item__answer" data-i18n="challenge.e3.answer">We analyse the true sources of performance, adjusted for risk, and assess the strength of the investment process and the team.</p>
+        </div>
+        <div class="challenge-item__panel" id="challenge-detail-3" role="region">
+          <div><p class="challenge-item__detail" data-i18n="challenge.e3.context">Performance depends on many factors — investment universe and process, strategic allocation, active or passive management, security selection, currency effects… — whose respective impact is hard to isolate.</p></div>
+        </div>
+      </div>
+
+      <div class="challenge-item">
+        <div class="challenge-item__row">
+          <div class="challenge-item__problem">
+            <p class="challenge-item__title" data-i18n="challenge.e4.title">Service quality that is rarely measured</p>
+            <button class="challenge-item__toggle" type="button" aria-controls="challenge-detail-4"
+                    aria-expanded="false" aria-label="Show problem detail"
+                    data-label-show="Show problem detail" data-label-hide="Hide problem detail"></button>
+          </div>
+          <p class="challenge-item__answer" data-i18n="challenge.e4.answer">We compare each institution's ability to sustain, over time, the services that truly matter to you.</p>
+        </div>
+        <div class="challenge-item__panel" id="challenge-detail-4" role="region">
+          <div><p class="challenge-item__detail" data-i18n="challenge.e4.context">Beyond financial criteria alone, other aspects matter just as much: the team's availability and stability, quality of advice, access to specialists, credit solutions, e-banking functionality, clarity of reporting.</p></div>
         </div>
       </div>
     </div>
