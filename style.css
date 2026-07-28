@@ -1828,7 +1828,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
   display: flex; flex-direction: column; gap: 12px;
   padding: 20px 0;
 }
-.challenge-item__problem {
+.challenge-item__problem-head {
   display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
 }
 .challenge-item__title {
@@ -1868,7 +1868,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
 
   .challenge-item__row {
     flex-direction: row; align-items: flex-start; gap: 0 32px;
-    padding: 24px 0;
+    padding: 24px 0 12px;
   }
   .challenge-item__problem { flex: 1; }
   .challenge-item__answer { flex: 1; }
@@ -1896,8 +1896,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
   .challenge-item__detail {
     font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
     color: var(--text-dark-sub); line-height: 1.6;
-    width: calc(50% - 16px);
-    margin: 0; padding: 4px 0 20px;
+    margin: 0; padding: 0 0 8px;
   }
 }
 
