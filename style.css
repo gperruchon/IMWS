@@ -1925,12 +1925,16 @@ section[aria-labelledby="challenge-title"] .section-sub {
 .intro-fo__lead strong { font-weight: 600; }
 
 .intro-fo__independence {
-  display: grid; grid-template-columns: 1fr; gap: 14px;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0;
   margin: 0 0 16px;
 }
 .intro-fo__ind {
   font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 500;
   color: var(--text-dark); line-height: 1.4; margin: 0;
+  white-space: nowrap;
+}
+.intro-fo__ind:not(:last-child)::after {
+  content: '|'; color: var(--text-dark-mut); margin: 0 0.6em;
 }
 .intro-fo__ind strong { color: var(--accent); font-weight: 700; }
 
@@ -1940,10 +1944,3 @@ section[aria-labelledby="challenge-title"] .section-sub {
   margin: 0 0 32px; max-width: 80ch;
 }
 
-@media (min-width: 768px) {
-  .intro-fo__independence { grid-template-columns: repeat(3, 1fr); gap: 0; }
-  .intro-fo__ind { padding-right: 24px; }
-  .intro-fo__ind + .intro-fo__ind {
-    padding-left: 24px; border-left: 0.5px solid var(--accent-border);
-  }
-}
