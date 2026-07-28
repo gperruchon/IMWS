@@ -1911,6 +1911,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
   margin: 0 0 32px; padding: 0; list-style: none;
 }
 .intro-fo__criteria-item {
+  background: var(--bg-light);
   border: 0.5px solid var(--border-light); border-radius: 999px;
   padding: 6px 15px;
   font-family: var(--f-sans); font-size: 0.85rem; color: var(--text-dark);
@@ -1919,15 +1920,13 @@ section[aria-labelledby="challenge-title"] .section-sub {
 .intro-fo__lead {
   font-family: var(--f-sans); font-size: 1.0625rem; font-weight: 300;
   color: var(--text-dark); line-height: 1.6;
-  margin: 0 0 32px; max-width: 62ch;
+  margin: 0 0 32px; max-width: 80ch;
 }
 .intro-fo__lead strong { font-weight: 600; }
 
 .intro-fo__independence {
   display: grid; grid-template-columns: 1fr; gap: 14px;
-  background: var(--accent-dim); border-left: 3px solid var(--accent);
-  border-radius: 0 10px 10px 0;
-  padding: 20px 24px; margin: 0 0 16px;
+  margin: 0 0 16px;
 }
 .intro-fo__ind {
   font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 500;
@@ -1938,7 +1937,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
 .intro-fo__note {
   font-family: var(--f-sans); font-size: 0.8125rem; font-weight: 300;
   color: var(--text-dark-mut); line-height: 1.55;
-  margin: 0 0 32px; max-width: 62ch;
+  margin: 0 0 32px; max-width: 80ch;
 }
 
 @media (min-width: 768px) {
