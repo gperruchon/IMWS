@@ -115,6 +115,10 @@ section { padding:80px 0; }
 .btn-accent:hover  { opacity:0.86; }
 .btn-accent:active { transform:scale(0.98); }
 
+@media (max-width:480px) {
+  .btn-accent { white-space:normal; text-align:center; }
+}
+
 .btn-outline-dark {
   display:inline-flex; align-items:center;
   background:transparent; color:var(--text-dark);
@@ -1937,6 +1941,10 @@ section[aria-labelledby="challenge-title"] .section-sub {
   content: '|'; color: var(--text-dark-mut); margin: 0 0.6em;
 }
 .intro-fo__ind strong { color: var(--accent); font-weight: 700; }
+
+@media (max-width: 480px) {
+  .intro-fo__ind { white-space: normal; }
+}
 
 .intro-fo__note {
   font-family: var(--f-sans); font-size: 0.8125rem; font-weight: 300;
