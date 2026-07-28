@@ -2,12 +2,6 @@
 # dashboard's primary-domain setting doesn't already handle it.
 https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301!
 
-# Force trailing slash on language roots — avoids duplicate 200s (/de vs /de/)
-# and keeps relative links (href="contact") resolving inside the language folder
-/fr    /fr/    301!
-/de    /de/    301!
-/it    /it/    301!
-
 # FR/DE/IT root rewrite (ambiguous root only)
 /fr/      /fr/index.html      200
 /de/      /de/index.html      200
