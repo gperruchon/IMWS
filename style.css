@@ -1951,8 +1951,9 @@ section[aria-labelledby="challenge-title"] .section-sub {
 }
 
 .intro-fo__conversion {
-  font-family: var(--f-sans); font-size: 1.125rem; font-weight: 700;
+  font-family: var(--f-sans); font-size: 1.125rem; font-weight: 400;
   color: var(--text-dark); line-height: 1.5;
   margin: 0 0 32px; max-width: 80ch;
 }
+.intro-fo__conversion strong { font-weight: 700; }
 
