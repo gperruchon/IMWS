@@ -1960,7 +1960,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
 /* ── BANNER QUOTE ── */
 .banner-quote {
   background: var(--bg-light-alt);
-  padding: 48px 0;
+  padding: 24px 0 48px;
 }
 .banner-quote__inner {
   max-width: 1140px;
@@ -1990,7 +1990,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
 }
 
 @media (max-width: 640px) {
-  .banner-quote { padding: 32px 0; }
+  .banner-quote { padding: 16px 0 32px; }
   .banner-quote__text { font-size: 1.4375rem; }
 }
 
