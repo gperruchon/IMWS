@@ -1958,9 +1958,18 @@ section[aria-labelledby="challenge-title"] .section-sub {
 .intro-fo__conversion strong { font-weight: 700; }
 
 /* ── BANNER QUOTE ── */
+/* Reduce trailing whitespace from the Family Office Intro section above the quote (scoped — not the global `section` rule, to avoid affecting other sections) */
+section[aria-labelledby="intro-title"] { padding-bottom: 32px; }
+@media (min-width: 768px) {
+  section[aria-labelledby="intro-title"] { padding-bottom: 48px; }
+}
+
 .banner-quote {
   background: var(--bg-light-alt);
-  padding: 24px 0 48px;
+  padding: 24px 0 72px;
+}
+@media (min-width: 768px) {
+  .banner-quote { padding: 48px 0 72px; }
 }
 .banner-quote__inner {
   max-width: 1140px;
@@ -1990,7 +1999,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
 }
 
 @media (max-width: 640px) {
-  .banner-quote { padding: 16px 0 32px; }
+  .banner-quote { padding: 16px 0 48px; }
   .banner-quote__text { font-size: 1.4375rem; }
 }
 
