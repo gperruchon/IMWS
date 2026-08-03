@@ -1848,14 +1848,35 @@ section[aria-labelledby="challenge-title"] .section-sub {
   color: var(--text-dark); line-height: 1.6; margin: 0;
 }
 
-/* Bouton "+" — desktop only */
+/* Bouton "+" — présent à toutes les tailles : l'accordéon est actif aussi en mobile */
 .challenge-item__toggle {
-  display: none;
+  display: block; flex: none; width: 22px; height: 22px; margin-top: 2px;
+  position: relative; cursor: pointer;
+  background: none; border: none; border-radius: 3px; padding: 0;
 }
+.challenge-item__toggle::before,
+.challenge-item__toggle::after {
+  content: ''; position: absolute; background: var(--accent);
+  transition: transform 0.22s var(--ease), opacity 0.22s var(--ease);
+}
+.challenge-item__toggle::before { top: 10px; left: 3px; width: 16px; height: 2px; }
+.challenge-item__toggle::after  { top: 3px; left: 10px; width: 2px; height: 16px; }
+.challenge-item.is-expanded .challenge-item__toggle::after { transform: scaleY(0); opacity: 0; }
 
-/* Détail dépliable — masqué par défaut partout ; affiché seulement au clic, desktop uniquement */
+/* Toute la ligne de titre déclenche l'accordéon (cible tactile large en mobile) */
+.challenge-item__problem-head { cursor: pointer; }
+
+/* Détail dépliable — toujours dans le DOM (indexation mobile-first), replié par défaut */
 .challenge-item__panel {
-  display: none;
+  display: grid; grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s var(--ease);
+}
+.challenge-item.is-expanded .challenge-item__panel { grid-template-rows: 1fr; }
+.challenge-item__panel > div { overflow: hidden; }
+.challenge-item__detail {
+  font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
+  color: var(--text-dark-sub); line-height: 1.6;
+  margin: 0; padding: 0 0 8px;
 }
 
 @media (min-width: 768px) {
@@ -1876,32 +1897,7 @@ section[aria-labelledby="challenge-title"] .section-sub {
   }
   .challenge-item__problem { flex: 1; }
   .challenge-item__answer { flex: 1; }
-
-  .challenge-item__toggle {
-    display: block; flex: none; width: 22px; height: 22px; margin-top: 2px;
-    position: relative; cursor: pointer;
-    background: none; border: none; border-radius: 3px; padding: 0;
-  }
-  .challenge-item__toggle::before,
-  .challenge-item__toggle::after {
-    content: ''; position: absolute; background: var(--accent);
-    transition: transform 0.22s var(--ease), opacity 0.22s var(--ease);
-  }
-  .challenge-item__toggle::before { top: 10px; left: 3px; width: 16px; height: 2px; }
-  .challenge-item__toggle::after  { top: 3px; left: 10px; width: 2px; height: 16px; }
-  .challenge-item.is-expanded .challenge-item__toggle::after { transform: scaleY(0); opacity: 0; }
-
-  .challenge-item__panel {
-    display: grid; grid-template-rows: 0fr;
-    transition: grid-template-rows 0.3s var(--ease);
-  }
-  .challenge-item.is-expanded .challenge-item__panel { grid-template-rows: 1fr; }
-  .challenge-item__panel > div { overflow: hidden; }
-  .challenge-item__detail {
-    font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
-    color: var(--text-dark-sub); line-height: 1.6;
-    margin: 0; padding: 0 0 8px;
-  }
+  .challenge-item__answer-col { flex: 1; }
 }
 
 @media (hover: none) {
@@ -2003,3 +1999,27 @@ section[aria-labelledby="intro-title"] { padding-bottom: 32px; }
   .banner-quote__text { font-size: 1.4375rem; }
 }
 
+
+/* ── CLAUSE DE BÉNÉFICE (encadrés « Notre réponse ») ── */
+/* Même vert que l'italique de la pull-quote (.banner-quote__text em) : var(--accent) */
+.benefit {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+/* ── LIEN ARTICLE SOUS UN ENCADRÉ RÉPONSE ── */
+.challenge-item__answer-col {
+  display: block;
+}
+.challenge-item__article-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  margin-top: 10px;
+  font-family: var(--f-sans); font-size: 0.8125rem; font-weight: 500;
+  color: var(--text-dark-mut); text-decoration: none;
+  transition: color 0.25s ease;
+}
+.challenge-item__article-link:hover { color: var(--accent); }
+@media (hover: none) {
+  .challenge-item__article-link:hover { color: var(--text-dark-mut); }
+}

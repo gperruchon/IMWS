@@ -509,10 +509,17 @@
         btn.setAttribute('aria-label', expanded ? btn.dataset.labelHide : btn.dataset.labelShow);
       };
       sync();
-      btn.addEventListener('click', function () {
+      var toggle = function () {
         item.classList.toggle('is-expanded');
         sync();
+      };
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        toggle();
       });
+      // Toute la ligne de titre est tappable (cible tactile large en mobile)
+      var head = item.querySelector('.challenge-item__problem-head');
+      if (head) head.addEventListener('click', toggle);
     });
   })();
 })();
