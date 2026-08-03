@@ -1897,7 +1897,6 @@ section[aria-labelledby="challenge-title"] .section-sub {
   }
   .challenge-item__problem { flex: 1; }
   .challenge-item__answer { flex: 1; }
-  .challenge-item__answer-col { flex: 1; }
 }
 
 @media (hover: none) {
@@ -2008,18 +2007,16 @@ section[aria-labelledby="intro-title"] { padding-bottom: 32px; }
   font-weight: 400;
 }
 
-/* ── LIEN ARTICLE SOUS UN ENCADRÉ RÉPONSE ── */
-.challenge-item__answer-col {
-  display: block;
-}
+/* ── LIEN ARTICLE — dernière ligne du corps dépliable ── */
+/* Même corps/interligne que .challenge-item__detail ; couleur de lien du site (cf. .prose a) */
 .challenge-item__article-link {
-  display: inline-flex; align-items: center; gap: 4px;
-  margin-top: 10px;
-  font-family: var(--f-sans); font-size: 0.8125rem; font-weight: 500;
-  color: var(--text-dark-mut); text-decoration: none;
-  transition: color 0.25s ease;
+  display: inline-block;
+  padding-bottom: 8px;
+  font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 400;
+  line-height: 1.6;
+  color: var(--accent); text-decoration: none;
 }
-.challenge-item__article-link:hover { color: var(--accent); }
+.challenge-item__article-link:hover { text-decoration: underline; }
 @media (hover: none) {
-  .challenge-item__article-link:hover { color: var(--text-dark-mut); }
+  .challenge-item__article-link:hover { text-decoration: none; }
 }
