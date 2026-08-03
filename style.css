@@ -2020,3 +2020,39 @@ section[aria-labelledby="intro-title"] { padding-bottom: 32px; }
 @media (hover: none) {
   .challenge-item__article-link:hover { text-decoration: none; }
 }
+
+/* ── RÉMUNÉRATION (home) — tarif, option, corps ── */
+/* Tokens repris tels quels : var(--f-serif)/var(--f-sans), var(--text-dark),
+   var(--text-dark-sub), var(--text-dark-mut). Aucune nouvelle couleur ni police.
+   Traitement du tarif aligné sur le composant chiffre-clé existant .stat-bar__value
+   (serif, weight 400, encre). */
+.fees-figure {
+  margin-top: 40px;
+}
+.fees-figure__price {
+  font-family: var(--f-serif); font-weight: 400;
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  line-height: 1.15; letter-spacing: -0.015em;
+  color: var(--text-dark);
+  margin: 0;
+  text-wrap: pretty;
+}
+.fees-figure__note {
+  font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 400;
+  color: var(--text-dark-sub); line-height: 1.6;
+  margin: 12px 0 0;
+}
+/* Nettement subordonnée au tarif (14px vs 28-40px), y compris en mobile */
+.fees-option {
+  font-family: var(--f-sans); font-size: 0.875rem; font-weight: 300;
+  font-style: italic;
+  color: var(--text-dark-mut); line-height: 1.7;
+  max-width: 640px;
+  margin: 20px 0 0;
+}
+.fees-body {
+  font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
+  color: var(--text-dark-sub); line-height: 1.8;
+  max-width: 640px;
+  margin: 28px 0 0;
+}
