@@ -79,6 +79,7 @@
 
   "approach_page.eyebrow": "Il nostro metodo",
   "approach_page.hero.title": "Un processo rigoroso e indipendente.",
+  "approach_page.cta": "Colloquio confidenziale, senza impegno",
   "approach_page.step1.eyebrow": "Fase 01",
   "approach_page.step1.title": "Diagnosticare.",
   "approach_page.step1.subtitle": "Sapere esattamente dove vi trovate.",
@@ -146,7 +147,8 @@
   "expertise_page.uc6.body": "Più banche, più report, nessuna visione d'insieme. Consolidamo, semplifichiamo e vi offriamo una lettura chiara dell'intera vostra struttura patrimoniale.",
   "expertise_page.cta.text": "La vostra situazione non corrisponde a nessuno di questi casi?",
   "expertise_page.cta.sub": "Ogni situazione patrimoniale è unica. Parliamone.",
-  "expertise_page.cta.btn": "Prendere contatto →",
+  "expertise_page.cta.btn": "Colloquio confidenziale, senza impegno",
+  "expertise_page.cta.btn2": "Scoprite il nostro metodo",
 
   "publications_page.eyebrow": "Pubblicazioni",
   "publications_page.hero.title": "Prospettive sul private banking.",

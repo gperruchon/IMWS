@@ -79,6 +79,7 @@
 
   "approach_page.eyebrow": "Unser Ansatz",
   "approach_page.hero.title": "Ein rigoroser, unabhängiger Prozess.",
+  "approach_page.cta": "Vertrauliches Gespräch, unverbindlich",
   "approach_page.step1.eyebrow": "Schritt 01",
   "approach_page.step1.title": "Analysieren.",
   "approach_page.step1.subtitle": "Genau wissen, wo Sie stehen.",
@@ -146,7 +147,8 @@
   "expertise_page.uc6.body": "Mehrere Banken, mehrere Berichte, keine Gesamtübersicht. Wir konsolidieren, vereinfachen und verschaffen Ihnen einen klaren Überblick über Ihre gesamte Vermögensstruktur.",
   "expertise_page.cta.text": "Ihre Situation entspricht keinem dieser Fälle?",
   "expertise_page.cta.sub": "Jede Vermögenssituation ist einzigartig. Sprechen wir darüber.",
-  "expertise_page.cta.btn": "Kontakt aufnehmen →",
+  "expertise_page.cta.btn": "Vertrauliches Gespräch, unverbindlich",
+  "expertise_page.cta.btn2": "Unsere Methode ansehen",
 
   "publications_page.eyebrow": "Publikationen",
   "publications_page.hero.title": "Perspektiven zum Private Banking.",
