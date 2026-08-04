@@ -1905,6 +1905,12 @@ section[aria-labelledby="challenge-title"] .section-sub {
 }
 
 /* ── INTRO FAMILY OFFICE ── */
+/* Le sous-titre suit la largeur du lead : on neutralise le max-width:580px
+   hérité de la classe globale .section-sub (même approche que la section « Le défi ») */
+section[aria-labelledby="intro-title"] .section-sub {
+  max-width: none;
+}
+
 .intro-fo__criteria {
   display: flex; flex-wrap: wrap; gap: 8px;
   margin: 0 0 32px; padding: 0; list-style: none;
