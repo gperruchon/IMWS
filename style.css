@@ -2100,15 +2100,49 @@ section[aria-labelledby="intro-title"] { padding-bottom: 32px; }
   margin: 0 0 6px;
 }
 
-.team-home-card__role {
-  font-family: var(--f-sans); font-size: 0.6875rem; font-weight: 700;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--text-dark-mut);
-  margin: 0 0 18px;
+/* Ligne de crédential condensée (teaser home) */
+.team-home-card__cred {
+  font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
+  color: var(--text-dark-sub); line-height: 1.6;
+  margin: 0;
 }
 
-.team-home-card__bio {
-  font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
-  color: var(--text-dark-sub); line-height: 1.8;
-  margin: 0;
+/* Badge CAIA — même recette que les pastilles .intro-fo__criteria-item
+   (rayon 999px, filet 0.5px, sans-serif) ; fond crème pour rester lisible
+   sur la carte blanche. Aucun token nouveau. */
+.team-badge {
+  display: inline-block;
+  background: var(--bg-light-alt);
+  border: 0.5px solid var(--border-light);
+  border-radius: 999px;
+  padding: 3px 11px;
+  margin-right: 6px;
+  font-family: var(--f-sans); font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-dark);
+  vertical-align: baseline;
+}
+
+/* Lien vers /team — même traitement que .challenge-item__article-link */
+.team-home-link {
+  display: inline-block;
+  font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 400;
+  line-height: 1.6;
+  color: var(--accent); text-decoration: none;
+}
+.team-home-link:hover { text-decoration: underline; }
+@media (hover: none) {
+  .team-home-link:hover { text-decoration: none; }
+}
+
+/* ── /team — badge, statut réglementaire ── */
+.profile__badges {
+  margin: 0 0 14px;
+}
+/* Utilisée par le bloc « statut réglementaire », actuellement commenté dans le HTML
+   en attente de l'information client (voir TODO CLIENT dans les pages /team). */
+.team-regulatory {
+  font-family: var(--f-sans); font-size: 0.875rem; font-weight: 300;
+  color: var(--text-dark-mut); line-height: 1.6;
+  margin: 32px 0 0;
 }
