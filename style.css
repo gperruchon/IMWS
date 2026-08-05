@@ -2035,9 +2035,18 @@ section[aria-labelledby="intro-title"] { padding-bottom: 32px; }
 .fees-figure {
   margin-top: 40px;
 }
+/* Colonne de texte alignée sur la section « Sélection & négociation » :
+   celle-ci neutralise le max-width de .section-sub et laisse ses paragraphes
+   occuper toute la largeur de .container. Même traitement ici. */
+section[aria-labelledby="remuneration-title"] .section-sub {
+  max-width: none;
+}
+
 .fees-figure__price {
   font-family: var(--f-serif); font-weight: 400;
-  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  /* Plafond à 2rem : au-delà, le tarif ne tient pas sur une ligne à 1200px
+     (le DE demande ~32px maximum). */
+  font-size: clamp(1.75rem, 3.2vw, 2rem);
   line-height: 1.15; letter-spacing: -0.015em;
   color: var(--text-dark);
   margin: 0;
@@ -2053,13 +2062,11 @@ section[aria-labelledby="intro-title"] { padding-bottom: 32px; }
   font-family: var(--f-sans); font-size: 0.875rem; font-weight: 300;
   font-style: italic;
   color: var(--text-dark-mut); line-height: 1.7;
-  max-width: 640px;
   margin: 20px 0 0;
 }
 .fees-body {
   font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
   color: var(--text-dark-sub); line-height: 1.8;
-  max-width: 640px;
   margin: 28px 0 0;
 }
 
