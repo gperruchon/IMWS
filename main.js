@@ -366,8 +366,8 @@
   }
 
   /* ── Profile bio expand (Team page) ─────────── */
-  const profileContent = document.querySelector('.profile__content');
-  if (profileContent) {
+  // Plusieurs profils possibles depuis le passage à une grille duo
+  document.querySelectorAll('.profile__content').forEach(function (profileContent) {
     const toggle = () => {
       const expanded = profileContent.classList.toggle('is-expanded');
       profileContent.setAttribute('aria-expanded', String(expanded));
@@ -379,7 +379,7 @@
     profileContent.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
     });
-  }
+  });
 
   /* ── Cookie banner ────────────────────────────── */
   const cookie = document.getElementById('cookie-banner');

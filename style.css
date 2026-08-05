@@ -2146,3 +2146,42 @@ section[aria-labelledby="intro-title"] { padding-bottom: 32px; }
   color: var(--text-dark-mut); line-height: 1.6;
   margin: 32px 0 0;
 }
+
+/* ── /team — grille duo (2 profils) ── */
+/* Même coquille que les cartes équipe de la home ; bio alignée à gauche
+   car 3 paragraphes centrés seraient illisibles. */
+.team-profile-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .team-profile-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.team-profile-card {
+  padding: 40px;
+  border: 0.5px solid var(--border-light);
+  border-radius: 12px;
+  background: var(--bg-light);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.team-profile-card .profile__bio { text-align: left; }
+.team-profile-card .u-btn-row { justify-content: center; }
+
+/* Ancienneté / stat courte, sous le rôle */
+.profile__stat {
+  font-family: var(--f-sans); font-size: 0.9375rem; font-weight: 300;
+  color: var(--text-dark-sub); line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+/* Placeholder de bio manquante — volontairement visible pour ne pas passer inaperçu */
+.profile__bio--todo {
+  border: 1px dashed var(--border-light);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: var(--text-dark-mut);
+  font-style: italic;
+}
