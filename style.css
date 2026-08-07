@@ -2192,3 +2192,14 @@ section[aria-labelledby="remuneration-title"] .section-sub {
   color: var(--text-dark-mut);
   font-style: italic;
 }
+
+/* ── Cadrage du portrait de Gaylord ── */
+/* La photo source (800×1167) le cadre plus bas dans l'image que celle d'Aurélien.
+   On décale la fenêtre de recadrage vers le bas pour aligner la hauteur des yeux
+   sur celle d'Aurélien. Le fichier image n'est pas modifié.
+   Note : en object-fit:cover sur un cercle, une source en portrait remplit
+   exactement la largeur — l'axe X d'object-position est donc sans effet ici,
+   seul l'axe Y agit. */
+.team-home-card__photo--gaylord {
+  object-position: 50% 22%;
+}
