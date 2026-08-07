@@ -2203,3 +2203,23 @@ section[aria-labelledby="remuneration-title"] .section-sub {
 .team-home-card__photo--gaylord {
   object-position: 50% 22%;
 }
+
+/* ── /team — boutons sous la grille des profils ── */
+/* Les CTA appartiennent à la section, pas à l'une des deux personnes.
+   Alignés à gauche, comme le CTA de fin de page. */
+.team-profile-actions {
+  margin-top: 48px;
+}
+
+/* Sous-titre de section : même traitement que sur la home — on neutralise
+   le max-width:580px hérité de la classe globale .section-sub. */
+section[aria-labelledby="tools-title"] .section-sub {
+  max-width: none;
+}
+
+/* Bandeau de confiance : respiration identique avant et après (48px,
+   valeur déjà utilisée par le rythme vertical du site). */
+.team-trust-band {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
