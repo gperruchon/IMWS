@@ -1204,12 +1204,14 @@ a.contact-detail__text:hover { color:var(--accent); }
 }
 
 .footer-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 2px 6px;
+  min-width: 0;
   font-family: var(--f-sans);
   font-size: 0.7rem;
   color: var(--text-dark-mut);
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .footer-bar__right {
@@ -2222,4 +2224,37 @@ section[aria-labelledby="tools-title"] .section-sub {
 .team-trust-band {
   margin-top: 48px;
   margin-bottom: 48px;
+}
+
+/* ── FOOTER BAR — LIGNE DE CONTACT ──
+   La ligne de gauche porte désormais 4 informations (raison sociale, adresse,
+   email, téléphone). Elle ne peut plus être tronquée en ellipse : les
+   coordonnées doivent rester lisibles à toutes les largeurs. Elle bascule donc
+   sur deux lignes (identité / coordonnées) dès que la place manque. */
+.footer-bar__contact {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px 6px;
+}
+
+/* 1120px = largeur mesurée nécessaire à la ligne complète dans la langue la plus
+   longue (FR : 1080px, libellés « Nous contacter » / « Politique de
+   confidentialité »), + marge pour l'expansion allemande à venir. En dessous,
+   on empile plutôt que de tronquer. */
+@media (max-width: 1120px) {
+  .footer-bar__left {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2px;
+    white-space: normal;
+  }
+  /* Le séparateur inter-groupes n'a plus de sens une fois les deux blocs
+     empilés : il pendrait en fin de première ligne. */
+  .footer-bar__sep--group { display: none; }
+}
+
+@media (max-width: 600px) {
+  .footer-bar__left { align-items: center; }
+  .footer-bar__contact { justify-content: center; }
 }
