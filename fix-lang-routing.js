@@ -40,7 +40,7 @@ if (mainJsChanged) {
 /* ── 2. Verify / fix data-href in every HTML file ────────────────
    Each lang-switcher option must carry data-href pointing to the
    same-page equivalent in the target language, not always to index. */
-const PAGES = ['index', 'approach', 'use-cases', 'publications', 'team', 'contact', 'privacy'];
+const PAGES = ['index', 'approach', 'use-cases', 'publications', 'contact', 'privacy'];
 const LANGS  = [
   { code: 'EN', pfx: '' },
   { code: 'FR', pfx: 'fr-' },

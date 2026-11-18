@@ -5,7 +5,7 @@ const path = require('path');
 const DIR = __dirname;
 let fixes = 0;
 
-const PAGES = ['index', 'approach', 'use-cases', 'publications', 'team', 'contact', 'privacy'];
+const PAGES = ['index', 'approach', 'use-cases', 'publications', 'contact', 'privacy'];
 const LANGS  = [
   { code: 'EN', pfx: '' },
   { code: 'FR', pfx: 'fr-' },

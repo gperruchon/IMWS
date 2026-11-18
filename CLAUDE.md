@@ -16,7 +16,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `main.js` | All JS: nav shadow, hamburger, lang dropdown, scroll reveal, stat count-up, anchor nav |
 | `translations/en.json` | Translatable string keys (`data-i18n` attributes) — EN only so far |
 | `cahier_des_charges.md` | Full design brief (V6 Vontobel Light): colors, layouts, per-page specs |
-| `*.html` | Six pages: index, approach, use-cases, publications, team, contact |
+| `*.html` | Five pages (EN at root, FR/DE/IT in `/fr/`, `/de/`, `/it/`): index, approach, use-cases, publications, contact — plus privacy and articles. The Team page and the fees section were removed in Nov 2026; `team` URLs redirect to the home page via `_redirects`. |
 
 ## Architecture
 

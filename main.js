@@ -315,36 +315,6 @@
     });
   }
 
-  /* ── Tool-item accordion (Team page) ─────────── */
-  const toolItems = document.querySelectorAll('.tool-item');
-  if (toolItems.length) {
-    toolItems.forEach(item => {
-      item.setAttribute('role', 'button');
-      item.setAttribute('tabindex', '0');
-      item.setAttribute('aria-expanded', 'false');
-
-      const toggle = () => {
-        const wasExpanded = item.classList.contains('is-expanded');
-        toolItems.forEach(t => {
-          t.classList.remove('is-expanded');
-          t.setAttribute('aria-expanded', 'false');
-        });
-        if (!wasExpanded) {
-          item.classList.add('is-expanded');
-          item.setAttribute('aria-expanded', 'true');
-        }
-      };
-
-      item.addEventListener('click', toggle);
-      item.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          toggle();
-        }
-      });
-    });
-  }
-
   /* ── Approach-card step toggle (index.html) ─── */
   const approachCards = document.querySelectorAll('.approach-card');
   if (approachCards.length) {
@@ -364,22 +334,6 @@
       });
     });
   }
-
-  /* ── Profile bio expand (Team page) ─────────── */
-  // Plusieurs profils possibles depuis le passage à une grille duo
-  document.querySelectorAll('.profile__content').forEach(function (profileContent) {
-    const toggle = () => {
-      const expanded = profileContent.classList.toggle('is-expanded');
-      profileContent.setAttribute('aria-expanded', String(expanded));
-    };
-    profileContent.addEventListener('click', (e) => {
-      if (e.target.closest('a, button')) return;
-      toggle();
-    });
-    profileContent.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
-    });
-  });
 
   /* ── Cookie banner ────────────────────────────── */
   const cookie = document.getElementById('cookie-banner');

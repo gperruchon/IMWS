@@ -49,7 +49,7 @@ GLOBAL NAVIGATION
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - Fixed, height 64px, `--bg-light`, 0.5px bottom border `--border-light`
 - Left: "IM Wealth Select®" (Inter 700, `--text-dark`)
-- Center: Approach · Expertise · Publications · Team
+- Center: Approach · Expertise · Publications
 - Right: Language dropdown (EN/FR/DE/ES/IT) + CTA "Request a banking review"
 - Mobile: hamburger → cream overlay with all links + inline language row
 - Scroll shadow: `box-shadow: 0 1px 24px rgba(0,0,0,0.06)` on `.is-scrolled`
@@ -120,9 +120,8 @@ PAGE 1 — HOME (index.html)
 PAGE 2 — APPROACH (approach.html)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - Page hero: serif title "A rigorous, independent process." (no subtitle)
-- Anchor nav: 01 — Diagnose (`#diagnose`) · 02 — Select & Negotiate (`#select`) · 03 — Monitor (`#monitor`) · Fees (`#fees`)
+- Anchor nav: 01 — Diagnose (`#diagnose`) · 02 — Select & Negotiate (`#select`) · 03 — Monitor (`#monitor`)
 - 3 step detail sections (alternating white/cream)
-- Fee table section (cream): transparent flat fee, no retrocessions
 
 **Step 01 — Diagnose** (`id="diagnose"`, `section-light`)
 - H2: "Diagnose."
@@ -146,14 +145,6 @@ PAGE 2 — APPROACH (approach.html)
 - Deliverable card: "Governance Report & Online Reporting Access" — "Regular governance reporting, access to an online reporting tool, quarterly review meetings and clear recommendations when a mandate requires attention."
 - Format card: "First 12 months after onboarding" — "Ongoing monitoring is included during the first 12 months after onboarding. After that period, continued governance and reporting can be maintained at a reduced annual rate."
 
-Fees (asset-tiered, percentage-based — `.fee-table-v2.stagger-grid`):
-| Assets under advice (CHF M) | Diagnose, selection & monitoring — Year 1 | Monitoring per annum (after Year 1) |
-|---|---|---|
-| 1 – 5 | 0.65% | 0.25% |
-| 5 – 10 | 0.40% | 0.20% |
-| 10 – 20 | 0.35% | 0.15% |
-| 20+ | 0.25% | 0.10% |
-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PAGE 3 — USE CASES / EXPERTISE (use-cases.html)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -172,13 +163,6 @@ PAGE 4 — PUBLICATIONS (publications.html)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - Article list (`.article-list`) on white background
 - Filter badges: All · Banking · Fees · Governance · Succession
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PAGE 5 — TEAM (team.html)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-- Gaylord Perruchon profile (white section)
-- Bio: Independent wealth management consultant, Geneva. Former private banker.
-- Tech infrastructure (cream section): Morningstar, SmartRFP, Bloomberg, Secure Document Vault
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PAGE 6 — CONTACT (contact.html)
@@ -212,7 +196,7 @@ PAGE 7 — LEGAL & PRIVACY (privacy.html)
 - Eyebrow "Use, disclosure & transfers" + heading "Why we process data, and who may see it."
 - Intro paragraph: purposes (operate/secure site, respond to enquiries, assess relevance, comply with law)
 - Body paragraph: legal basis (GDPR/UK GDPR), no automated profiling, no sale/rental of data, no disclosure to banks without instruction
-- **Sub-processor table** (`.fee-table-v2.stagger-grid`, same component as the approach.html fee table, repurposed with text columns instead of percentages):
+- **Sub-processor table** (`.fee-table-v2.stagger-grid`, component originally built for the (now removed) fee table, repurposed with text columns instead of percentages):
   | Service | Provider | Processing location |
   |---|---|---|
   | Website hosting | Gandi SAS | France (EU); limited transfers outside EU for technical/TLD purposes |

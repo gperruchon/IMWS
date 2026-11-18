@@ -1,3 +1,9 @@
+# Team page removed (Nov 2026) — send old URLs to the language home page
+/team          /       301!
+/fr/team       /fr/    301!
+/de/team       /de/    301!
+/it/team       /it/    301!
+
 # Canonical host — force apex (non-www) to www, in case the Netlify
 # dashboard's primary-domain setting doesn't already handle it.
 https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301!
@@ -18,7 +24,7 @@ https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301
 /contact.html                                                     /contact 301!
 /use-cases.html                                                   /use-cases 301!
 /publications.html                                                /publications 301!
-/team.html                                                        /team 301!
+/team.html                                                        /  301!
 /privacy.html                                                     /privacy 301!
 /article-evaluate-private-bank.html                               /article-evaluate-private-bank 301!
 /article-rfp-private-bank.html                                    /article-rfp-private-bank 301!
@@ -28,7 +34,7 @@ https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301
 /fr/contact.html                                                  /fr/contact 301!
 /fr/use-cases.html                                                /fr/use-cases 301!
 /fr/publications.html                                             /fr/publications 301!
-/fr/team.html                                                     /fr/team 301!
+/fr/team.html                                                     /fr/ 301!
 /fr/privacy.html                                                  /fr/privacy 301!
 /fr/article-appel-offres-banque-privee.html                       /fr/article-appel-offres-banque-privee 301!
 /fr/article-evaluer-banque-privee.html                            /fr/article-evaluer-banque-privee 301!
@@ -38,7 +44,7 @@ https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301
 /de/contact.html                                                  /de/contact 301!
 /de/use-cases.html                                                /de/use-cases 301!
 /de/publications.html                                             /de/publications 301!
-/de/team.html                                                     /de/team 301!
+/de/team.html                                                     /de/ 301!
 /de/privacy.html                                                  /de/privacy 301!
 /de/artikel-ausschreibung-privatbank.html                         /de/artikel-ausschreibung-privatbank 301!
 /de/artikel-privatbank-bewerten.html                              /de/artikel-privatbank-bewerten 301!
@@ -48,7 +54,7 @@ https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301
 /it/contact.html                                                  /it/contact 301!
 /it/use-cases.html                                                /it/use-cases 301!
 /it/publications.html                                             /it/publications 301!
-/it/team.html                                                     /it/team 301!
+/it/team.html                                                     /it/ 301!
 /it/privacy.html                                                  /it/privacy 301!
 /it/articolo-gara-banca-privata.html                              /it/articolo-gara-banca-privata 301!
 /it/articolo-valutare-banca-privata.html                          /it/articolo-valutare-banca-privata 301!
@@ -60,7 +66,7 @@ https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301
 /fr-contact.html                 /fr/contact                        301
 /fr-use-cases.html                /fr/use-cases                      301
 /fr-publications.html             /fr/publications                   301
-/fr-team.html                    /fr/team                            301
+/fr-team.html                    /fr/                            301
 /fr-privacy.html                 /fr/privacy                         301
 /fr-article-appel-offres-banque-privee.html   /fr/article-appel-offres-banque-privee   301
 /fr-article-evaluer-banque-privee.html        /fr/article-evaluer-banque-privee        301
@@ -70,7 +76,7 @@ https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301
 /de-contact.html                 /de/contact                        301
 /de-use-cases.html                /de/use-cases                      301
 /de-publications.html             /de/publications                  301
-/de-team.html                    /de/team                            301
+/de-team.html                    /de/                            301
 /de-privacy.html                 /de/privacy                         301
 /de-artikel-ausschreibung-privatbank.html     /de/artikel-ausschreibung-privatbank     301
 /de-artikel-privatbank-bewerten.html          /de/artikel-privatbank-bewerten          301
@@ -80,7 +86,7 @@ https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301
 /it-contact.html                 /it/contact                        301
 /it-use-cases.html                /it/use-cases                      301
 /it-publications.html             /it/publications                   301
-/it-team.html                    /it/team                            301
+/it-team.html                    /it/                            301
 /it-privacy.html                 /it/privacy                         301
 /it-articolo-gara-banca-privata.html          /it/articolo-gara-banca-privata          301
 /it-articolo-valutare-banca-privata.html      /it/articolo-valutare-banca-privata      301
@@ -90,21 +96,21 @@ https://im-wealthselect.ch/*      https://www.im-wealthselect.ch/:splat      301
 /fr-contact                      /fr/contact                        301
 /fr-use-cases                    /fr/use-cases                       301
 /fr-publications                 /fr/publications                   301
-/fr-team                         /fr/team                           301
+/fr-team                         /fr/                           301
 /fr-privacy                      /fr/privacy                        301
 
 /de-approach                     /de/approach                       301
 /de-contact                      /de/contact                        301
 /de-use-cases                    /de/use-cases                      301
 /de-publications                 /de/publications                  301
-/de-team                         /de/team                           301
+/de-team                         /de/                           301
 /de-privacy                      /de/privacy                        301
 
 /it-approach                     /it/approach                       301
 /it-contact                      /it/contact                        301
 /it-use-cases                    /it/use-cases                      301
 /it-publications                 /it/publications                  301
-/it-team                         /it/team                           301
+/it-team                         /it/                           301
 /it-privacy                      /it/privacy                        301
 
 # Deleted articles → homepage

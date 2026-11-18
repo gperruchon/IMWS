@@ -236,52 +236,6 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/publications"/>
   </url>
 
-  <!-- ══ TEAM — priority 0.7 · monthly ══ -->
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/team</loc>
-    <lastmod>2026-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/fr/team</loc>
-    <lastmod>2026-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/de/team</loc>
-    <lastmod>2026-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team"/>
-  </url>
-
-  <url>
-    <loc>https://www.im-wealthselect.ch/it/team</loc>
-    <lastmod>2026-07-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.im-wealthselect.ch/team"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.im-wealthselect.ch/fr/team"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.im-wealthselect.ch/de/team"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.im-wealthselect.ch/it/team"/>
-  </url>
-
   <!-- ══ ARTICLE: Évaluer / Evaluate / Bewerten / Valutare — priority 0.6 · weekly ══ -->
 
   <url>
