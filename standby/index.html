@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM Wealth Select® — Genève</title>
+  <meta name="description" content="IM Wealth Select® — conseil patrimonial indépendant à Genève. Notre nouveau site arrive prochainement. Contact : contact@im-wealthselect.ch">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --accent:#1A6B56; --text-dark:#1A1A18; --text-dark-sub:#4D4D48; --text-dark-mut:#8A8A85; --border-light:#E5E3DC; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html, body { height:100%; }
+    body { font-family:'Inter',system-ui,-apple-system,sans-serif; font-weight:300; color:var(--text-dark-sub); background:#fff; display:flex; flex-direction:column; min-height:100vh; -webkit-font-smoothing:antialiased; }
+    main { flex:1; display:flex; align-items:center; justify-content:center; padding:64px 24px; }
+    .standby { max-width:640px; text-align:center; animation:fade 1s ease-out both; }
+    .brand { font-family:Georgia,'Times New Roman',serif; font-size:22px; color:var(--text-dark); letter-spacing:0.02em; margin-bottom:56px; }
+    .eyebrow { display:block; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:0.16em; color:var(--text-dark-mut); margin-bottom:20px; }
+    h1 { font-family:Georgia,'Times New Roman',serif; font-weight:400; font-size:clamp(30px,5vw,44px); line-height:1.2; color:var(--text-dark); margin-bottom:24px; }
+    .lead { font-size:17px; line-height:1.7; margin:0 auto 40px; max-width:520px; }
+    .btn-accent { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:400; font-size:15px; padding:15px 32px; border-radius:999px; transition:opacity .2s ease, transform .2s ease; }
+    .btn-accent:hover { opacity:.9; transform:translateY(-1px); }
+    .email { display:block; margin-top:18px; font-size:14px; color:var(--text-dark-mut); }
+    .divider { width:40px; height:1px; background:var(--border-light); margin:48px auto 24px; }
+    .en { font-size:14px; line-height:1.6; color:var(--text-dark-mut); }
+    @keyframes fade { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+    @media (prefers-reduced-motion: reduce) { .standby { animation:none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="standby">
+      <p class="brand">IM Wealth Select®</p>
+      <span class="eyebrow">Genève · Conseil patrimonial indépendant</span>
+      <h1>Notre nouveau site arrive prochainement.</h1>
+      <p class="lead">Nous restons à votre disposition pendant ce temps. Écrivez-nous&nbsp;: nous vous répondons personnellement sous un jour ouvré, en toute confidentialité.</p>
+      <a class="btn-accent" href="mailto:contact@im-wealthselect.ch">Nous écrire</a>
+      <span class="email">contact@im-wealthselect.ch</span>
+      <div class="divider" aria-hidden="true"></div>
+      <p class="en" lang="en">Our new website is coming soon. In the meantime, please contact us by email.</p>
+    </div>
+  </main>
+</body>
+</html>

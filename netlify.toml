@@ -1,3 +1,8 @@
+[build]
+  # Ancienne valeur de publish : aucune dans ce fichier (réglage du tableau de bord Netlify, par défaut la racine du dépôt ".")
+  # Site en pause. Pour réafficher le site complet : supprimer ces lignes [build] (ou remettre publish = ".")
+  publish = "standby"
+
 [[headers]]
   for = "/*"
   [headers.values]
